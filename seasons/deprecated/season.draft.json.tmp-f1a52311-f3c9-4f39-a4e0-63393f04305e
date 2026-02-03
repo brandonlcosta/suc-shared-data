@@ -1,0 +1,74 @@
+{
+  "seasonId": "8d1756f4-a150-4390-b510-e89bba3e2679",
+  "status": "draft",
+  "blocks": [
+    {
+      "blockId": "d555b479-43d9-4167-b502-f2e3e8794709",
+      "name": "Blank Block",
+      "tags": [],
+      "weeks": [
+        {
+          "weekId": "abd58685-7ef1-43d3-899d-237e9149819b",
+          "focus": "heat",
+          "stress": "high",
+          "volume": "med",
+          "intensity": "med-high"
+        },
+        {
+          "weekId": "2bff9ca5-00b7-461f-a0b8-e82f1cece68a",
+          "focus": "speed",
+          "stress": "med-high",
+          "volume": "med",
+          "intensity": "high"
+        }
+      ]
+    },
+    {
+      "blockId": "62052c91-e28a-47bb-b7c0-7d3af55c2670",
+      "name": "Salmon Falls",
+      "tags": [],
+      "weeks": [
+        {
+          "weekId": "3db090f0-613b-41c2-8bf6-d5c4c69e4568",
+          "focus": "base",
+          "stress": "med",
+          "volume": "med",
+          "intensity": "low"
+        },
+        {
+          "weekId": "cc963540-e2d8-4bd3-9c9d-323ee3519ec0",
+          "focus": null,
+          "stress": "low",
+          "volume": "low",
+          "intensity": "low"
+        },
+        {
+          "weekId": "18c63a71-f410-406f-82b5-8b687472122a",
+          "focus": null,
+          "stress": "low",
+          "volume": "low",
+          "intensity": "low"
+        },
+        {
+          "weekId": "3c07c505-489e-4dae-81c0-09bb15130d39",
+          "focus": null,
+          "stress": "low",
+          "volume": "low",
+          "intensity": "low"
+        }
+      ]
+    }
+  ],
+  "seasonMarkers": [
+    {
+      "markerId": "c8216a7a-84a2-42a9-8ec7-db2f5b5e62e3",
+      "label": "Spring Season",
+      "weekIndex": 4
+    },
+    {
+      "markerId": "aa545ed0-fddf-407a-8698-3364a164dc44",
+      "label": "Summer Season",
+      "weekIndex": 16
+    }
+  ]
+}

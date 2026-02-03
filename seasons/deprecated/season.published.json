@@ -1,0 +1,25 @@
+﻿{
+    "seasonId":  "282d7dff-d106-4838-ba8f-75f0311c6389",
+    "status":  "published",
+    "blocks":  [
+                   {
+                       "blockId":  "07fc2524-a2bd-473a-8b28-3c995d057cca",
+                       "name":  "Blank Block",
+                       "tags":  [
+
+                                ],
+                       "weeks":  [
+                                     {
+                                         "weekId":  "9804d727-6466-4ab7-af32-fe62eb613bd5",
+                                         "focus":  null,
+                                         "stress":  "low",
+                                         "volume":  "low",
+                                         "intensity":  "low"
+                                     }
+                                 ]
+                   }
+               ],
+    "seasonMarkers":  [
+
+                      ]
+}

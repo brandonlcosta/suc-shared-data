@@ -1,0 +1,132 @@
+{
+  "seasonId": "8d1756f4-a150-4390-b510-e89bba3e2679",
+  "status": "draft",
+  "blocks": [
+    {
+      "blockId": "73fc9711-9a2c-4bde-af1e-bffa4baa4a4f",
+      "name": "Blank Block",
+      "tags": [],
+      "weeks": [
+        {
+          "weekId": "9a229ea8-b24c-47f5-aa18-28623a604982",
+          "focus": "hill-power",
+          "stress": "med-high",
+          "volume": "very-high",
+          "intensity": "very-high"
+        }
+      ]
+    },
+    {
+      "blockId": "d37f054c-d4e0-4bec-b9fe-4519a136d0bf",
+      "name": "Base Block",
+      "tags": [],
+      "weeks": [
+        {
+          "weekId": "4e2db9e3-6bc0-476d-9a1a-6461ebd6c975",
+          "focus": "base",
+          "stress": "med",
+          "volume": "med",
+          "intensity": "med"
+        },
+        {
+          "weekId": "eee07d2c-aad5-428d-9be3-641992d06e25",
+          "focus": null,
+          "stress": "low",
+          "volume": "low",
+          "intensity": "low"
+        },
+        {
+          "weekId": "f9bc3648-0f23-4834-809a-55fe46134882",
+          "focus": null,
+          "stress": "low",
+          "volume": "low",
+          "intensity": "low"
+        },
+        {
+          "weekId": "34e288f0-0408-4861-a7d8-4057f01929cf",
+          "focus": null,
+          "stress": "low",
+          "volume": "low",
+          "intensity": "low"
+        }
+      ]
+    },
+    {
+      "blockId": "883f86cf-7b5e-49f3-8821-d23f5acca7eb",
+      "name": "Blank Block",
+      "tags": [],
+      "weeks": [
+        {
+          "weekId": "5c3dfce8-88ac-41e0-b91f-3cb7694b3108",
+          "focus": null,
+          "stress": "low",
+          "volume": "low",
+          "intensity": "low"
+        }
+      ]
+    },
+    {
+      "blockId": "f191118b-575b-40a1-896b-104e0a07d67c",
+      "name": "Blank Block",
+      "tags": [],
+      "weeks": [
+        {
+          "weekId": "3e847f0e-954e-4ea9-b9f1-0117551178a8",
+          "focus": null,
+          "stress": "low",
+          "volume": "low",
+          "intensity": "low"
+        }
+      ]
+    },
+    {
+      "blockId": "5e7a9759-2b6a-43ed-bcb7-77cbc40fab09",
+      "name": "Blank Block",
+      "tags": [],
+      "weeks": [
+        {
+          "weekId": "694a99bb-2e1a-4078-ab1e-8e6de2daa4cf",
+          "focus": null,
+          "stress": "low",
+          "volume": "low",
+          "intensity": "low"
+        }
+      ]
+    },
+    {
+      "blockId": "16ce6e4d-81a3-4a88-a6a7-7b8d7f507156",
+      "name": "Blank Block",
+      "tags": [],
+      "weeks": [
+        {
+          "weekId": "e9681015-9eb4-4f78-bc20-7cca54c5cf3b",
+          "focus": null,
+          "stress": "low",
+          "volume": "low",
+          "intensity": "low"
+        }
+      ]
+    },
+    {
+      "blockId": "85886e73-af38-4045-9c66-42f28e79d5c1",
+      "name": "Blank Block",
+      "tags": [],
+      "weeks": [
+        {
+          "weekId": "d9bb9806-cae1-4165-9525-3c58640fe30a",
+          "focus": null,
+          "stress": "low",
+          "volume": "low",
+          "intensity": "low"
+        }
+      ]
+    }
+  ],
+  "seasonMarkers": [
+    {
+      "markerId": "c8216a7a-84a2-42a9-8ec7-db2f5b5e62e3",
+      "label": "Spring Season",
+      "weekIndex": 4
+    }
+  ]
+}

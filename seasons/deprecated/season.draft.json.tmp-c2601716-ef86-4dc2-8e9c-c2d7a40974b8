@@ -1,0 +1,98 @@
+{
+  "seasonId": "8d1756f4-a150-4390-b510-e89bba3e2679",
+  "status": "draft",
+  "blocks": [
+    {
+      "blockId": "47b2630f-9967-4855-b305-9f7e8a359475",
+      "name": "Salmon Falls Block",
+      "tags": [],
+      "weeks": [
+        {
+          "weekId": "15960c6c-40ba-4be9-a34a-c5f3b280033c",
+          "focus": "heat",
+          "stress": "med-high",
+          "volume": "high",
+          "intensity": "med"
+        },
+        {
+          "weekId": "0fd12ec0-a37e-479a-ac96-7fefd4f1f84c",
+          "focus": null,
+          "stress": "low",
+          "volume": "low",
+          "intensity": "low"
+        }
+      ]
+    },
+    {
+      "blockId": "4b5a8345-9936-4156-9e50-cca0a16e4f1b",
+      "name": "Deload Block",
+      "tags": [],
+      "weeks": [
+        {
+          "weekId": "d1f9e6fb-e4a9-4c96-8d65-4ce6770ea62b",
+          "focus": "deload",
+          "stress": "low",
+          "volume": "low",
+          "intensity": "low"
+        }
+      ]
+    },
+    {
+      "blockId": "00c59221-30fd-4fe3-a674-e382d72d7dc9",
+      "name": "Canyons Block",
+      "tags": [],
+      "weeks": [
+        {
+          "weekId": "790a19c9-abaf-47ce-a6db-3be4be6d333e",
+          "focus": null,
+          "stress": "low",
+          "volume": "low",
+          "intensity": "low"
+        },
+        {
+          "weekId": "2ceb0f4c-1bec-4c4f-aefc-fad057c270da",
+          "focus": null,
+          "stress": "low",
+          "volume": "low",
+          "intensity": "low"
+        }
+      ]
+    },
+    {
+      "blockId": "5fd498c8-e80d-4c6f-8f0a-e077fba2ff0c",
+      "name": "Base Block",
+      "tags": [],
+      "weeks": [
+        {
+          "weekId": "7daf4831-28d5-45a4-b9bb-709626be8b0f",
+          "focus": "base",
+          "stress": "med",
+          "volume": "med",
+          "intensity": "med"
+        },
+        {
+          "weekId": "180d4881-f543-4fe1-9cea-c0cd5ead6793",
+          "focus": "base",
+          "stress": "med",
+          "volume": "med",
+          "intensity": "med"
+        },
+        {
+          "weekId": "202bbce5-1570-4aa8-b46f-da6141f56ce2",
+          "focus": "base",
+          "stress": "med",
+          "volume": "med",
+          "intensity": "med"
+        },
+        {
+          "weekId": "e5e4d819-50c2-4b90-bd95-017ab5bd63ef",
+          "focus": null,
+          "stress": "low",
+          "volume": "low",
+          "intensity": "low"
+        }
+      ]
+    }
+  ],
+  "seasonMarkers": []
+}

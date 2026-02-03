@@ -1,0 +1,242 @@
+[
+  {
+    "id": "genclavier@yahoo.com",
+    "name": "Genevieve Clavier",
+    "email": "genclavier@yahoo.com",
+    "status": "active",
+    "tier": "MED",
+    "joinedDate": "",
+    "trainingGoal": "Mammoth Trail Fest",
+    "weeklyMileageRange": "40 – 60 mi",
+    "consent": {
+      "publicName": false,
+      "publicStory": false,
+      "publicPhotos": false,
+      "publicMetrics": false
+    }
+  },
+  {
+    "id": "sarahcrowe250@yahoo.com",
+    "name": "Sarah Crowe",
+    "email": "sarahcrowe250@yahoo.com",
+    "status": "active",
+    "tier": "MED",
+    "joinedDate": "",
+    "trainingGoal": "Rio De Lago 50K",
+    "weeklyMileageRange": "20 – 40 mi",
+    "consent": {
+      "publicName": false,
+      "publicStory": false,
+      "publicPhotos": false,
+      "publicMetrics": false
+    }
+  },
+  {
+    "id": "kvnkennedy817@gmail.com",
+    "name": "Kevin Kennedy",
+    "email": "kvnkennedy817@gmail.com",
+    "status": "active",
+    "tier": "MED",
+    "joinedDate": "",
+    "trainingGoal": "General training",
+    "weeklyMileageRange": "20 – 40 mi",
+    "consent": {
+      "publicName": false,
+      "publicStory": false,
+      "publicPhotos": false,
+      "publicMetrics": false
+    }
+  },
+  {
+    "id": "juanpadillaphotos@gmail.com",
+    "name": "Juan Padilla",
+    "email": "juanpadillaphotos@gmail.com",
+    "status": "active",
+    "tier": "XL",
+    "joinedDate": "",
+    "trainingGoal": "Waldo 100k",
+    "weeklyMileageRange": "40 – 60 mi",
+    "consent": {
+      "publicName": false,
+      "publicStory": false,
+      "publicPhotos": false,
+      "publicMetrics": false
+    }
+  },
+  {
+    "id": "danieljones33@gmail.com",
+    "name": "Daniel Jones",
+    "email": "danieljones33@gmail.com",
+    "status": "active",
+    "tier": "MED",
+    "joinedDate": "",
+    "trainingGoal": "Rio Del Lago 50k",
+    "weeklyMileageRange": "20 – 40 mi",
+    "consent": {
+      "publicName": false,
+      "publicStory": false,
+      "publicPhotos": false,
+      "publicMetrics": false
+    }
+  },
+  {
+    "id": "eacpope@gmail.com",
+    "name": "Elizabeth Pope",
+    "email": "eacpope@gmail.com",
+    "status": "active",
+    "tier": "MED",
+    "joinedDate": "",
+    "trainingGoal": "Blood Sweat and Beers",
+    "weeklyMileageRange": "40 – 60 mi",
+    "consent": {
+      "publicName": false,
+      "publicStory": false,
+      "publicPhotos": false,
+      "publicMetrics": false
+    }
+  },
+  {
+    "id": "rizwan@rizwanjavaid.com",
+    "name": "Rizwan Janjua",
+    "email": "rizwan@rizwanjavaid.com",
+    "status": "active",
+    "tier": "MED",
+    "joinedDate": "",
+    "trainingGoal": "No race selected yet but eyeing a winter 35k like No Hands/Fourmidable",
+    "weeklyMileageRange": "Under 20 mi",
+    "consent": {
+      "publicName": false,
+      "publicStory": false,
+      "publicPhotos": false,
+      "publicMetrics": false
+    }
+  },
+  {
+    "id": "newplanes.co@gmail.com",
+    "name": "Gary Singh",
+    "email": "newplanes.co@gmail.com",
+    "status": "active",
+    "tier": "XL",
+    "joinedDate": "",
+    "trainingGoal": "Lake Sonoma 100k",
+    "weeklyMileageRange": "40 – 60 mi",
+    "consent": {
+      "publicName": false,
+      "publicStory": false,
+      "publicPhotos": false,
+      "publicMetrics": false
+    }
+  },
+  {
+    "id": "sdsorlie@gmail.com",
+    "name": "Shannon Brown",
+    "email": "sdsorlie@gmail.com",
+    "status": "active",
+    "tier": "MED",
+    "joinedDate": "",
+    "trainingGoal": "Double Dipsea",
+    "weeklyMileageRange": "Under 20 mi",
+    "consent": {
+      "publicName": false,
+      "publicStory": false,
+      "publicPhotos": false,
+      "publicMetrics": false
+    }
+  },
+  {
+    "id": "jennymariecook@gmail.com",
+    "name": "Jenny Cook",
+    "email": "jennymariecook@gmail.com",
+    "status": "active",
+    "tier": "MED",
+    "joinedDate": "",
+    "trainingGoal": "Blood Sweat Beers, then gearing up for CIM, base is ~40mile weeks!",
+    "weeklyMileageRange": "20 – 40 mi",
+    "consent": {
+      "publicName": false,
+      "publicStory": false,
+      "publicPhotos": false,
+      "publicMetrics": false
+    }
+  },
+  {
+    "id": "angelaritchie262@gmail.com",
+    "name": "Angela Ritchie",
+    "email": "angelaritchie262@gmail.com",
+    "status": "active",
+    "tier": "MED",
+    "joinedDate": "",
+    "trainingGoal": "Tbd",
+    "weeklyMileageRange": "20 – 40 mi",
+    "consent": {
+      "publicName": false,
+      "publicStory": false,
+      "publicPhotos": false,
+      "publicMetrics": false
+    }
+  },
+  {
+    "id": "dianna2195@gmail.com",
+    "name": "Dianna Gomez",
+    "email": "dianna2195@gmail.com",
+    "status": "active",
+    "tier": "MED",
+    "joinedDate": "",
+    "trainingGoal": "Canyons 100k",
+    "weeklyMileageRange": "20 – 40 mi",
+    "consent": {
+      "publicName": false,
+      "publicStory": false,
+      "publicPhotos": false,
+      "publicMetrics": false
+    }
+  },
+  {
+    "id": "tbalan69@aol.com",
+    "name": "Tom Alan",
+    "email": "tbalan69@aol.com",
+    "status": "active",
+    "tier": "XL",
+    "joinedDate": "",
+    "trainingGoal": "Quicksilver 100 K",
+    "weeklyMileageRange": "40 – 60 mi",
+    "consent": {
+      "publicName": false,
+      "publicStory": false,
+      "publicPhotos": false,
+      "publicMetrics": false
+    }
+  },
+  {
+    "id": "nnarimk@yahoo.com",
+    "name": "Nichole Torgerson-Nari",
+    "email": "nnarimk@yahoo.com",
+    "status": "active",
+    "tier": "XL",
+    "joinedDate": "",
+    "trainingGoal": "Salmon Falls 50k, Lake Sonoma 100k, RDL",
+    "weeklyMileageRange": "20 – 40 mi",
+    "consent": {
+      "publicName": false,
+      "publicStory": false,
+      "publicPhotos": false,
+      "publicMetrics": false
+    }
+  },
+  {
+    "id": "kpringle218@gmail.com",
+    "name": "Kirsten Pringle",
+    "email": "kpringle218@gmail.com",
+    "status": "active",
+    "tier": "MED",
+    "joinedDate": "",
+    "trainingGoal": "Big Alta 100k :)",
+    "weeklyMileageRange": "20 – 40 mi",
+    "consent": {
+      "publicName": false,
+      "publicStory": false,
+      "publicPhotos": false,
+      "publicMetrics": false
+    }
+  }
+]

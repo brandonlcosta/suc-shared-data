@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SUC Week Schema",
+  "description": "Canonical week structure with daily workout references.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["weekId", "seasonId", "blockId", "startDate", "workouts"],
+    "properties": {
+      "weekId": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+$",
+        "description": "Stable week identifier."
+      },
+      "seasonId": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+$",
+        "description": "Parent season identifier."
+      },
+      "blockId": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+$",
+        "description": "Parent block identifier."
+      },
+      "startDate": {
+        "type": "string",
+        "format": "date",
+        "description": "Week start date (YYYY-MM-DD), Monday."
+      },
+      "workouts": {
+        "type": "object",
+        "required": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
+        "properties": {
+          "mon": { "$ref": "#/definitions/workoutRefOrNull" },
+          "tue": { "$ref": "#/definitions/workoutRefOrNull" },
+          "wed": { "$ref": "#/definitions/workoutRefOrNull" },
+          "thu": { "$ref": "#/definitions/workoutRefOrNull" },
+          "fri": { "$ref": "#/definitions/workoutRefOrNull" },
+          "sat": { "$ref": "#/definitions/workoutRefOrNull" },
+          "sun": { "$ref": "#/definitions/workoutRefOrNull" }
+        },
+        "additionalProperties": false,
+        "description": "Daily workout references in workoutId@vN format or null for rest."
+      }
+    },
+    "additionalProperties": false
+  },
+  "definitions": {
+    "workoutRefOrNull": {
+      "oneOf": [
+        {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+@v[1-9][0-9]*$"
+        },
+        { "type": "null" }
+      ]
+    }
+  }
+}

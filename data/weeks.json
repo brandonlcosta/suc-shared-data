@@ -1,0 +1,62 @@
+[
+  {
+    "weekId": "week-2026-01-26",
+    "seasonId": "season-2026-foundation",
+    "blockId": "block-2026-foundation-a",
+    "startDate": "2026-01-26",
+    "workouts": {
+      "mon": "workout-1769662084999@v1",
+      "tue": null,
+      "wed": "workout-recovery-30@v1",
+      "thu": null,
+      "fri": null,
+      "sat": "workout-1769662084999@v1",
+      "sun": null
+    }
+  },
+  {
+    "weekId": "week-2026-02-02",
+    "seasonId": "season-2026-foundation",
+    "blockId": "block-2026-foundation-a",
+    "startDate": "2026-02-02",
+    "workouts": {
+      "mon": "workout-1769662084999@v1",
+      "tue": null,
+      "wed": "workout-recovery-30@v1",
+      "thu": null,
+      "fri": null,
+      "sat": "workout-1769662084999@v1",
+      "sun": null
+    }
+  },
+  {
+    "weekId": "week-2026-02-09",
+    "seasonId": "season-2026-foundation",
+    "blockId": "block-2026-foundation-b",
+    "startDate": "2026-02-09",
+    "workouts": {
+      "mon": "workout-1769662084999@v1",
+      "tue": null,
+      "wed": "workout-recovery-30@v1",
+      "thu": null,
+      "fri": null,
+      "sat": "workout-1769662084999@v1",
+      "sun": null
+    }
+  },
+  {
+    "weekId": "week-2026-02-16",
+    "seasonId": "season-2026-foundation",
+    "blockId": "block-2026-foundation-b",
+    "startDate": "2026-02-16",
+    "workouts": {
+      "mon": "workout-1769662084999@v1",
+      "tue": null,
+      "wed": "workout-recovery-30@v1",
+      "thu": null,
+      "fri": null,
+      "sat": "workout-1769662084999@v1",
+      "sun": null
+    }
+  }
+]

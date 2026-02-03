@@ -1,0 +1,95 @@
+{
+  "seasonId": "8d1756f4-a150-4390-b510-e89bba3e2679",
+  "status": "draft",
+  "blocks": [
+    {
+      "blockId": "d555b479-43d9-4167-b502-f2e3e8794709",
+      "name": "Blank Block",
+      "tags": [],
+      "weeks": [
+        {
+          "weekId": "abd58685-7ef1-43d3-899d-237e9149819b",
+          "focus": "base",
+          "stress": "med",
+          "volume": "med",
+          "intensity": "med"
+        },
+        {
+          "weekId": "2bff9ca5-00b7-461f-a0b8-e82f1cece68a",
+          "focus": "hill-power",
+          "stress": "high",
+          "volume": "med-high",
+          "intensity": "high"
+        },
+        {
+          "weekId": "03840f25-718a-456b-8ef5-68f655212c2c",
+          "focus": "heat",
+          "stress": "very-high",
+          "volume": "very-high",
+          "intensity": "very-high"
+        },
+        {
+          "weekId": "19397b2d-5464-4a4e-8c08-4633863bf9a1",
+          "focus": "taper",
+          "stress": "low",
+          "volume": "low-med",
+          "intensity": "low"
+        }
+      ]
+    },
+    {
+      "blockId": "50af66da-4857-41d7-8bad-f15015bd07f1",
+      "name": "Blank Block",
+      "tags": [],
+      "weeks": [
+        {
+          "weekId": "63279ef2-ca3e-4796-a60b-ead7a68d4058",
+          "focus": "deload",
+          "stress": "low",
+          "volume": "low",
+          "intensity": "low"
+        },
+        {
+          "weekId": "ebc0336c-3e1a-4c3b-9daf-7cebae2ec48d",
+          "focus": "base",
+          "stress": "med",
+          "volume": "med",
+          "intensity": "med"
+        },
+        {
+          "weekId": "0d3c1de3-2596-4052-85de-8766512a1bf7",
+          "focus": "heat",
+          "stress": "high",
+          "volume": "med",
+          "intensity": "med-high"
+        },
+        {
+          "weekId": "bc5ff40a-33a5-4ef5-9f9f-9bc75c024fd0",
+          "focus": "heat",
+          "stress": "high",
+          "volume": "med",
+          "intensity": "med-high"
+        },
+        {
+          "weekId": "f049ea7c-3374-4d0d-9bf2-b60b851b7fcf",
+          "focus": "taper",
+          "stress": "low",
+          "volume": "low-med",
+          "intensity": "low"
+        }
+      ]
+    }
+  ],
+  "seasonMarkers": [
+    {
+      "markerId": "c8216a7a-84a2-42a9-8ec7-db2f5b5e62e3",
+      "label": "Spring Season",
+      "weekIndex": 4
+    },
+    {
+      "markerId": "aa545ed0-fddf-407a-8698-3364a164dc44",
+      "label": "Summer Season",
+      "weekIndex": 16
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "seasonId": "8d1756f4-a150-4390-b510-e89bba3e2679",
+  "status": "draft",
+  "blocks": [
+    {
+      "blockId": "47b2630f-9967-4855-b305-9f7e8a359475",
+      "name": "Salmon Falls Block",
+      "tags": [],
+      "weeks": [
+        {
+          "weekId": "15960c6c-40ba-4be9-a34a-c5f3b280033c",
+          "focus": "heat",
+          "stress": "med-high",
+          "volume": "high",
+          "intensity": "med"
+        },
+        {
+          "weekId": "0fd12ec0-a37e-479a-ac96-7fefd4f1f84c",
+          "focus": null,
+          "stress": "low",
+          "volume": "low",
+          "intensity": "low"
+        }
+      ]
+    },
+    {
+      "blockId": "1868d2ce-9606-410c-ae1c-5bc226e66aa3",
+      "name": "Blank Block",
+      "tags": [],
+      "weeks": [
+        {
+          "weekId": "d1829e6d-872b-4888-b28a-07641ee5cd16",
+          "focus": null,
+          "stress": "low",
+          "volume": "low",
+          "intensity": "low"
+        }
+      ]
+    },
+    {
+      "blockId": "0e7e6556-c814-487b-93ff-1e6848bc8800",
+      "name": "Speed Block",
+      "tags": [],
+      "weeks": [
+        {
+          "weekId": "c49428fe-9358-4031-ba17-cdc6d280dd5e",
+          "focus": "speed",
+          "stress": "med-high",
+          "volume": "med",
+          "intensity": "high"
+        },
+        {
+          "weekId": "6ad68227-1345-43a7-a970-cbc038dab6f1",
+          "focus": "speed",
+          "stress": "med-high",
+          "volume": "med",
+          "intensity": "high"
+        }
+      ]
+    },
+    {
+      "blockId": "bf5b3273-c076-4bd7-8124-1690040d04fe",
+      "name": "Mileage Block",
+      "tags": [],
+      "weeks": [
+        {
+          "weekId": "0992ef69-70b2-412d-a839-1033d8154f2e",
+          "focus": "mileage",
+          "stress": "med",
+          "volume": "high",
+          "intensity": "med"
+        },
+        {
+          "weekId": "6c888a5d-fcf3-4d2f-be03-a07638059298",
+          "focus": "mileage",
+          "stress": "med",
+          "volume": "high",
+          "intensity": "med"
+        },
+        {
+          "weekId": "0a92fb4a-94b5-44d4-96ac-56dc260318ce",
+          "focus": "mileage",
+          "stress": "med",
+          "volume": "high",
+          "intensity": "med"
+        }
+      ]
+    },
+    {
+      "blockId": "00c59221-30fd-4fe3-a674-e382d72d7dc9",
+      "name": "Canyons Block",
+      "tags": [],
+      "weeks": [
+        {
+          "weekId": "790a19c9-abaf-47ce-a6db-3be4be6d333e",
+          "focus": null,
+          "stress": "low",
+          "volume": "low",
+          "intensity": "low"
+        },
+        {
+          "weekId": "2ceb0f4c-1bec-4c4f-aefc-fad057c270da",
+          "focus": null,
+          "stress": "low",
+          "volume": "low",
+          "intensity": "low"
+        }
+      ]
+    },
+    {
+      "blockId": "2e8447fe-ec46-4b07-8e4a-ae7f3da8559e",
+      "name": "Blank Block",
+      "tags": [],
+      "weeks": [
+        {
+          "weekId": "71a8f0e4-6007-42a4-b687-fb97481ff3ef",
+          "focus": null,
+          "stress": "low",
+          "volume": "low",
+          "intensity": "low"
+        }
+      ]
+    }
+  ],
+  "seasonMarkers": []
+}

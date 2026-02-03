@@ -1,0 +1,20 @@
+[
+  {
+    "blockId": "block-2026-foundation-a",
+    "name": "Foundation Base",
+    "intent": "Aerobic base + rhythm",
+    "weekIds": [
+      "week-2026-01-26",
+      "week-2026-02-02"
+    ]
+  },
+  {
+    "blockId": "block-2026-foundation-b",
+    "name": "Foundation Build",
+    "intent": "Strength + tempo integration",
+    "weekIds": [
+      "week-2026-02-09",
+      "week-2026-02-16"
+    ]
+  }
+]

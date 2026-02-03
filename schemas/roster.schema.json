@@ -1,0 +1,99 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SUC Roster Schema",
+  "description": "Canonical human identity, consent, and context for SUC OS",
+  "type": "object",
+  "required": ["members"],
+  "properties": {
+    "members": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/member"
+      }
+    }
+  },
+  "definitions": {
+    "member": {
+      "type": "object",
+      "required": ["id", "name", "email", "status", "tier", "consent", "joined_at"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable slug identifier, never changes",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "name": {
+          "type": "string",
+          "description": "Full name"
+        },
+        "email": {
+          "type": "string",
+          "format": "email"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["active", "paused", "alumni"],
+          "description": "Current membership status"
+        },
+        "tier": {
+          "type": "string",
+          "description": "Training tier or membership level"
+        },
+        "context": {
+          "type": "object",
+          "description": "Light training context",
+          "properties": {
+            "goal": {
+              "type": "string",
+              "description": "Current training goal"
+            },
+            "mileage": {
+              "type": "string",
+              "description": "Weekly mileage range or typical volume"
+            }
+          }
+        },
+        "links": {
+          "type": "object",
+          "description": "Boolean flags for external profile links",
+          "additionalProperties": {
+            "type": "boolean"
+          }
+        },
+        "consent": {
+          "type": "object",
+          "required": ["public_name", "public_story", "public_photos", "public_metrics"],
+          "description": "Explicit consent flags for content usage",
+          "properties": {
+            "public_name": {
+              "type": "boolean",
+              "description": "Can name be used publicly"
+            },
+            "public_story": {
+              "type": "boolean",
+              "description": "Can story/quotes be shared publicly"
+            },
+            "public_photos": {
+              "type": "boolean",
+              "description": "Can photos be used publicly"
+            },
+            "public_metrics": {
+              "type": "boolean",
+              "description": "Can performance metrics be shared publicly"
+            }
+          }
+        },
+        "joined_at": {
+          "type": "string",
+          "format": "date",
+          "description": "Date joined SUC (YYYY-MM-DD)"
+        },
+        "notes": {
+          "type": "string",
+          "maxLength": 200,
+          "description": "Short internal notes (1-2 lines max)"
+        }
+      }
+    }
+  }
+}

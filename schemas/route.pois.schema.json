@@ -1,0 +1,102 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SUC Route POI Schema",
+  "description": "Canonical POI annotations for a route group (variant-aware, snapped to GPX).",
+  "type": "object",
+  "required": ["routeGroupId", "pois"],
+  "properties": {
+    "version": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Optional schema/data version."
+    },
+    "routeGroupId": {
+      "type": "string",
+      "description": "Route group identifier (matches routes/:groupId)."
+    },
+    "pois": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/poi" }
+    }
+  },
+  "definitions": {
+    "point": {
+      "type": "object",
+      "required": ["lat", "lon"],
+      "properties": {
+        "lat": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "lon": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        }
+      }
+    },
+    "variantPlacement": {
+      "type": "object",
+      "required": ["lat", "lon", "distanceMi", "distanceM"],
+      "properties": {
+        "lat": { "$ref": "#/definitions/point/properties/lat" },
+        "lon": { "$ref": "#/definitions/point/properties/lon" },
+        "distanceMi": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Snapped distance along the route (miles)."
+        },
+        "distanceM": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Snapped distance along the route (meters)."
+        },
+        "snapIndex": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Index of the snapped GPX polyline point."
+        }
+      }
+    },
+    "poi": {
+      "type": "object",
+      "required": ["id", "title", "type", "variants"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "description": "Stable POI identifier."
+        },
+        "title": {
+          "type": "string",
+          "description": "Display name for the POI."
+        },
+        "type": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "description": "Category label (e.g., aid, water, hazard, viewpoint)."
+        },
+        "notes": {
+          "type": "string",
+          "description": "Optional internal notes."
+        },
+        "drop": {
+          "$ref": "#/definitions/point",
+          "description": "Original drop location before snapping."
+        },
+        "variants": {
+          "type": "object",
+          "description": "Per-variant snapped POI placement.",
+          "properties": {
+            "MED": { "$ref": "#/definitions/variantPlacement" },
+            "LRG": { "$ref": "#/definitions/variantPlacement" },
+            "XL": { "$ref": "#/definitions/variantPlacement" },
+            "XXL": { "$ref": "#/definitions/variantPlacement" }
+          },
+          "additionalProperties": false
+        }
+      }
+    }
+  }
+}

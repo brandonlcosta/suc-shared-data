@@ -1,0 +1,15 @@
+[
+  {
+    "seasonId": "season-2026-foundation",
+    "name": "2026 Foundation",
+    "startDate": "2026-01-26",
+    "endDate": "2026-02-22",
+    "timezone": "America/Los_Angeles",
+    "weekIds": [
+      "week-2026-01-26",
+      "week-2026-02-02",
+      "week-2026-02-09",
+      "week-2026-02-16"
+    ]
+  }
+]
