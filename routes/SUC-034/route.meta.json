@@ -1,8 +1,0 @@
-{
-  "routeGroupId": "SUC-034",
-  "name": "To Hell and Back",
-  "location": "Mount Diablo",
-  "source": "SUC",
-  "notes": "Original event routes. Do not delete.",
-  "variants": ["MED", "LRG", "XL"]
-}

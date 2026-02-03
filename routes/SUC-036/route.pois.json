@@ -1,0 +1,211 @@
+{
+  "routeGroupId": "SUC-036",
+  "pois": [
+    {
+      "id": "summit-summit",
+      "title": "Summit",
+      "type": "summit",
+      "variants": {
+        "LRG": {
+          "lat": 38.03726,
+          "lon": -122.62098,
+          "snapIndex": 502,
+          "distanceM": 12612.711086104267,
+          "distanceMi": 7.837175324917648
+        },
+        "XL": {
+          "lat": 38.03726,
+          "lon": -122.62098,
+          "snapIndex": 897,
+          "distanceM": 21344.96722487739,
+          "distanceMi": 13.26314773278888
+        },
+        "XXL": {
+          "lat": 38.03726,
+          "lon": -122.62098,
+          "snapIndex": 897,
+          "distanceM": 21344.96722487739,
+          "distanceMi": 13.26314773278888
+        }
+      },
+      "drop": {
+        "lat": 38.037324712714906,
+        "lon": -122.62092006725003
+      }
+    },
+    {
+      "id": "fork-xl-xxl-loop",
+      "title": "XL + XXL Loop",
+      "type": "fork",
+      "variants": {
+        "MED": {
+          "lat": 38.01953,
+          "lon": -122.61538000000002,
+          "snapIndex": 415,
+          "distanceM": 10008.33531868096,
+          "distanceMi": 6.218891249279806
+        },
+        "LRG": {
+          "lat": 38.01953,
+          "lon": -122.61538000000002,
+          "snapIndex": 416,
+          "distanceM": 10008.827363990933,
+          "distanceMi": 6.219196992060699
+        },
+        "XL": {
+          "lat": 38.01953,
+          "lon": -122.61538000000002,
+          "snapIndex": 415,
+          "distanceM": 10010.061919243837,
+          "distanceMi": 6.219964109130078
+        },
+        "XXL": {
+          "lat": 38.01953,
+          "lon": -122.61538000000002,
+          "snapIndex": 415,
+          "distanceM": 10010.061919243837,
+          "distanceMi": 6.219964109130078
+        }
+      },
+      "drop": {
+        "lat": 38.01953,
+        "lon": -122.61538000000002
+      }
+    },
+    {
+      "id": "summit-loma-alta",
+      "title": "Loma Alta",
+      "type": "summit",
+      "variants": {
+        "LRG": {
+          "lat": 38.02467,
+          "lon": -122.61247000000002,
+          "snapIndex": 453,
+          "distanceM": 10926.641803672888,
+          "distanceMi": 6.789500444698516
+        },
+        "XL": {
+          "lat": 38.02467,
+          "lon": -122.61247000000002,
+          "snapIndex": 848,
+          "distanceM": 19658.913861106437,
+          "distanceMi": 12.215482743966756
+        },
+        "XXL": {
+          "lat": 38.02467,
+          "lon": -122.61247000000002,
+          "snapIndex": 848,
+          "distanceM": 19658.913861106437,
+          "distanceMi": 12.215482743966756
+        }
+      },
+      "drop": {
+        "lat": 38.02467,
+        "lon": -122.61247000000002
+      }
+    },
+    {
+      "id": "summit-big-rock-ridge",
+      "title": "Big Rock Ridge",
+      "type": "summit",
+      "variants": {
+        "LRG": {
+          "lat": 38.059000000000005,
+          "lon": -122.60425000000001,
+          "snapIndex": 833,
+          "distanceM": 19918.521219193048,
+          "distanceMi": 12.376795277574619
+        },
+        "XL": {
+          "lat": 38.059000000000005,
+          "lon": -122.60425000000001,
+          "snapIndex": 1228,
+          "distanceM": 28650.77735796617,
+          "distanceMi": 17.80276768544585
+        },
+        "XXL": {
+          "lat": 38.059000000000005,
+          "lon": -122.60425000000001,
+          "snapIndex": 1228,
+          "distanceM": 28650.77735796617,
+          "distanceMi": 17.80276768544585
+        }
+      },
+      "drop": {
+        "lat": 38.059000000000005,
+        "lon": -122.60425000000001
+      }
+    },
+    {
+      "id": "fork-xxl-loop",
+      "title": "XXL Loop",
+      "type": "fork",
+      "variants": {
+        "LRG": {
+          "lat": 38.04542,
+          "lon": -122.57313,
+          "snapIndex": 958,
+          "distanceM": 23424.194670178917,
+          "distanceMi": 14.555119769408478
+        },
+        "XL": {
+          "lat": 38.04542,
+          "lon": -122.57313,
+          "snapIndex": 1353,
+          "distanceM": 32156.45080895204,
+          "distanceMi": 19.98109217727971
+        },
+        "XXL": {
+          "lat": 38.04542,
+          "lon": -122.57313,
+          "snapIndex": 1353,
+          "distanceM": 32156.75316736939,
+          "distanceMi": 19.981280054089982
+        }
+      },
+      "drop": {
+        "lat": 38.04542,
+        "lon": -122.57313
+      }
+    },
+    {
+      "id": "viewpoint-regroup-viewpoint",
+      "title": "Regroup / Viewpoint",
+      "type": "viewpoint",
+      "variants": {
+        "MED": {
+          "lat": 38.02729,
+          "lon": -122.59932,
+          "snapIndex": 302,
+          "distanceM": 7633.456595721944,
+          "distanceMi": 4.743210025775685
+        },
+        "LRG": {
+          "lat": 38.02729,
+          "lon": -122.59932,
+          "snapIndex": 302,
+          "distanceM": 7633.456595721944,
+          "distanceMi": 4.743210025775685
+        },
+        "XL": {
+          "lat": 38.02729,
+          "lon": -122.59932,
+          "snapIndex": 302,
+          "distanceM": 7633.456595721944,
+          "distanceMi": 4.743210025775685
+        },
+        "XXL": {
+          "lat": 38.02729,
+          "lon": -122.59932,
+          "snapIndex": 302,
+          "distanceM": 7633.456595721944,
+          "distanceMi": 4.743210025775685
+        }
+      },
+      "drop": {
+        "lat": 38.02729,
+        "lon": -122.59932
+      }
+    }
+  ]
+}

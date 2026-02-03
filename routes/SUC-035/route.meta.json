@@ -1,0 +1,13 @@
+{
+  "routeGroupId": "SUC-035",
+  "name": "Salmon Simulator",
+  "location": "Brown's Ravine",
+  "source": "SUC",
+  "notes": "Another course recon run on the Salmon Falls 50k course. Rolling single-track. Fast trails and beginner friendly.",
+  "variants": [
+    "LRG",
+    "MED",
+    "XL",
+    "XXL"
+  ]
+}

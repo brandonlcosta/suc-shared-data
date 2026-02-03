@@ -1,0 +1,250 @@
+{
+  "routeGroupId": "SUC-035",
+  "pois": [
+    {
+      "id": "water-water-faucet",
+      "title": "Water Faucet",
+      "type": "water",
+      "variants": {
+        "LRG": {
+          "lat": 38.738800000000005,
+          "lon": -121.08637000000002,
+          "snapIndex": 212,
+          "distanceM": 5217.508454552928,
+          "distanceMi": 3.2420094489139224
+        },
+        "MED": {
+          "lat": 38.738800000000005,
+          "lon": -121.08637000000002,
+          "snapIndex": 211,
+          "distanceM": 5217.451733201247,
+          "distanceMi": 3.2419742039000035
+        },
+        "XL": {
+          "lat": 38.738800000000005,
+          "lon": -121.08637000000002,
+          "snapIndex": 212,
+          "distanceM": 5217.508454552928,
+          "distanceMi": 3.2420094489139224
+        },
+        "XXL": {
+          "lat": 38.738800000000005,
+          "lon": -121.08637000000002,
+          "snapIndex": 211,
+          "distanceM": 5219.272703575312,
+          "distanceMi": 3.243105702432365
+        }
+      },
+      "drop": {
+        "lat": 38.738800000000005,
+        "lon": -121.08637000000002
+      }
+    },
+    {
+      "id": "hazard-slippery-bridge",
+      "title": "Slippery Bridge",
+      "type": "hazard",
+      "variants": {
+        "LRG": {
+          "lat": 38.728770000000004,
+          "lon": -121.06936,
+          "snapIndex": 375,
+          "distanceM": 9547.348340042814,
+          "distanceMi": 5.932447220757535
+        },
+        "XL": {
+          "lat": 38.728770000000004,
+          "lon": -121.06936,
+          "snapIndex": 375,
+          "distanceM": 9547.348340042814,
+          "distanceMi": 5.932447220757535
+        },
+        "XXL": {
+          "lat": 38.728770000000004,
+          "lon": -121.06936,
+          "snapIndex": 374,
+          "distanceM": 9549.157747753545,
+          "distanceMi": 5.9335715345839946
+        }
+      },
+      "drop": {
+        "lat": 38.728770000000004,
+        "lon": -121.06936
+      }
+    },
+    {
+      "id": "fork-xl-turnaround",
+      "title": "XL Turnaround",
+      "type": "fork",
+      "variants": {
+        "XL": {
+          "lat": 38.752250000000004,
+          "lon": -121.05846000000001,
+          "snapIndex": 672,
+          "distanceM": 16171.657315773877,
+          "distanceMi": 10.048601986756017
+        },
+        "XXL": {
+          "lat": 38.75215,
+          "lon": -121.05866,
+          "snapIndex": 668,
+          "distanceM": 16151.857964884068,
+          "distanceMi": 10.036299240488091
+        }
+      },
+      "drop": {
+        "lat": 38.752250000000004,
+        "lon": -121.05846000000001
+      }
+    },
+    {
+      "id": "fork-lrg-turnaround",
+      "title": "LRG Turnaround",
+      "type": "fork",
+      "variants": {
+        "LRG": {
+          "lat": 38.747550000000004,
+          "lon": -121.06867000000001,
+          "snapIndex": 526,
+          "distanceM": 12781.974438466095,
+          "distanceMi": 7.942350695976804
+        },
+        "XL": {
+          "lat": 38.747490000000006,
+          "lon": -121.06866000000001,
+          "snapIndex": 526,
+          "distanceM": 12775.29701847847,
+          "distanceMi": 7.938201539558024
+        },
+        "XXL": {
+          "lat": 38.747490000000006,
+          "lon": -121.06866000000001,
+          "snapIndex": 524,
+          "distanceM": 12777.053904459577,
+          "distanceMi": 7.93929321789473
+        }
+      },
+      "drop": {
+        "lat": 38.747550000000004,
+        "lon": -121.06867000000001
+      }
+    },
+    {
+      "id": "fork-med-turnaround",
+      "title": "MED Turnaround",
+      "type": "fork",
+      "variants": {
+        "LRG": {
+          "lat": 38.74344,
+          "lon": -121.07438,
+          "snapIndex": 278,
+          "distanceM": 7264.601339635534,
+          "distanceMi": 4.514013995538265
+        },
+        "MED": {
+          "lat": 38.74347,
+          "lon": -121.07440000000001,
+          "snapIndex": 276,
+          "distanceM": 7260.8839954668765,
+          "distanceMi": 4.5117041449602295
+        },
+        "XL": {
+          "lat": 38.74344,
+          "lon": -121.07438,
+          "snapIndex": 278,
+          "distanceM": 7264.601339635534,
+          "distanceMi": 4.514013995538265
+        },
+        "XXL": {
+          "lat": 38.74344,
+          "lon": -121.07438,
+          "snapIndex": 277,
+          "distanceM": 7266.4107473462645,
+          "distanceMi": 4.515138309364725
+        }
+      },
+      "drop": {
+        "lat": 38.74347,
+        "lon": -121.07440000000001
+      }
+    },
+    {
+      "id": "aid-sweetwater-trailhead",
+      "title": "Sweetwater Trailhead",
+      "type": "aid",
+      "variants": {
+        "LRG": {
+          "lat": 38.719930000000005,
+          "lon": -121.09994,
+          "snapIndex": 1,
+          "distanceM": 23.55279845920149,
+          "distanceMi": 0.014635030459119671
+        },
+        "MED": {
+          "lat": 38.719840000000005,
+          "lon": -121.09988000000001,
+          "snapIndex": 554,
+          "distanceM": 14514.331505608965,
+          "distanceMi": 9.01878747216814
+        },
+        "XL": {
+          "lat": 38.719930000000005,
+          "lon": -121.09994,
+          "snapIndex": 1,
+          "distanceM": 23.55279845920149,
+          "distanceMi": 0.014635030459119671
+        },
+        "XXL": {
+          "lat": 38.719930000000005,
+          "lon": -121.09994,
+          "snapIndex": 1,
+          "distanceM": 25.339560675131793,
+          "distanceMi": 0.015745273027476903
+        }
+      },
+      "drop": {
+        "lat": 38.719840000000005,
+        "lon": -121.09988000000001
+      }
+    },
+    {
+      "id": "fork-sweetwater-xxl-turnaround",
+      "title": "Sweetwater (XXL Turnaround)",
+      "type": "fork",
+      "variants": {
+        "LRG": {
+          "lat": 38.745200000000004,
+          "lon": -121.07554,
+          "snapIndex": 273,
+          "distanceM": 7037.335450293538,
+          "distanceMi": 4.372797518922951
+        },
+        "MED": {
+          "lat": 38.745200000000004,
+          "lon": -121.07554,
+          "snapIndex": 271,
+          "distanceM": 7037.275172109433,
+          "distanceMi": 4.372760063795828
+        },
+        "XL": {
+          "lat": 38.745200000000004,
+          "lon": -121.07554,
+          "snapIndex": 273,
+          "distanceM": 7037.335450293538,
+          "distanceMi": 4.372797518922951
+        },
+        "XXL": {
+          "lat": 38.745200000000004,
+          "lon": -121.07554,
+          "snapIndex": 272,
+          "distanceM": 7039.144858004269,
+          "distanceMi": 4.373921832749411
+        }
+      },
+      "drop": {
+        "lat": 38.745200000000004,
+        "lon": -121.07554
+      }
+    }
+  ]
+}

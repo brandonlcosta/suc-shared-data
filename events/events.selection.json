@@ -1,4 +1,7 @@
 {
   "version": 1,
-  "selectedEventIds": []
+  "selectedEventIds": [
+    "SUC-036",
+    "SUC-035"
+  ]
 }

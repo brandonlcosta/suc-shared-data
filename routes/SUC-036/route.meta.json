@@ -1,0 +1,13 @@
+{
+  "routeGroupId": "SUC-036",
+  "name": "Big Alta Energy",
+  "location": "Marinwood",
+  "source": "SUC",
+  "notes": "",
+  "variants": [
+    "MED",
+    "LRG",
+    "XL",
+    "XXL"
+  ]
+}
