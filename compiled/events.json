@@ -1,0 +1,72 @@
+[
+  {
+    "eventId": "SUC-036",
+    "eventName": "SUC 036 - Big Alta Energy",
+    "eventDescription": "Roses are red, violets are blue. SUC loves big climbs. This vert might kill you.\n\n",
+    "eventDate": "February 14, 2026",
+    "eventTime": "8:15 AM",
+    "startLocationName": "Marinwood Community Park",
+    "startLocationUrl": "https://maps.app.goo.gl/vrbZS6iWjj22qkwY8",
+    "startLocationCoordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "routes": [
+      {
+        "label": "MED",
+        "statsUrl": "/routes/SUC-036-MED.json",
+        "geojsonUrl": "/routes/SUC-036-MED.geojson"
+      },
+      {
+        "label": "LRG",
+        "statsUrl": "/routes/SUC-036-LRG.json",
+        "geojsonUrl": "/routes/SUC-036-LRG.geojson"
+      },
+      {
+        "label": "XL",
+        "statsUrl": "/routes/SUC-036-XL.json",
+        "geojsonUrl": "/routes/SUC-036-XL.geojson"
+      },
+      {
+        "label": "XXL",
+        "statsUrl": "/routes/SUC-036-XXL.json",
+        "geojsonUrl": "/routes/SUC-036-XXL.geojson"
+      }
+    ]
+  },
+  {
+    "eventId": "SUC-035",
+    "eventName": "SUC 035 - Salmon Simulator",
+    "eventDescription": "",
+    "eventDate": "2026-2-7",
+    "eventTime": "7:15 AM",
+    "startLocationName": "Brown's Ravine",
+    "startLocationUrl": "",
+    "startLocationCoordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "routes": [
+      {
+        "label": "LRG",
+        "statsUrl": "/routes/SUC-035-LRG.json",
+        "geojsonUrl": "/routes/SUC-035-LRG.geojson"
+      },
+      {
+        "label": "MED",
+        "statsUrl": "/routes/SUC-035-MED.json",
+        "geojsonUrl": "/routes/SUC-035-MED.geojson"
+      },
+      {
+        "label": "XL",
+        "statsUrl": "/routes/SUC-035-XL.json",
+        "geojsonUrl": "/routes/SUC-035-XL.geojson"
+      },
+      {
+        "label": "XXL",
+        "statsUrl": "/routes/SUC-035-XXL.json",
+        "geojsonUrl": "/routes/SUC-035-XXL.geojson"
+      }
+    ]
+  }
+]
