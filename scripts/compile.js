@@ -80,6 +80,8 @@ function eventsJsonExport(events, routes) {
         geojsonUrl: route.geojson_url
       }));
 
+    const poiHighlights = Array.isArray(event.poi_highlights) ? event.poi_highlights : [];
+
     return {
       eventId: event.event_id,
       eventName: event.event_name,
@@ -92,7 +94,8 @@ function eventsJsonExport(events, routes) {
         lat: event.start_lat,
         lng: event.start_lng
       },
-      routes: eventRoutes
+      routes: eventRoutes,
+      ...(poiHighlights.length ? { poiHighlights } : {})
     };
   });
 
@@ -302,12 +305,20 @@ function normalizePoiVariant(raw) {
 
   const snapIndex = Number.isFinite(raw.snapIndex) ? Math.max(0, Math.floor(raw.snapIndex)) : null;
 
+  const passIndex = Number.isFinite(raw.passIndex)
+    ? Math.max(0, Math.floor(raw.passIndex))
+    : null;
+  const direction =
+    raw.direction === 'forward' || raw.direction === 'reverse' ? raw.direction : null;
+
   return {
     lat,
     lon,
     distanceMi: finalDistanceMi,
     distanceM: finalDistanceM,
-    snapIndex
+    snapIndex,
+    passIndex,
+    direction
   };
 }
 
@@ -319,23 +330,127 @@ function compilePoisForVariant(poisDoc, label) {
   for (const poi of poisDoc.pois) {
     if (!poi || !poi.variants) continue;
     const rawVariant = poi.variants[key] ?? poi.variants[key.toLowerCase()];
-    const normalized = normalizePoiVariant(rawVariant);
-    if (!normalized) continue;
-    compiled.push({
-      id: String(poi.id ?? ''),
-      title: String(poi.title ?? ''),
-      type: String(poi.type ?? ''),
-      variant: key,
-      distanceMi: normalized.distanceMi,
-      distanceM: normalized.distanceM,
-      lat: normalized.lat,
-      lon: normalized.lon,
-      snapIndex: normalized.snapIndex,
-      notes: typeof poi.notes === 'string' ? poi.notes : undefined
-    });
+    const normalizedVariants = Array.isArray(rawVariant)
+      ? rawVariant.map((entry) => normalizePoiVariant(entry)).filter(Boolean)
+      : [normalizePoiVariant(rawVariant)].filter(Boolean);
+    if (!normalizedVariants.length) continue;
+
+    for (let i = 0; i < normalizedVariants.length; i += 1) {
+      const normalized = normalizedVariants[i];
+      compiled.push({
+        id: String(poi.id ?? ''),
+        poiId: String(poi.id ?? ''),
+        title: String(poi.title ?? ''),
+        type: String(poi.type ?? ''),
+        variant: key,
+        distanceMi: normalized.distanceMi,
+        distanceM: normalized.distanceM,
+        lat: normalized.lat,
+        lon: normalized.lon,
+        snapIndex: normalized.snapIndex,
+        passIndex: normalized.passIndex ?? i,
+        direction: normalized.direction ?? undefined,
+        system: typeof poi.system === 'boolean' ? poi.system : undefined,
+        locked: typeof poi.locked === 'boolean' ? poi.locked : undefined,
+        notes: typeof poi.notes === 'string' ? poi.notes : undefined
+      });
+    }
   }
 
   return compiled;
+}
+
+const DEFAULT_EVENT_POI_CONFIG = {
+  showPOIs: true,
+  poiCategories: ['parking', 'water', 'hazard', 'view'],
+  maxPOIsPerEvent: 4
+};
+
+const CATEGORY_ALIASES = new Map([['viewpoint', 'view']]);
+
+function normalizePoiCategory(value) {
+  if (!value) return '';
+  const raw = String(value).trim().toLowerCase();
+  if (CATEGORY_ALIASES.has(raw)) return CATEGORY_ALIASES.get(raw);
+  if (raw.includes('view')) return 'view';
+  return raw;
+}
+
+function isPoiHighlighted(poi, allowedCategories) {
+  if (!poi || typeof poi !== 'object') return false;
+  if (poi.isHighlight === true) return true;
+  const category = normalizePoiCategory(poi.category ?? poi.type ?? '');
+  return category ? allowedCategories.includes(category) : false;
+}
+
+function collectPoiDistances(variantEntry) {
+  if (!variantEntry) return [];
+  if (Array.isArray(variantEntry)) {
+    return variantEntry.map((entry) => toNumber(entry?.distanceMi)).filter((val) => val != null);
+  }
+  const distance = toNumber(variantEntry.distanceMi);
+  return distance != null ? [distance] : [];
+}
+
+function selectPoiDistance(poi, variantLabels) {
+  if (!poi || !poi.variants) return null;
+  const distances = [];
+  for (const label of variantLabels) {
+    const key = normalizeVariantKey(label);
+    const variantEntry = poi.variants[key] ?? poi.variants[key.toLowerCase()];
+    distances.push(...collectPoiDistances(variantEntry));
+  }
+  if (!distances.length) return null;
+  return Math.min(...distances);
+}
+
+async function compileEventPoiHighlights(event, routeGroupCache, config) {
+  const eventId = getEventId(event);
+  const routeGroupIds = getRouteGroupIds(event);
+  if (!eventId || !routeGroupIds.length) return [];
+
+  const allowedCategories = (config.poiCategories || []).map(normalizePoiCategory);
+  const highlightMap = new Map();
+
+  for (const routeGroupId of routeGroupIds) {
+    let cached = routeGroupCache.get(routeGroupId);
+    if (!cached) {
+      cached = {
+        meta: readRouteMeta(routeGroupId),
+        pois: readRoutePois(routeGroupId)
+      };
+      routeGroupCache.set(routeGroupId, cached);
+    }
+
+    // eslint-disable-next-line no-await-in-loop
+    const resolvedMeta = await cached.meta;
+    // eslint-disable-next-line no-await-in-loop
+    const resolvedPois = await cached.pois;
+
+    const variants = (resolvedMeta && resolvedMeta.variants) || [];
+    if (!resolvedPois || !Array.isArray(resolvedPois.pois)) continue;
+
+    for (const poi of resolvedPois.pois) {
+      if (!isPoiHighlighted(poi, allowedCategories)) continue;
+      const poiId = String(poi.id ?? '');
+      if (!poiId || highlightMap.has(poiId)) continue;
+
+      const category = normalizePoiCategory(poi.category ?? poi.type ?? '');
+      const distanceMi = selectPoiDistance(poi, variants);
+
+      highlightMap.set(poiId, {
+        id: poiId,
+        title: String(poi.title ?? ''),
+        type: String(poi.type ?? ''),
+        category: category || undefined,
+        description: typeof poi.description === 'string' ? poi.description : undefined,
+        notes: typeof poi.notes === 'string' ? poi.notes : undefined,
+        distanceMi: distanceMi ?? undefined
+      });
+    }
+  }
+
+  return Array.from(highlightMap.values()).slice(0, config.maxPOIsPerEvent);
 }
 
 function buildPoiFeatures(pois) {
@@ -343,10 +458,16 @@ function buildPoiFeatures(pois) {
     type: 'Feature',
     properties: {
       id: poi.id,
+      poiId: poi.poiId ?? poi.id,
       title: poi.title,
       type: poi.type,
       variant: poi.variant,
-      distanceMi: poi.distanceMi
+      distanceMi: poi.distanceMi,
+      distanceM: poi.distanceM,
+      passIndex: poi.passIndex ?? 0,
+      direction: poi.direction,
+      system: poi.system ?? false,
+      locked: poi.locked ?? false
     },
     geometry: {
       type: 'Point',
@@ -357,11 +478,13 @@ function buildPoiFeatures(pois) {
 
 async function compileRoutesForEvents(selectedEvents) {
   if (!selectedEvents || selectedEvents.length === 0) {
-    return { routes: [], compiledRoutes: { routes: {} } };
+    return { routes: [], compiledRoutes: { routes: {} }, poiHighlightsByEvent: {} };
   }
 
   const routes = [];
   const compiledRoutes = { routes: {} };
+  const routeGroupCache = new Map();
+  const poiHighlightsByEvent = {};
 
   for (const event of selectedEvents) {
     const eventId = getEventId(event);
@@ -374,8 +497,18 @@ async function compileRoutesForEvents(selectedEvents) {
     }
 
     for (const routeGroupId of routeGroupIds) {
-      const meta = await readRouteMeta(routeGroupId);
-      const poisDoc = await readRoutePois(routeGroupId);
+      if (!routeGroupCache.has(routeGroupId)) {
+        routeGroupCache.set(routeGroupId, {
+          meta: readRouteMeta(routeGroupId),
+          pois: readRoutePois(routeGroupId)
+        });
+      }
+
+      const cached = routeGroupCache.get(routeGroupId);
+      // eslint-disable-next-line no-await-in-loop
+      const meta = await cached.meta;
+      // eslint-disable-next-line no-await-in-loop
+      const poisDoc = await cached.pois;
       const variants = meta.variants || [];
 
       for (const rawLabel of variants) {
@@ -405,9 +538,21 @@ async function compileRoutesForEvents(selectedEvents) {
         });
       }
     }
+
+    if (DEFAULT_EVENT_POI_CONFIG.showPOIs) {
+      // eslint-disable-next-line no-await-in-loop
+      const highlights = await compileEventPoiHighlights(
+        event,
+        routeGroupCache,
+        DEFAULT_EVENT_POI_CONFIG
+      );
+      if (highlights.length) {
+        poiHighlightsByEvent[eventId] = highlights;
+      }
+    }
   }
 
-  return { routes, compiledRoutes };
+  return { routes, compiledRoutes, poiHighlightsByEvent };
 }
 
 async function main() {
@@ -428,11 +573,18 @@ async function main() {
   }
 
   log('Compiling POIs...');
-  const { routes, compiledRoutes } = await compileRoutesForEvents(selectedEvents);
+  const { routes, compiledRoutes, poiHighlightsByEvent } =
+    await compileRoutesForEvents(selectedEvents);
 
   log('Compiling events...');
   const normalizedEvents = selectedEvents.map(normalizeEventForBroadcast);
-  const eventsJson = eventsJsonExport(normalizedEvents, routes);
+  const eventsJson = eventsJsonExport(
+    normalizedEvents.map((event) => ({
+      ...event,
+      poi_highlights: poiHighlightsByEvent[event.event_id] ?? []
+    })),
+    routes
+  );
 
   await fs.mkdir(COMPILED_DIR, { recursive: true });
   await fs.writeFile(

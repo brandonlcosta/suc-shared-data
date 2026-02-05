@@ -56,8 +56,24 @@
           "type": "integer",
           "minimum": 0,
           "description": "Index of the snapped GPX polyline point."
+        },
+        "passIndex": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Pass index for multi-hit POIs."
+        },
+        "direction": {
+          "type": "string",
+          "enum": ["forward", "reverse"],
+          "description": "Optional traversal direction for this hit."
         }
       }
+    },
+    "variantHits": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/definitions/variantPlacement" },
+      "description": "Multiple snapped placements for a single variant."
     },
     "poi": {
       "type": "object",
@@ -77,6 +93,14 @@
           "pattern": "^[a-z0-9-]+$",
           "description": "Category label (e.g., aid, water, hazard, viewpoint)."
         },
+        "system": {
+          "type": "boolean",
+          "description": "Marks a system-generated POI."
+        },
+        "locked": {
+          "type": "boolean",
+          "description": "Marks a POI as non-editable in authoring tools."
+        },
         "notes": {
           "type": "string",
           "description": "Optional internal notes."
@@ -89,10 +113,30 @@
           "type": "object",
           "description": "Per-variant snapped POI placement.",
           "properties": {
-            "MED": { "$ref": "#/definitions/variantPlacement" },
-            "LRG": { "$ref": "#/definitions/variantPlacement" },
-            "XL": { "$ref": "#/definitions/variantPlacement" },
-            "XXL": { "$ref": "#/definitions/variantPlacement" }
+            "MED": {
+              "oneOf": [
+                { "$ref": "#/definitions/variantPlacement" },
+                { "$ref": "#/definitions/variantHits" }
+              ]
+            },
+            "LRG": {
+              "oneOf": [
+                { "$ref": "#/definitions/variantPlacement" },
+                { "$ref": "#/definitions/variantHits" }
+              ]
+            },
+            "XL": {
+              "oneOf": [
+                { "$ref": "#/definitions/variantPlacement" },
+                { "$ref": "#/definitions/variantHits" }
+              ]
+            },
+            "XXL": {
+              "oneOf": [
+                { "$ref": "#/definitions/variantPlacement" },
+                { "$ref": "#/definitions/variantHits" }
+              ]
+            }
           },
           "additionalProperties": false
         }

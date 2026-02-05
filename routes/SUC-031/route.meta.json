@@ -1,0 +1,13 @@
+{
+  "routeGroupId": "SUC-031",
+  "name": "Tam Grand Slam",
+  "location": "Marin",
+  "source": "SUC",
+  "notes": "",
+  "variants": [
+    "MED",
+    "LRG",
+    "XL",
+    "XXL"
+  ]
+}

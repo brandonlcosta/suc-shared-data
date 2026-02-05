@@ -1,0 +1,143 @@
+{
+  "routeGroupId": "SUC-031",
+  "pois": [
+    {
+      "id": "start-finish",
+      "title": "Start / Finish",
+      "type": "start-finish",
+      "system": true,
+      "locked": true,
+      "drop": {
+        "lat": 37.90393,
+        "lon": -122.60397
+      },
+      "variants": {
+        "MED": [
+          {
+            "lat": 37.90393,
+            "lon": -122.60397,
+            "snapIndex": 0,
+            "distanceM": 0,
+            "distanceMi": 0,
+            "passIndex": 0
+          },
+          {
+            "lat": 37.90393,
+            "lon": -122.60397,
+            "snapIndex": 662,
+            "distanceM": 13809.906362435697,
+            "distanceMi": 8.581077981112612,
+            "passIndex": 1
+          }
+        ],
+        "LRG": [
+          {
+            "lat": 37.90393,
+            "lon": -122.60397,
+            "snapIndex": 0,
+            "distanceM": 0,
+            "distanceMi": 0,
+            "passIndex": 0
+          },
+          {
+            "lat": 37.90393,
+            "lon": -122.60397,
+            "snapIndex": 824,
+            "distanceM": 16977.732275735965,
+            "distanceMi": 10.549473745660322,
+            "passIndex": 1
+          }
+        ],
+        "XL": [
+          {
+            "lat": 37.90393,
+            "lon": -122.60397,
+            "snapIndex": 0,
+            "distanceM": 0,
+            "distanceMi": 0,
+            "passIndex": 0
+          },
+          {
+            "lat": 37.903800000000004,
+            "lon": -122.60434000000001,
+            "snapIndex": 1428,
+            "distanceM": 28785.028432100113,
+            "distanceMi": 17.886187435439602,
+            "passIndex": 1
+          }
+        ],
+        "XXL": [
+          {
+            "lat": 37.90393,
+            "lon": -122.60397,
+            "snapIndex": 0,
+            "distanceM": 0,
+            "distanceMi": 0,
+            "passIndex": 0
+          },
+          {
+            "lat": 37.903800000000004,
+            "lon": -122.60434000000001,
+            "snapIndex": 2038,
+            "distanceM": 41718.17457692253,
+            "distanceMi": 25.922471874827586,
+            "passIndex": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "summit-mt-tam-summit",
+      "title": "Mt Tam Summit",
+      "type": "summit",
+      "variants": {
+        "MED": {
+          "lat": 37.92916,
+          "lon": -122.57761,
+          "snapIndex": 302,
+          "distanceM": 6416.323490379282,
+          "distanceMi": 3.986918576997386,
+          "passIndex": 0
+        },
+        "LRG": {
+          "lat": 37.929140000000004,
+          "lon": -122.57759000000001,
+          "snapIndex": 462,
+          "distanceM": 9579.837372216321,
+          "distanceMi": 5.952634969413824,
+          "passIndex": 0
+        },
+        "XL": {
+          "lat": 37.929140000000004,
+          "lon": -122.57759000000001,
+          "snapIndex": 462,
+          "distanceM": 9579.837372216321,
+          "distanceMi": 5.952634969413824,
+          "passIndex": 0
+        },
+        "XXL": [
+          {
+            "lat": 37.929140000000004,
+            "lon": -122.57759000000001,
+            "snapIndex": 462,
+            "distanceM": 9579.837372216321,
+            "distanceMi": 5.952634969413824,
+            "passIndex": 0
+          },
+          {
+            "lat": 37.92916,
+            "lon": -122.57761,
+            "snapIndex": 1732,
+            "distanceM": 35278.12928103478,
+            "distanceMi": 21.920813251259382,
+            "passIndex": 1
+          }
+        ]
+      },
+      "drop": {
+        "lat": 37.929140000000004,
+        "lon": -122.57759000000001
+      }
+    }
+  ]
+}

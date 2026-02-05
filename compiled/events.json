@@ -8,8 +8,8 @@
     "startLocationName": "Marinwood Community Park",
     "startLocationUrl": "https://maps.app.goo.gl/vrbZS6iWjj22qkwY8",
     "startLocationCoordinates": {
-      "lat": 0,
-      "lng": 0
+      "lat": 38.5816,
+      "lng": -121.4944
     },
     "routes": [
       {
@@ -32,19 +32,28 @@
         "statsUrl": "/routes/SUC-036-XXL.json",
         "geojsonUrl": "/routes/SUC-036-XXL.geojson"
       }
+    ],
+    "poiHighlights": [
+      {
+        "id": "viewpoint-regroup-viewpoint",
+        "title": "Regroup / Viewpoint",
+        "type": "viewpoint",
+        "category": "view",
+        "distanceMi": 4.743210025775685
+      }
     ]
   },
   {
     "eventId": "SUC-035",
     "eventName": "SUC 035 - Salmon Simulator",
-    "eventDescription": "",
-    "eventDate": "2026-2-7",
+    "eventDescription": "Our final course recon run for Salmon Falls 50k. Covering the last portion of the course.",
+    "eventDate": "February 7th, 2026",
     "eventTime": "7:15 AM",
     "startLocationName": "Brown's Ravine",
-    "startLocationUrl": "",
+    "startLocationUrl": "https://maps.app.goo.gl/bm3Hs1gYXefEoKUJ6",
     "startLocationCoordinates": {
-      "lat": 0,
-      "lng": 0
+      "lat": 38.5816,
+      "lng": -121.4944
     },
     "routes": [
       {
@@ -66,6 +75,57 @@
         "label": "XXL",
         "statsUrl": "/routes/SUC-035-XXL.json",
         "geojsonUrl": "/routes/SUC-035-XXL.geojson"
+      }
+    ],
+    "poiHighlights": [
+      {
+        "id": "water-water-access",
+        "title": "Water Access",
+        "type": "water",
+        "category": "water",
+        "distanceMi": 3.2419742039000035
+      },
+      {
+        "id": "hazard-slippery-bridge",
+        "title": "Slippery Bridge",
+        "type": "hazard",
+        "category": "hazard",
+        "distanceMi": 5.957261567148397
+      }
+    ]
+  },
+  {
+    "eventId": "SUC-031",
+    "eventName": "SUC 031 Tam Grand Slam",
+    "eventDescription": "Mount Tamalpais Summit. Dipsea trail. Stinson beach. Big vert day.",
+    "eventDate": "February 10, 2026",
+    "eventTime": "8:15 AM",
+    "startLocationName": "Pantoll Campground",
+    "startLocationUrl": "https://maps.app.goo.gl/uhwA16y3RkZsbiZe7",
+    "startLocationCoordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "routes": [
+      {
+        "label": "MED",
+        "statsUrl": "/routes/SUC-031-MED.json",
+        "geojsonUrl": "/routes/SUC-031-MED.geojson"
+      },
+      {
+        "label": "LRG",
+        "statsUrl": "/routes/SUC-031-LRG.json",
+        "geojsonUrl": "/routes/SUC-031-LRG.geojson"
+      },
+      {
+        "label": "XL",
+        "statsUrl": "/routes/SUC-031-XL.json",
+        "geojsonUrl": "/routes/SUC-031-XL.geojson"
+      },
+      {
+        "label": "XXL",
+        "statsUrl": "/routes/SUC-031-XXL.json",
+        "geojsonUrl": "/routes/SUC-031-XXL.geojson"
       }
     ]
   }
