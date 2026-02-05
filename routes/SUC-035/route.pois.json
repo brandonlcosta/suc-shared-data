@@ -2,6 +2,206 @@
   "routeGroupId": "SUC-035",
   "pois": [
     {
+      "id": "turnaround-med-turnaround",
+      "title": "MED Turnaround",
+      "type": "turnaround",
+      "variants": {
+        "LRG": {
+          "lat": 38.74347189938628,
+          "lon": -121.07439063312877,
+          "snapIndex": 278,
+          "distanceM": 7260.936373586444,
+          "distanceMi": 4.511736691214833,
+          "passIndex": 0
+        },
+        "MED": {
+          "lat": 38.74347,
+          "lon": -121.07440000000001,
+          "snapIndex": 276,
+          "distanceM": 7260.8839954668765,
+          "distanceMi": 4.5117041449602295,
+          "passIndex": 0
+        },
+        "XL": {
+          "lat": 38.74347189938628,
+          "lon": -121.07439063312877,
+          "snapIndex": 278,
+          "distanceM": 7260.936373586444,
+          "distanceMi": 4.511736691214833,
+          "passIndex": 0
+        },
+        "XXL": {
+          "lat": 38.74347189938628,
+          "lon": -121.07439063312877,
+          "snapIndex": 277,
+          "distanceM": 7262.745781297174,
+          "distanceMi": 4.512861005041293,
+          "passIndex": 0
+        }
+      },
+      "drop": {
+        "lat": 38.74347,
+        "lon": -121.07440000000001
+      }
+    },
+    {
+      "id": "hazard-slippery-bridge",
+      "title": "Slippery Bridge",
+      "type": "hazard",
+      "variants": {
+        "LRG": [
+          {
+            "lat": 38.728770000000004,
+            "lon": -121.06936,
+            "snapIndex": 375,
+            "distanceM": 9547.348340042814,
+            "distanceMi": 5.932447220757535,
+            "passIndex": 0
+          },
+          {
+            "lat": 38.728770000000004,
+            "lon": -121.06936,
+            "snapIndex": 677,
+            "distanceM": 16016.59841772742,
+            "distanceMi": 9.952252854409883,
+            "passIndex": 1
+          }
+        ],
+        "XL": [
+          {
+            "lat": 38.728770000000004,
+            "lon": -121.06936,
+            "snapIndex": 375,
+            "distanceM": 9547.348340042814,
+            "distanceMi": 5.932447220757535,
+            "passIndex": 0
+          },
+          {
+            "lat": 38.728770000000004,
+            "lon": -121.06936,
+            "snapIndex": 967,
+            "distanceM": 22790.995641176465,
+            "distanceMi": 14.161668133833702,
+            "passIndex": 1
+          }
+        ],
+        "XXL": [
+          {
+            "lat": 38.728770000000004,
+            "lon": -121.06936,
+            "snapIndex": 374,
+            "distanceM": 9549.157747753545,
+            "distanceMi": 5.9335715345839946,
+            "passIndex": 0
+          },
+          {
+            "lat": 38.728770000000004,
+            "lon": -121.06936,
+            "snapIndex": 1380,
+            "distanceM": 33198.08923090178,
+            "distanceMi": 20.628336285406835,
+            "passIndex": 1
+          }
+        ]
+      },
+      "drop": {
+        "lat": 38.728770000000004,
+        "lon": -121.06936
+      }
+    },
+    {
+      "id": "turnaround-xl-turnaround",
+      "title": "XL Turnaround",
+      "type": "turnaround",
+      "variants": {
+        "XL": {
+          "lat": 38.75215,
+          "lon": -121.05866000000003,
+          "snapIndex": 671,
+          "distanceM": 16151.055535555523,
+          "distanceMi": 10.035800634019527,
+          "passIndex": 0
+        },
+        "XXL": {
+          "lat": 38.75215,
+          "lon": -121.05866000000003,
+          "snapIndex": 668,
+          "distanceM": 16151.857964884068,
+          "distanceMi": 10.036299240488091,
+          "passIndex": 0
+        }
+      },
+      "drop": {
+        "lat": 38.75215,
+        "lon": -121.05866
+      }
+    },
+    {
+      "id": "turnaround-lrg-turnaround",
+      "title": "LRG Turnaround",
+      "type": "turnaround",
+      "variants": {
+        "LRG": [
+          {
+            "lat": 38.74743,
+            "lon": -121.06864000000002,
+            "snapIndex": 524,
+            "distanceM": 12768.353153505694,
+            "distanceMi": 7.933886821901155,
+            "passIndex": 0
+          },
+          {
+            "lat": 38.74743,
+            "lon": -121.06864000000002,
+            "snapIndex": 528,
+            "distanceM": 12795.595723426497,
+            "distanceMi": 7.950814570052454,
+            "passIndex": 1
+          }
+        ],
+        "XL": [
+          {
+            "lat": 38.74743,
+            "lon": -121.06864000000002,
+            "snapIndex": 525,
+            "distanceM": 12768.403556073361,
+            "distanceMi": 7.933918140604719,
+            "passIndex": 0
+          },
+          {
+            "lat": 38.74743,
+            "lon": -121.06864000000002,
+            "snapIndex": 818,
+            "distanceM": 19569.99294687557,
+            "distanceMi": 12.16022984947629,
+            "passIndex": 1
+          }
+        ],
+        "XXL": [
+          {
+            "lat": 38.74743,
+            "lon": -121.06864000000002,
+            "snapIndex": 523,
+            "distanceM": 12770.160442054468,
+            "distanceMi": 7.935009818941424,
+            "passIndex": 0
+          },
+          {
+            "lat": 38.74743,
+            "lon": -121.06864000000002,
+            "snapIndex": 1231,
+            "distanceM": 29977.086536600877,
+            "distanceMi": 18.62689800104942,
+            "passIndex": 1
+          }
+        ]
+      },
+      "drop": {
+        "lat": 38.74743,
+        "lon": -121.06864000000002
+      }
+    },
+    {
       "id": "water-water-access",
       "title": "Water Access",
       "type": "water",
@@ -82,196 +282,6 @@
       "drop": {
         "lat": 38.738800000000005,
         "lon": -121.08637000000002
-      }
-    },
-    {
-      "id": "hazard-slippery-bridge",
-      "title": "Slippery Bridge",
-      "type": "hazard",
-      "variants": {
-        "LRG": [
-          {
-            "lat": 38.72908,
-            "lon": -121.06922999999996,
-            "snapIndex": 379,
-            "distanceM": 9587.28315952087,
-            "distanceMi": 5.957261567148397,
-            "passIndex": 0
-          },
-          {
-            "lat": 38.72908,
-            "lon": -121.06922999999996,
-            "snapIndex": 673,
-            "distanceM": 15976.663598249364,
-            "distanceMi": 9.927438508019021,
-            "passIndex": 1
-          }
-        ],
-        "XL": [
-          {
-            "lat": 38.72908,
-            "lon": -121.06922999999996,
-            "snapIndex": 379,
-            "distanceM": 9587.28315952087,
-            "distanceMi": 5.957261567148397,
-            "passIndex": 0
-          },
-          {
-            "lat": 38.72908,
-            "lon": -121.06922999999996,
-            "snapIndex": 963,
-            "distanceM": 22751.06082169841,
-            "distanceMi": 14.13685378744284,
-            "passIndex": 1
-          }
-        ],
-        "XXL": [
-          {
-            "lat": 38.72908,
-            "lon": -121.06922999999996,
-            "snapIndex": 378,
-            "distanceM": 9589.0925672316,
-            "distanceMi": 5.958385880974857,
-            "passIndex": 0
-          },
-          {
-            "lat": 38.72908,
-            "lon": -121.06922999999996,
-            "snapIndex": 1376,
-            "distanceM": 33158.154411423726,
-            "distanceMi": 20.603521939015973,
-            "passIndex": 1
-          }
-        ]
-      },
-      "drop": {
-        "lat": 38.72908,
-        "lon": -121.06923
-      }
-    },
-    {
-      "id": "turnaround-lrg-turnaround",
-      "title": "LRG Turnaround",
-      "type": "turnaround",
-      "variants": {
-        "LRG": {
-          "lat": 38.747550000000004,
-          "lon": -121.06867000000001,
-          "snapIndex": 526,
-          "distanceM": 12781.974438466095,
-          "distanceMi": 7.942350695976804,
-          "passIndex": 0
-        },
-        "XL": [
-          {
-            "lat": 38.74755024183364,
-            "lon": -121.06866602418334,
-            "snapIndex": 526,
-            "distanceM": 12782.015946304593,
-            "distanceMi": 7.9423764877519,
-            "passIndex": 0
-          },
-          {
-            "lat": 38.747490000000006,
-            "lon": -121.06866000000002,
-            "snapIndex": 817,
-            "distanceM": 19563.099484470462,
-            "distanceMi": 12.155946450522984,
-            "passIndex": 1
-          }
-        ],
-        "XXL": [
-          {
-            "lat": 38.74755024183364,
-            "lon": -121.06866602418334,
-            "snapIndex": 524,
-            "distanceM": 12783.7728322857,
-            "distanceMi": 7.943468166088605,
-            "passIndex": 0
-          },
-          {
-            "lat": 38.747490000000006,
-            "lon": -121.06866000000002,
-            "snapIndex": 1230,
-            "distanceM": 29970.19307419577,
-            "distanceMi": 18.622614602096114,
-            "passIndex": 1
-          }
-        ]
-      },
-      "drop": {
-        "lat": 38.747550000000004,
-        "lon": -121.06867000000001
-      }
-    },
-    {
-      "id": "turnaround-xl-turnaround",
-      "title": "XL Turnaround",
-      "type": "turnaround",
-      "variants": {
-        "XL": {
-          "lat": 38.7522335434322,
-          "lon": -121.05849291313564,
-          "snapIndex": 672,
-          "distanceM": 16168.266969842789,
-          "distanceMi": 10.04649532346272,
-          "passIndex": 0
-        },
-        "XXL": {
-          "lat": 38.75223746835255,
-          "lon": -121.05849657228872,
-          "snapIndex": 668,
-          "distanceM": 16169.046254050874,
-          "distanceMi": 10.04697954822019,
-          "passIndex": 0
-        }
-      },
-      "drop": {
-        "lat": 38.752230000000004,
-        "lon": -121.05849
-      }
-    },
-    {
-      "id": "turnaround-med-turnaround",
-      "title": "MED Turnaround",
-      "type": "turnaround",
-      "variants": {
-        "LRG": {
-          "lat": 38.74347189938628,
-          "lon": -121.07439063312877,
-          "snapIndex": 278,
-          "distanceM": 7260.936373586444,
-          "distanceMi": 4.511736691214833,
-          "passIndex": 0
-        },
-        "MED": {
-          "lat": 38.74347,
-          "lon": -121.07440000000001,
-          "snapIndex": 276,
-          "distanceM": 7260.8839954668765,
-          "distanceMi": 4.5117041449602295,
-          "passIndex": 0
-        },
-        "XL": {
-          "lat": 38.74347189938628,
-          "lon": -121.07439063312877,
-          "snapIndex": 278,
-          "distanceM": 7260.936373586444,
-          "distanceMi": 4.511736691214833,
-          "passIndex": 0
-        },
-        "XXL": {
-          "lat": 38.74347189938628,
-          "lon": -121.07439063312877,
-          "snapIndex": 277,
-          "distanceM": 7262.745781297174,
-          "distanceMi": 4.512861005041293,
-          "passIndex": 0
-        }
-      },
-      "drop": {
-        "lat": 38.74347,
-        "lon": -121.07440000000001
       }
     }
   ]

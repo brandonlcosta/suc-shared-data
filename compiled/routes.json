@@ -36192,6 +36192,71 @@
         ],
         "pois": [
           {
+            "id": "turnaround-med-turnaround",
+            "poiId": "turnaround-med-turnaround",
+            "title": "MED Turnaround",
+            "type": "turnaround",
+            "variant": "LRG",
+            "distanceMi": 4.511736691214833,
+            "distanceM": 7260.936373586444,
+            "lat": 38.74347189938628,
+            "lon": -121.07439063312877,
+            "snapIndex": 278,
+            "passIndex": 0
+          },
+          {
+            "id": "hazard-slippery-bridge",
+            "poiId": "hazard-slippery-bridge",
+            "title": "Slippery Bridge",
+            "type": "hazard",
+            "variant": "LRG",
+            "distanceMi": 5.932447220757535,
+            "distanceM": 9547.348340042814,
+            "lat": 38.728770000000004,
+            "lon": -121.06936,
+            "snapIndex": 375,
+            "passIndex": 0
+          },
+          {
+            "id": "hazard-slippery-bridge",
+            "poiId": "hazard-slippery-bridge",
+            "title": "Slippery Bridge",
+            "type": "hazard",
+            "variant": "LRG",
+            "distanceMi": 9.952252854409883,
+            "distanceM": 16016.59841772742,
+            "lat": 38.728770000000004,
+            "lon": -121.06936,
+            "snapIndex": 677,
+            "passIndex": 1
+          },
+          {
+            "id": "turnaround-lrg-turnaround",
+            "poiId": "turnaround-lrg-turnaround",
+            "title": "LRG Turnaround",
+            "type": "turnaround",
+            "variant": "LRG",
+            "distanceMi": 7.933886821901155,
+            "distanceM": 12768.353153505694,
+            "lat": 38.74743,
+            "lon": -121.06864000000002,
+            "snapIndex": 524,
+            "passIndex": 0
+          },
+          {
+            "id": "turnaround-lrg-turnaround",
+            "poiId": "turnaround-lrg-turnaround",
+            "title": "LRG Turnaround",
+            "type": "turnaround",
+            "variant": "LRG",
+            "distanceMi": 7.950814570052454,
+            "distanceM": 12795.595723426497,
+            "lat": 38.74743,
+            "lon": -121.06864000000002,
+            "snapIndex": 528,
+            "passIndex": 1
+          },
+          {
             "id": "water-water-access",
             "poiId": "water-water-access",
             "title": "Water Access",
@@ -36216,58 +36281,6 @@
             "lon": -121.08629,
             "snapIndex": 840,
             "passIndex": 1
-          },
-          {
-            "id": "hazard-slippery-bridge",
-            "poiId": "hazard-slippery-bridge",
-            "title": "Slippery Bridge",
-            "type": "hazard",
-            "variant": "LRG",
-            "distanceMi": 5.957261567148397,
-            "distanceM": 9587.28315952087,
-            "lat": 38.72908,
-            "lon": -121.06922999999996,
-            "snapIndex": 379,
-            "passIndex": 0
-          },
-          {
-            "id": "hazard-slippery-bridge",
-            "poiId": "hazard-slippery-bridge",
-            "title": "Slippery Bridge",
-            "type": "hazard",
-            "variant": "LRG",
-            "distanceMi": 9.927438508019021,
-            "distanceM": 15976.663598249364,
-            "lat": 38.72908,
-            "lon": -121.06922999999996,
-            "snapIndex": 673,
-            "passIndex": 1
-          },
-          {
-            "id": "turnaround-lrg-turnaround",
-            "poiId": "turnaround-lrg-turnaround",
-            "title": "LRG Turnaround",
-            "type": "turnaround",
-            "variant": "LRG",
-            "distanceMi": 7.942350695976804,
-            "distanceM": 12781.974438466095,
-            "lat": 38.747550000000004,
-            "lon": -121.06867000000001,
-            "snapIndex": 526,
-            "passIndex": 0
-          },
-          {
-            "id": "turnaround-med-turnaround",
-            "poiId": "turnaround-med-turnaround",
-            "title": "MED Turnaround",
-            "type": "turnaround",
-            "variant": "LRG",
-            "distanceMi": 4.511736691214833,
-            "distanceM": 7260.936373586444,
-            "lat": 38.74347189938628,
-            "lon": -121.07439063312877,
-            "snapIndex": 278,
-            "passIndex": 0
           }
         ]
       },
@@ -40486,6 +40499,116 @@
           {
             "type": "Feature",
             "properties": {
+              "id": "turnaround-med-turnaround",
+              "poiId": "turnaround-med-turnaround",
+              "title": "MED Turnaround",
+              "type": "turnaround",
+              "variant": "LRG",
+              "distanceMi": 4.511736691214833,
+              "distanceM": 7260.936373586444,
+              "passIndex": 0,
+              "system": false,
+              "locked": false
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -121.07439063312877,
+                38.74347189938628
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "id": "hazard-slippery-bridge",
+              "poiId": "hazard-slippery-bridge",
+              "title": "Slippery Bridge",
+              "type": "hazard",
+              "variant": "LRG",
+              "distanceMi": 5.932447220757535,
+              "distanceM": 9547.348340042814,
+              "passIndex": 0,
+              "system": false,
+              "locked": false
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -121.06936,
+                38.728770000000004
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "id": "hazard-slippery-bridge",
+              "poiId": "hazard-slippery-bridge",
+              "title": "Slippery Bridge",
+              "type": "hazard",
+              "variant": "LRG",
+              "distanceMi": 9.952252854409883,
+              "distanceM": 16016.59841772742,
+              "passIndex": 1,
+              "system": false,
+              "locked": false
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -121.06936,
+                38.728770000000004
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "id": "turnaround-lrg-turnaround",
+              "poiId": "turnaround-lrg-turnaround",
+              "title": "LRG Turnaround",
+              "type": "turnaround",
+              "variant": "LRG",
+              "distanceMi": 7.933886821901155,
+              "distanceM": 12768.353153505694,
+              "passIndex": 0,
+              "system": false,
+              "locked": false
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -121.06864000000002,
+                38.74743
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "id": "turnaround-lrg-turnaround",
+              "poiId": "turnaround-lrg-turnaround",
+              "title": "LRG Turnaround",
+              "type": "turnaround",
+              "variant": "LRG",
+              "distanceMi": 7.950814570052454,
+              "distanceM": 12795.595723426497,
+              "passIndex": 1,
+              "system": false,
+              "locked": false
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -121.06864000000002,
+                38.74743
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
               "id": "water-water-access",
               "poiId": "water-water-access",
               "title": "Water Access",
@@ -40524,94 +40647,6 @@
               "coordinates": [
                 -121.08629,
                 38.738719999999994
-              ]
-            }
-          },
-          {
-            "type": "Feature",
-            "properties": {
-              "id": "hazard-slippery-bridge",
-              "poiId": "hazard-slippery-bridge",
-              "title": "Slippery Bridge",
-              "type": "hazard",
-              "variant": "LRG",
-              "distanceMi": 5.957261567148397,
-              "distanceM": 9587.28315952087,
-              "passIndex": 0,
-              "system": false,
-              "locked": false
-            },
-            "geometry": {
-              "type": "Point",
-              "coordinates": [
-                -121.06922999999996,
-                38.72908
-              ]
-            }
-          },
-          {
-            "type": "Feature",
-            "properties": {
-              "id": "hazard-slippery-bridge",
-              "poiId": "hazard-slippery-bridge",
-              "title": "Slippery Bridge",
-              "type": "hazard",
-              "variant": "LRG",
-              "distanceMi": 9.927438508019021,
-              "distanceM": 15976.663598249364,
-              "passIndex": 1,
-              "system": false,
-              "locked": false
-            },
-            "geometry": {
-              "type": "Point",
-              "coordinates": [
-                -121.06922999999996,
-                38.72908
-              ]
-            }
-          },
-          {
-            "type": "Feature",
-            "properties": {
-              "id": "turnaround-lrg-turnaround",
-              "poiId": "turnaround-lrg-turnaround",
-              "title": "LRG Turnaround",
-              "type": "turnaround",
-              "variant": "LRG",
-              "distanceMi": 7.942350695976804,
-              "distanceM": 12781.974438466095,
-              "passIndex": 0,
-              "system": false,
-              "locked": false
-            },
-            "geometry": {
-              "type": "Point",
-              "coordinates": [
-                -121.06867000000001,
-                38.747550000000004
-              ]
-            }
-          },
-          {
-            "type": "Feature",
-            "properties": {
-              "id": "turnaround-med-turnaround",
-              "poiId": "turnaround-med-turnaround",
-              "title": "MED Turnaround",
-              "type": "turnaround",
-              "variant": "LRG",
-              "distanceMi": 4.511736691214833,
-              "distanceM": 7260.936373586444,
-              "passIndex": 0,
-              "system": false,
-              "locked": false
-            },
-            "geometry": {
-              "type": "Point",
-              "coordinates": [
-                -121.07439063312877,
-                38.74347189938628
               ]
             }
           }
@@ -41748,6 +41783,19 @@
         ],
         "pois": [
           {
+            "id": "turnaround-med-turnaround",
+            "poiId": "turnaround-med-turnaround",
+            "title": "MED Turnaround",
+            "type": "turnaround",
+            "variant": "MED",
+            "distanceMi": 4.5117041449602295,
+            "distanceM": 7260.8839954668765,
+            "lat": 38.74347,
+            "lon": -121.07440000000001,
+            "snapIndex": 276,
+            "passIndex": 0
+          },
+          {
             "id": "water-water-access",
             "poiId": "water-water-access",
             "title": "Water Access",
@@ -41772,19 +41820,6 @@
             "lon": -121.08629,
             "snapIndex": 344,
             "passIndex": 1
-          },
-          {
-            "id": "turnaround-med-turnaround",
-            "poiId": "turnaround-med-turnaround",
-            "title": "MED Turnaround",
-            "type": "turnaround",
-            "variant": "MED",
-            "distanceMi": 4.5117041449602295,
-            "distanceM": 7260.8839954668765,
-            "lat": 38.74347,
-            "lon": -121.07440000000001,
-            "snapIndex": 276,
-            "passIndex": 0
           }
         ]
       },
@@ -44023,6 +44058,28 @@
           {
             "type": "Feature",
             "properties": {
+              "id": "turnaround-med-turnaround",
+              "poiId": "turnaround-med-turnaround",
+              "title": "MED Turnaround",
+              "type": "turnaround",
+              "variant": "MED",
+              "distanceMi": 4.5117041449602295,
+              "distanceM": 7260.8839954668765,
+              "passIndex": 0,
+              "system": false,
+              "locked": false
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -121.07440000000001,
+                38.74347
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
               "id": "water-water-access",
               "poiId": "water-water-access",
               "title": "Water Access",
@@ -44061,28 +44118,6 @@
               "coordinates": [
                 -121.08629,
                 38.738719999999994
-              ]
-            }
-          },
-          {
-            "type": "Feature",
-            "properties": {
-              "id": "turnaround-med-turnaround",
-              "poiId": "turnaround-med-turnaround",
-              "title": "MED Turnaround",
-              "type": "turnaround",
-              "variant": "MED",
-              "distanceMi": 4.5117041449602295,
-              "distanceM": 7260.8839954668765,
-              "passIndex": 0,
-              "system": false,
-              "locked": false
-            },
-            "geometry": {
-              "type": "Point",
-              "coordinates": [
-                -121.07440000000001,
-                38.74347
               ]
             }
           }
@@ -46789,6 +46824,84 @@
         ],
         "pois": [
           {
+            "id": "turnaround-med-turnaround",
+            "poiId": "turnaround-med-turnaround",
+            "title": "MED Turnaround",
+            "type": "turnaround",
+            "variant": "XL",
+            "distanceMi": 4.511736691214833,
+            "distanceM": 7260.936373586444,
+            "lat": 38.74347189938628,
+            "lon": -121.07439063312877,
+            "snapIndex": 278,
+            "passIndex": 0
+          },
+          {
+            "id": "hazard-slippery-bridge",
+            "poiId": "hazard-slippery-bridge",
+            "title": "Slippery Bridge",
+            "type": "hazard",
+            "variant": "XL",
+            "distanceMi": 5.932447220757535,
+            "distanceM": 9547.348340042814,
+            "lat": 38.728770000000004,
+            "lon": -121.06936,
+            "snapIndex": 375,
+            "passIndex": 0
+          },
+          {
+            "id": "hazard-slippery-bridge",
+            "poiId": "hazard-slippery-bridge",
+            "title": "Slippery Bridge",
+            "type": "hazard",
+            "variant": "XL",
+            "distanceMi": 14.161668133833702,
+            "distanceM": 22790.995641176465,
+            "lat": 38.728770000000004,
+            "lon": -121.06936,
+            "snapIndex": 967,
+            "passIndex": 1
+          },
+          {
+            "id": "turnaround-xl-turnaround",
+            "poiId": "turnaround-xl-turnaround",
+            "title": "XL Turnaround",
+            "type": "turnaround",
+            "variant": "XL",
+            "distanceMi": 10.035800634019527,
+            "distanceM": 16151.055535555523,
+            "lat": 38.75215,
+            "lon": -121.05866000000003,
+            "snapIndex": 671,
+            "passIndex": 0
+          },
+          {
+            "id": "turnaround-lrg-turnaround",
+            "poiId": "turnaround-lrg-turnaround",
+            "title": "LRG Turnaround",
+            "type": "turnaround",
+            "variant": "XL",
+            "distanceMi": 7.933918140604719,
+            "distanceM": 12768.403556073361,
+            "lat": 38.74743,
+            "lon": -121.06864000000002,
+            "snapIndex": 525,
+            "passIndex": 0
+          },
+          {
+            "id": "turnaround-lrg-turnaround",
+            "poiId": "turnaround-lrg-turnaround",
+            "title": "LRG Turnaround",
+            "type": "turnaround",
+            "variant": "XL",
+            "distanceMi": 12.16022984947629,
+            "distanceM": 19569.99294687557,
+            "lat": 38.74743,
+            "lon": -121.06864000000002,
+            "snapIndex": 818,
+            "passIndex": 1
+          },
+          {
             "id": "water-water-access",
             "poiId": "water-water-access",
             "title": "Water Access",
@@ -46813,84 +46926,6 @@
             "lon": -121.08629,
             "snapIndex": 1130,
             "passIndex": 1
-          },
-          {
-            "id": "hazard-slippery-bridge",
-            "poiId": "hazard-slippery-bridge",
-            "title": "Slippery Bridge",
-            "type": "hazard",
-            "variant": "XL",
-            "distanceMi": 5.957261567148397,
-            "distanceM": 9587.28315952087,
-            "lat": 38.72908,
-            "lon": -121.06922999999996,
-            "snapIndex": 379,
-            "passIndex": 0
-          },
-          {
-            "id": "hazard-slippery-bridge",
-            "poiId": "hazard-slippery-bridge",
-            "title": "Slippery Bridge",
-            "type": "hazard",
-            "variant": "XL",
-            "distanceMi": 14.13685378744284,
-            "distanceM": 22751.06082169841,
-            "lat": 38.72908,
-            "lon": -121.06922999999996,
-            "snapIndex": 963,
-            "passIndex": 1
-          },
-          {
-            "id": "turnaround-lrg-turnaround",
-            "poiId": "turnaround-lrg-turnaround",
-            "title": "LRG Turnaround",
-            "type": "turnaround",
-            "variant": "XL",
-            "distanceMi": 7.9423764877519,
-            "distanceM": 12782.015946304593,
-            "lat": 38.74755024183364,
-            "lon": -121.06866602418334,
-            "snapIndex": 526,
-            "passIndex": 0
-          },
-          {
-            "id": "turnaround-lrg-turnaround",
-            "poiId": "turnaround-lrg-turnaround",
-            "title": "LRG Turnaround",
-            "type": "turnaround",
-            "variant": "XL",
-            "distanceMi": 12.155946450522984,
-            "distanceM": 19563.099484470462,
-            "lat": 38.747490000000006,
-            "lon": -121.06866000000002,
-            "snapIndex": 817,
-            "passIndex": 1
-          },
-          {
-            "id": "turnaround-xl-turnaround",
-            "poiId": "turnaround-xl-turnaround",
-            "title": "XL Turnaround",
-            "type": "turnaround",
-            "variant": "XL",
-            "distanceMi": 10.04649532346272,
-            "distanceM": 16168.266969842789,
-            "lat": 38.7522335434322,
-            "lon": -121.05849291313564,
-            "snapIndex": 672,
-            "passIndex": 0
-          },
-          {
-            "id": "turnaround-med-turnaround",
-            "poiId": "turnaround-med-turnaround",
-            "title": "MED Turnaround",
-            "type": "turnaround",
-            "variant": "XL",
-            "distanceMi": 4.511736691214833,
-            "distanceM": 7260.936373586444,
-            "lat": 38.74347189938628,
-            "lon": -121.07439063312877,
-            "snapIndex": 278,
-            "passIndex": 0
           }
         ]
       },
@@ -52269,6 +52304,138 @@
           {
             "type": "Feature",
             "properties": {
+              "id": "turnaround-med-turnaround",
+              "poiId": "turnaround-med-turnaround",
+              "title": "MED Turnaround",
+              "type": "turnaround",
+              "variant": "XL",
+              "distanceMi": 4.511736691214833,
+              "distanceM": 7260.936373586444,
+              "passIndex": 0,
+              "system": false,
+              "locked": false
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -121.07439063312877,
+                38.74347189938628
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "id": "hazard-slippery-bridge",
+              "poiId": "hazard-slippery-bridge",
+              "title": "Slippery Bridge",
+              "type": "hazard",
+              "variant": "XL",
+              "distanceMi": 5.932447220757535,
+              "distanceM": 9547.348340042814,
+              "passIndex": 0,
+              "system": false,
+              "locked": false
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -121.06936,
+                38.728770000000004
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "id": "hazard-slippery-bridge",
+              "poiId": "hazard-slippery-bridge",
+              "title": "Slippery Bridge",
+              "type": "hazard",
+              "variant": "XL",
+              "distanceMi": 14.161668133833702,
+              "distanceM": 22790.995641176465,
+              "passIndex": 1,
+              "system": false,
+              "locked": false
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -121.06936,
+                38.728770000000004
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "id": "turnaround-xl-turnaround",
+              "poiId": "turnaround-xl-turnaround",
+              "title": "XL Turnaround",
+              "type": "turnaround",
+              "variant": "XL",
+              "distanceMi": 10.035800634019527,
+              "distanceM": 16151.055535555523,
+              "passIndex": 0,
+              "system": false,
+              "locked": false
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -121.05866000000003,
+                38.75215
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "id": "turnaround-lrg-turnaround",
+              "poiId": "turnaround-lrg-turnaround",
+              "title": "LRG Turnaround",
+              "type": "turnaround",
+              "variant": "XL",
+              "distanceMi": 7.933918140604719,
+              "distanceM": 12768.403556073361,
+              "passIndex": 0,
+              "system": false,
+              "locked": false
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -121.06864000000002,
+                38.74743
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "id": "turnaround-lrg-turnaround",
+              "poiId": "turnaround-lrg-turnaround",
+              "title": "LRG Turnaround",
+              "type": "turnaround",
+              "variant": "XL",
+              "distanceMi": 12.16022984947629,
+              "distanceM": 19569.99294687557,
+              "passIndex": 1,
+              "system": false,
+              "locked": false
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -121.06864000000002,
+                38.74743
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
               "id": "water-water-access",
               "poiId": "water-water-access",
               "title": "Water Access",
@@ -52307,138 +52474,6 @@
               "coordinates": [
                 -121.08629,
                 38.738719999999994
-              ]
-            }
-          },
-          {
-            "type": "Feature",
-            "properties": {
-              "id": "hazard-slippery-bridge",
-              "poiId": "hazard-slippery-bridge",
-              "title": "Slippery Bridge",
-              "type": "hazard",
-              "variant": "XL",
-              "distanceMi": 5.957261567148397,
-              "distanceM": 9587.28315952087,
-              "passIndex": 0,
-              "system": false,
-              "locked": false
-            },
-            "geometry": {
-              "type": "Point",
-              "coordinates": [
-                -121.06922999999996,
-                38.72908
-              ]
-            }
-          },
-          {
-            "type": "Feature",
-            "properties": {
-              "id": "hazard-slippery-bridge",
-              "poiId": "hazard-slippery-bridge",
-              "title": "Slippery Bridge",
-              "type": "hazard",
-              "variant": "XL",
-              "distanceMi": 14.13685378744284,
-              "distanceM": 22751.06082169841,
-              "passIndex": 1,
-              "system": false,
-              "locked": false
-            },
-            "geometry": {
-              "type": "Point",
-              "coordinates": [
-                -121.06922999999996,
-                38.72908
-              ]
-            }
-          },
-          {
-            "type": "Feature",
-            "properties": {
-              "id": "turnaround-lrg-turnaround",
-              "poiId": "turnaround-lrg-turnaround",
-              "title": "LRG Turnaround",
-              "type": "turnaround",
-              "variant": "XL",
-              "distanceMi": 7.9423764877519,
-              "distanceM": 12782.015946304593,
-              "passIndex": 0,
-              "system": false,
-              "locked": false
-            },
-            "geometry": {
-              "type": "Point",
-              "coordinates": [
-                -121.06866602418334,
-                38.74755024183364
-              ]
-            }
-          },
-          {
-            "type": "Feature",
-            "properties": {
-              "id": "turnaround-lrg-turnaround",
-              "poiId": "turnaround-lrg-turnaround",
-              "title": "LRG Turnaround",
-              "type": "turnaround",
-              "variant": "XL",
-              "distanceMi": 12.155946450522984,
-              "distanceM": 19563.099484470462,
-              "passIndex": 1,
-              "system": false,
-              "locked": false
-            },
-            "geometry": {
-              "type": "Point",
-              "coordinates": [
-                -121.06866000000002,
-                38.747490000000006
-              ]
-            }
-          },
-          {
-            "type": "Feature",
-            "properties": {
-              "id": "turnaround-xl-turnaround",
-              "poiId": "turnaround-xl-turnaround",
-              "title": "XL Turnaround",
-              "type": "turnaround",
-              "variant": "XL",
-              "distanceMi": 10.04649532346272,
-              "distanceM": 16168.266969842789,
-              "passIndex": 0,
-              "system": false,
-              "locked": false
-            },
-            "geometry": {
-              "type": "Point",
-              "coordinates": [
-                -121.05849291313564,
-                38.7522335434322
-              ]
-            }
-          },
-          {
-            "type": "Feature",
-            "properties": {
-              "id": "turnaround-med-turnaround",
-              "poiId": "turnaround-med-turnaround",
-              "title": "MED Turnaround",
-              "type": "turnaround",
-              "variant": "XL",
-              "distanceMi": 4.511736691214833,
-              "distanceM": 7260.936373586444,
-              "passIndex": 0,
-              "system": false,
-              "locked": false
-            },
-            "geometry": {
-              "type": "Point",
-              "coordinates": [
-                -121.07439063312877,
-                38.74347189938628
               ]
             }
           }
@@ -55975,6 +56010,84 @@
         ],
         "pois": [
           {
+            "id": "turnaround-med-turnaround",
+            "poiId": "turnaround-med-turnaround",
+            "title": "MED Turnaround",
+            "type": "turnaround",
+            "variant": "XXL",
+            "distanceMi": 4.512861005041293,
+            "distanceM": 7262.745781297174,
+            "lat": 38.74347189938628,
+            "lon": -121.07439063312877,
+            "snapIndex": 277,
+            "passIndex": 0
+          },
+          {
+            "id": "hazard-slippery-bridge",
+            "poiId": "hazard-slippery-bridge",
+            "title": "Slippery Bridge",
+            "type": "hazard",
+            "variant": "XXL",
+            "distanceMi": 5.9335715345839946,
+            "distanceM": 9549.157747753545,
+            "lat": 38.728770000000004,
+            "lon": -121.06936,
+            "snapIndex": 374,
+            "passIndex": 0
+          },
+          {
+            "id": "hazard-slippery-bridge",
+            "poiId": "hazard-slippery-bridge",
+            "title": "Slippery Bridge",
+            "type": "hazard",
+            "variant": "XXL",
+            "distanceMi": 20.628336285406835,
+            "distanceM": 33198.08923090178,
+            "lat": 38.728770000000004,
+            "lon": -121.06936,
+            "snapIndex": 1380,
+            "passIndex": 1
+          },
+          {
+            "id": "turnaround-xl-turnaround",
+            "poiId": "turnaround-xl-turnaround",
+            "title": "XL Turnaround",
+            "type": "turnaround",
+            "variant": "XXL",
+            "distanceMi": 10.036299240488091,
+            "distanceM": 16151.857964884068,
+            "lat": 38.75215,
+            "lon": -121.05866000000003,
+            "snapIndex": 668,
+            "passIndex": 0
+          },
+          {
+            "id": "turnaround-lrg-turnaround",
+            "poiId": "turnaround-lrg-turnaround",
+            "title": "LRG Turnaround",
+            "type": "turnaround",
+            "variant": "XXL",
+            "distanceMi": 7.935009818941424,
+            "distanceM": 12770.160442054468,
+            "lat": 38.74743,
+            "lon": -121.06864000000002,
+            "snapIndex": 523,
+            "passIndex": 0
+          },
+          {
+            "id": "turnaround-lrg-turnaround",
+            "poiId": "turnaround-lrg-turnaround",
+            "title": "LRG Turnaround",
+            "type": "turnaround",
+            "variant": "XXL",
+            "distanceMi": 18.62689800104942,
+            "distanceM": 29977.086536600877,
+            "lat": 38.74743,
+            "lon": -121.06864000000002,
+            "snapIndex": 1231,
+            "passIndex": 1
+          },
+          {
             "id": "water-water-access",
             "poiId": "water-water-access",
             "title": "Water Access",
@@ -55999,84 +56112,6 @@
             "lon": -121.08629,
             "snapIndex": 1544,
             "passIndex": 1
-          },
-          {
-            "id": "hazard-slippery-bridge",
-            "poiId": "hazard-slippery-bridge",
-            "title": "Slippery Bridge",
-            "type": "hazard",
-            "variant": "XXL",
-            "distanceMi": 5.958385880974857,
-            "distanceM": 9589.0925672316,
-            "lat": 38.72908,
-            "lon": -121.06922999999996,
-            "snapIndex": 378,
-            "passIndex": 0
-          },
-          {
-            "id": "hazard-slippery-bridge",
-            "poiId": "hazard-slippery-bridge",
-            "title": "Slippery Bridge",
-            "type": "hazard",
-            "variant": "XXL",
-            "distanceMi": 20.603521939015973,
-            "distanceM": 33158.154411423726,
-            "lat": 38.72908,
-            "lon": -121.06922999999996,
-            "snapIndex": 1376,
-            "passIndex": 1
-          },
-          {
-            "id": "turnaround-lrg-turnaround",
-            "poiId": "turnaround-lrg-turnaround",
-            "title": "LRG Turnaround",
-            "type": "turnaround",
-            "variant": "XXL",
-            "distanceMi": 7.943468166088605,
-            "distanceM": 12783.7728322857,
-            "lat": 38.74755024183364,
-            "lon": -121.06866602418334,
-            "snapIndex": 524,
-            "passIndex": 0
-          },
-          {
-            "id": "turnaround-lrg-turnaround",
-            "poiId": "turnaround-lrg-turnaround",
-            "title": "LRG Turnaround",
-            "type": "turnaround",
-            "variant": "XXL",
-            "distanceMi": 18.622614602096114,
-            "distanceM": 29970.19307419577,
-            "lat": 38.747490000000006,
-            "lon": -121.06866000000002,
-            "snapIndex": 1230,
-            "passIndex": 1
-          },
-          {
-            "id": "turnaround-xl-turnaround",
-            "poiId": "turnaround-xl-turnaround",
-            "title": "XL Turnaround",
-            "type": "turnaround",
-            "variant": "XXL",
-            "distanceMi": 10.04697954822019,
-            "distanceM": 16169.046254050874,
-            "lat": 38.75223746835255,
-            "lon": -121.05849657228872,
-            "snapIndex": 668,
-            "passIndex": 0
-          },
-          {
-            "id": "turnaround-med-turnaround",
-            "poiId": "turnaround-med-turnaround",
-            "title": "MED Turnaround",
-            "type": "turnaround",
-            "variant": "XXL",
-            "distanceMi": 4.512861005041293,
-            "distanceM": 7262.745781297174,
-            "lat": 38.74347189938628,
-            "lon": -121.07439063312877,
-            "snapIndex": 277,
-            "passIndex": 0
           }
         ]
       },
@@ -63115,6 +63150,138 @@
           {
             "type": "Feature",
             "properties": {
+              "id": "turnaround-med-turnaround",
+              "poiId": "turnaround-med-turnaround",
+              "title": "MED Turnaround",
+              "type": "turnaround",
+              "variant": "XXL",
+              "distanceMi": 4.512861005041293,
+              "distanceM": 7262.745781297174,
+              "passIndex": 0,
+              "system": false,
+              "locked": false
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -121.07439063312877,
+                38.74347189938628
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "id": "hazard-slippery-bridge",
+              "poiId": "hazard-slippery-bridge",
+              "title": "Slippery Bridge",
+              "type": "hazard",
+              "variant": "XXL",
+              "distanceMi": 5.9335715345839946,
+              "distanceM": 9549.157747753545,
+              "passIndex": 0,
+              "system": false,
+              "locked": false
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -121.06936,
+                38.728770000000004
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "id": "hazard-slippery-bridge",
+              "poiId": "hazard-slippery-bridge",
+              "title": "Slippery Bridge",
+              "type": "hazard",
+              "variant": "XXL",
+              "distanceMi": 20.628336285406835,
+              "distanceM": 33198.08923090178,
+              "passIndex": 1,
+              "system": false,
+              "locked": false
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -121.06936,
+                38.728770000000004
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "id": "turnaround-xl-turnaround",
+              "poiId": "turnaround-xl-turnaround",
+              "title": "XL Turnaround",
+              "type": "turnaround",
+              "variant": "XXL",
+              "distanceMi": 10.036299240488091,
+              "distanceM": 16151.857964884068,
+              "passIndex": 0,
+              "system": false,
+              "locked": false
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -121.05866000000003,
+                38.75215
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "id": "turnaround-lrg-turnaround",
+              "poiId": "turnaround-lrg-turnaround",
+              "title": "LRG Turnaround",
+              "type": "turnaround",
+              "variant": "XXL",
+              "distanceMi": 7.935009818941424,
+              "distanceM": 12770.160442054468,
+              "passIndex": 0,
+              "system": false,
+              "locked": false
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -121.06864000000002,
+                38.74743
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "id": "turnaround-lrg-turnaround",
+              "poiId": "turnaround-lrg-turnaround",
+              "title": "LRG Turnaround",
+              "type": "turnaround",
+              "variant": "XXL",
+              "distanceMi": 18.62689800104942,
+              "distanceM": 29977.086536600877,
+              "passIndex": 1,
+              "system": false,
+              "locked": false
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -121.06864000000002,
+                38.74743
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
               "id": "water-water-access",
               "poiId": "water-water-access",
               "title": "Water Access",
@@ -63153,138 +63320,6 @@
               "coordinates": [
                 -121.08629,
                 38.738719999999994
-              ]
-            }
-          },
-          {
-            "type": "Feature",
-            "properties": {
-              "id": "hazard-slippery-bridge",
-              "poiId": "hazard-slippery-bridge",
-              "title": "Slippery Bridge",
-              "type": "hazard",
-              "variant": "XXL",
-              "distanceMi": 5.958385880974857,
-              "distanceM": 9589.0925672316,
-              "passIndex": 0,
-              "system": false,
-              "locked": false
-            },
-            "geometry": {
-              "type": "Point",
-              "coordinates": [
-                -121.06922999999996,
-                38.72908
-              ]
-            }
-          },
-          {
-            "type": "Feature",
-            "properties": {
-              "id": "hazard-slippery-bridge",
-              "poiId": "hazard-slippery-bridge",
-              "title": "Slippery Bridge",
-              "type": "hazard",
-              "variant": "XXL",
-              "distanceMi": 20.603521939015973,
-              "distanceM": 33158.154411423726,
-              "passIndex": 1,
-              "system": false,
-              "locked": false
-            },
-            "geometry": {
-              "type": "Point",
-              "coordinates": [
-                -121.06922999999996,
-                38.72908
-              ]
-            }
-          },
-          {
-            "type": "Feature",
-            "properties": {
-              "id": "turnaround-lrg-turnaround",
-              "poiId": "turnaround-lrg-turnaround",
-              "title": "LRG Turnaround",
-              "type": "turnaround",
-              "variant": "XXL",
-              "distanceMi": 7.943468166088605,
-              "distanceM": 12783.7728322857,
-              "passIndex": 0,
-              "system": false,
-              "locked": false
-            },
-            "geometry": {
-              "type": "Point",
-              "coordinates": [
-                -121.06866602418334,
-                38.74755024183364
-              ]
-            }
-          },
-          {
-            "type": "Feature",
-            "properties": {
-              "id": "turnaround-lrg-turnaround",
-              "poiId": "turnaround-lrg-turnaround",
-              "title": "LRG Turnaround",
-              "type": "turnaround",
-              "variant": "XXL",
-              "distanceMi": 18.622614602096114,
-              "distanceM": 29970.19307419577,
-              "passIndex": 1,
-              "system": false,
-              "locked": false
-            },
-            "geometry": {
-              "type": "Point",
-              "coordinates": [
-                -121.06866000000002,
-                38.747490000000006
-              ]
-            }
-          },
-          {
-            "type": "Feature",
-            "properties": {
-              "id": "turnaround-xl-turnaround",
-              "poiId": "turnaround-xl-turnaround",
-              "title": "XL Turnaround",
-              "type": "turnaround",
-              "variant": "XXL",
-              "distanceMi": 10.04697954822019,
-              "distanceM": 16169.046254050874,
-              "passIndex": 0,
-              "system": false,
-              "locked": false
-            },
-            "geometry": {
-              "type": "Point",
-              "coordinates": [
-                -121.05849657228872,
-                38.75223746835255
-              ]
-            }
-          },
-          {
-            "type": "Feature",
-            "properties": {
-              "id": "turnaround-med-turnaround",
-              "poiId": "turnaround-med-turnaround",
-              "title": "MED Turnaround",
-              "type": "turnaround",
-              "variant": "XXL",
-              "distanceMi": 4.512861005041293,
-              "distanceM": 7262.745781297174,
-              "passIndex": 0,
-              "system": false,
-              "locked": false
-            },
-            "geometry": {
-              "type": "Point",
-              "coordinates": [
-                -121.07439063312877,
-                38.74347189938628
               ]
             }
           }

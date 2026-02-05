@@ -79,18 +79,18 @@
     ],
     "poiHighlights": [
       {
+        "id": "hazard-slippery-bridge",
+        "title": "Slippery Bridge",
+        "type": "hazard",
+        "category": "hazard",
+        "distanceMi": 5.932447220757535
+      },
+      {
         "id": "water-water-access",
         "title": "Water Access",
         "type": "water",
         "category": "water",
         "distanceMi": 3.2419742039000035
-      },
-      {
-        "id": "hazard-slippery-bridge",
-        "title": "Slippery Bridge",
-        "type": "hazard",
-        "category": "hazard",
-        "distanceMi": 5.957261567148397
       }
     ]
   },
@@ -98,7 +98,7 @@
     "eventId": "SUC-031",
     "eventName": "SUC 031 Tam Grand Slam",
     "eventDescription": "Mount Tamalpais Summit. Dipsea trail. Stinson beach. Big vert day.",
-    "eventDate": "Jan 31 2026",
+    "eventDate": "Jan 10 2026",
     "eventTime": "8:15 AM",
     "startLocationName": "Pantoll Campground",
     "startLocationUrl": "https://maps.app.goo.gl/uhwA16y3RkZsbiZe7",
