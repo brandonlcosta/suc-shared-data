@@ -93,40 +93,5 @@
         "distanceMi": 5.957261567148397
       }
     ]
-  },
-  {
-    "eventId": "SUC-031",
-    "eventName": "SUC 031 Tam Grand Slam",
-    "eventDescription": "Mount Tamalpais Summit. Dipsea trail. Stinson beach. Big vert day.",
-    "eventDate": "February 10, 2026",
-    "eventTime": "8:15 AM",
-    "startLocationName": "Pantoll Campground",
-    "startLocationUrl": "https://maps.app.goo.gl/uhwA16y3RkZsbiZe7",
-    "startLocationCoordinates": {
-      "lat": 0,
-      "lng": 0
-    },
-    "routes": [
-      {
-        "label": "MED",
-        "statsUrl": "/routes/SUC-031-MED.json",
-        "geojsonUrl": "/routes/SUC-031-MED.geojson"
-      },
-      {
-        "label": "LRG",
-        "statsUrl": "/routes/SUC-031-LRG.json",
-        "geojsonUrl": "/routes/SUC-031-LRG.geojson"
-      },
-      {
-        "label": "XL",
-        "statsUrl": "/routes/SUC-031-XL.json",
-        "geojsonUrl": "/routes/SUC-031-XL.geojson"
-      },
-      {
-        "label": "XXL",
-        "statsUrl": "/routes/SUC-031-XXL.json",
-        "geojsonUrl": "/routes/SUC-031-XXL.geojson"
-      }
-    ]
   }
 ]
