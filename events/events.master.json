@@ -3,9 +3,9 @@
   "events": [
     {
       "event_id": "SUC-036",
-      "event_name": "SUC 036 - Big Alta Energy",
+      "event_name": "SUC 036 Big Alta Energy",
       "event_description": "Roses are red, violets are blue. SUC loves big climbs. This vert might kill you.\n\n",
-      "event_date": "February 14th, 2026",
+      "event_date": "Feb 14 2026",
       "event_time": "8:15 AM",
       "start_location_name": "Marinwood Community Park",
       "start_location_url": "https://maps.app.goo.gl/vrbZS6iWjj22qkwY8",
@@ -17,9 +17,9 @@
     },
     {
       "event_id": "SUC-035",
-      "event_name": "SUC 035 - Salmon Simulator",
+      "event_name": "SUC 035 Salmon Simulator",
       "event_description": "Our final course recon run for Salmon Falls 50k. Covering the last portion of the course.",
-      "event_date": "February 7th, 2026",
+      "event_date": "Feb 7th 2026",
       "event_time": "7:15 AM",
       "start_location_name": "Brown's Ravine",
       "start_location_url": "https://maps.app.goo.gl/bm3Hs1gYXefEoKUJ6",
@@ -33,7 +33,7 @@
       "event_id": "SUC-031",
       "event_name": "SUC 031 Tam Grand Slam",
       "event_description": "Mount Tamalpais Summit. Dipsea trail. Stinson beach. Big vert day.",
-      "event_date": "January 10th, 2026 (SUC Archive)",
+      "event_date": "Feb 10 2026",
       "event_time": "8:15 AM",
       "start_location_name": "Pantoll Campground",
       "start_location_url": "https://maps.app.goo.gl/uhwA16y3RkZsbiZe7",
