@@ -1572,19 +1572,6 @@
         ],
         "pois": [
           {
-            "id": "summit-summit",
-            "poiId": "summit-summit",
-            "title": "Summit",
-            "type": "summit",
-            "variant": "MED",
-            "distanceMi": 7.837175324917648,
-            "distanceM": 12612.711086104267,
-            "lat": 38.03726,
-            "lon": -122.62098,
-            "snapIndex": 502,
-            "passIndex": 0
-          },
-          {
             "id": "fork-xl-xxl-loop",
             "poiId": "fork-xl-xxl-loop",
             "title": "XL + XXL Loop",
@@ -1595,45 +1582,6 @@
             "lat": 38.01953,
             "lon": -122.61538000000002,
             "snapIndex": 415,
-            "passIndex": 0
-          },
-          {
-            "id": "summit-loma-alta",
-            "poiId": "summit-loma-alta",
-            "title": "Loma Alta",
-            "type": "summit",
-            "variant": "MED",
-            "distanceMi": 6.789500444698516,
-            "distanceM": 10926.641803672888,
-            "lat": 38.02467,
-            "lon": -122.61247000000002,
-            "snapIndex": 453,
-            "passIndex": 0
-          },
-          {
-            "id": "summit-big-rock-ridge",
-            "poiId": "summit-big-rock-ridge",
-            "title": "Big Rock Ridge",
-            "type": "summit",
-            "variant": "MED",
-            "distanceMi": 12.376795277574619,
-            "distanceM": 19918.521219193048,
-            "lat": 38.059000000000005,
-            "lon": -122.60425000000001,
-            "snapIndex": 833,
-            "passIndex": 0
-          },
-          {
-            "id": "fork-xxl-loop",
-            "poiId": "fork-xxl-loop",
-            "title": "XXL Loop",
-            "type": "fork",
-            "variant": "MED",
-            "distanceMi": 14.555119769408478,
-            "distanceM": 23424.194670178917,
-            "lat": 38.04542,
-            "lon": -122.57313,
-            "snapIndex": 958,
             "passIndex": 0
           },
           {
@@ -4770,28 +4718,6 @@
           {
             "type": "Feature",
             "properties": {
-              "id": "summit-summit",
-              "poiId": "summit-summit",
-              "title": "Summit",
-              "type": "summit",
-              "variant": "MED",
-              "distanceMi": 7.837175324917648,
-              "distanceM": 12612.711086104267,
-              "passIndex": 0,
-              "system": false,
-              "locked": false
-            },
-            "geometry": {
-              "type": "Point",
-              "coordinates": [
-                -122.62098,
-                38.03726
-              ]
-            }
-          },
-          {
-            "type": "Feature",
-            "properties": {
               "id": "fork-xl-xxl-loop",
               "poiId": "fork-xl-xxl-loop",
               "title": "XL + XXL Loop",
@@ -4808,72 +4734,6 @@
               "coordinates": [
                 -122.61538000000002,
                 38.01953
-              ]
-            }
-          },
-          {
-            "type": "Feature",
-            "properties": {
-              "id": "summit-loma-alta",
-              "poiId": "summit-loma-alta",
-              "title": "Loma Alta",
-              "type": "summit",
-              "variant": "MED",
-              "distanceMi": 6.789500444698516,
-              "distanceM": 10926.641803672888,
-              "passIndex": 0,
-              "system": false,
-              "locked": false
-            },
-            "geometry": {
-              "type": "Point",
-              "coordinates": [
-                -122.61247000000002,
-                38.02467
-              ]
-            }
-          },
-          {
-            "type": "Feature",
-            "properties": {
-              "id": "summit-big-rock-ridge",
-              "poiId": "summit-big-rock-ridge",
-              "title": "Big Rock Ridge",
-              "type": "summit",
-              "variant": "MED",
-              "distanceMi": 12.376795277574619,
-              "distanceM": 19918.521219193048,
-              "passIndex": 0,
-              "system": false,
-              "locked": false
-            },
-            "geometry": {
-              "type": "Point",
-              "coordinates": [
-                -122.60425000000001,
-                38.059000000000005
-              ]
-            }
-          },
-          {
-            "type": "Feature",
-            "properties": {
-              "id": "fork-xxl-loop",
-              "poiId": "fork-xxl-loop",
-              "title": "XXL Loop",
-              "type": "fork",
-              "variant": "MED",
-              "distanceMi": 14.555119769408478,
-              "distanceM": 23424.194670178917,
-              "passIndex": 0,
-              "system": false,
-              "locked": false
-            },
-            "geometry": {
-              "type": "Point",
-              "coordinates": [
-                -122.57313,
-                38.04542
               ]
             }
           },
@@ -36371,19 +36231,6 @@
             "passIndex": 1
           },
           {
-            "id": "turnaround-xl-turnaround",
-            "poiId": "turnaround-xl-turnaround",
-            "title": "XL Turnaround",
-            "type": "turnaround",
-            "variant": "LRG",
-            "distanceMi": 10.035800634019527,
-            "distanceM": 16151.055535555523,
-            "lat": 38.75215,
-            "lon": -121.05866000000003,
-            "snapIndex": 671,
-            "passIndex": 0
-          },
-          {
             "id": "turnaround-lrg-turnaround",
             "poiId": "turnaround-lrg-turnaround",
             "title": "LRG Turnaround",
@@ -40718,28 +40565,6 @@
           {
             "type": "Feature",
             "properties": {
-              "id": "turnaround-xl-turnaround",
-              "poiId": "turnaround-xl-turnaround",
-              "title": "XL Turnaround",
-              "type": "turnaround",
-              "variant": "LRG",
-              "distanceMi": 10.035800634019527,
-              "distanceM": 16151.055535555523,
-              "passIndex": 0,
-              "system": false,
-              "locked": false
-            },
-            "geometry": {
-              "type": "Point",
-              "coordinates": [
-                -121.05866000000003,
-                38.75215
-              ]
-            }
-          },
-          {
-            "type": "Feature",
-            "properties": {
               "id": "turnaround-lrg-turnaround",
               "poiId": "turnaround-lrg-turnaround",
               "title": "LRG Turnaround",
@@ -41969,71 +41794,6 @@
             "lon": -121.07440000000001,
             "snapIndex": 276,
             "passIndex": 0
-          },
-          {
-            "id": "hazard-slippery-bridge",
-            "poiId": "hazard-slippery-bridge",
-            "title": "Slippery Bridge",
-            "type": "hazard",
-            "variant": "MED",
-            "distanceMi": 5.932447220757535,
-            "distanceM": 9547.348340042814,
-            "lat": 38.728770000000004,
-            "lon": -121.06936,
-            "snapIndex": 375,
-            "passIndex": 0
-          },
-          {
-            "id": "hazard-slippery-bridge",
-            "poiId": "hazard-slippery-bridge",
-            "title": "Slippery Bridge",
-            "type": "hazard",
-            "variant": "MED",
-            "distanceMi": 9.952252854409883,
-            "distanceM": 16016.59841772742,
-            "lat": 38.728770000000004,
-            "lon": -121.06936,
-            "snapIndex": 677,
-            "passIndex": 1
-          },
-          {
-            "id": "turnaround-xl-turnaround",
-            "poiId": "turnaround-xl-turnaround",
-            "title": "XL Turnaround",
-            "type": "turnaround",
-            "variant": "MED",
-            "distanceMi": 10.035800634019527,
-            "distanceM": 16151.055535555523,
-            "lat": 38.75215,
-            "lon": -121.05866000000003,
-            "snapIndex": 671,
-            "passIndex": 0
-          },
-          {
-            "id": "turnaround-lrg-turnaround",
-            "poiId": "turnaround-lrg-turnaround",
-            "title": "LRG Turnaround",
-            "type": "turnaround",
-            "variant": "MED",
-            "distanceMi": 7.933886821901155,
-            "distanceM": 12768.353153505694,
-            "lat": 38.74743,
-            "lon": -121.06864000000002,
-            "snapIndex": 524,
-            "passIndex": 0
-          },
-          {
-            "id": "turnaround-lrg-turnaround",
-            "poiId": "turnaround-lrg-turnaround",
-            "title": "LRG Turnaround",
-            "type": "turnaround",
-            "variant": "MED",
-            "distanceMi": 7.950814570052454,
-            "distanceM": 12795.595723426497,
-            "lat": 38.74743,
-            "lon": -121.06864000000002,
-            "snapIndex": 528,
-            "passIndex": 1
           },
           {
             "id": "water-water-access",
@@ -44314,116 +44074,6 @@
               "coordinates": [
                 -121.07440000000001,
                 38.74347
-              ]
-            }
-          },
-          {
-            "type": "Feature",
-            "properties": {
-              "id": "hazard-slippery-bridge",
-              "poiId": "hazard-slippery-bridge",
-              "title": "Slippery Bridge",
-              "type": "hazard",
-              "variant": "MED",
-              "distanceMi": 5.932447220757535,
-              "distanceM": 9547.348340042814,
-              "passIndex": 0,
-              "system": false,
-              "locked": false
-            },
-            "geometry": {
-              "type": "Point",
-              "coordinates": [
-                -121.06936,
-                38.728770000000004
-              ]
-            }
-          },
-          {
-            "type": "Feature",
-            "properties": {
-              "id": "hazard-slippery-bridge",
-              "poiId": "hazard-slippery-bridge",
-              "title": "Slippery Bridge",
-              "type": "hazard",
-              "variant": "MED",
-              "distanceMi": 9.952252854409883,
-              "distanceM": 16016.59841772742,
-              "passIndex": 1,
-              "system": false,
-              "locked": false
-            },
-            "geometry": {
-              "type": "Point",
-              "coordinates": [
-                -121.06936,
-                38.728770000000004
-              ]
-            }
-          },
-          {
-            "type": "Feature",
-            "properties": {
-              "id": "turnaround-xl-turnaround",
-              "poiId": "turnaround-xl-turnaround",
-              "title": "XL Turnaround",
-              "type": "turnaround",
-              "variant": "MED",
-              "distanceMi": 10.035800634019527,
-              "distanceM": 16151.055535555523,
-              "passIndex": 0,
-              "system": false,
-              "locked": false
-            },
-            "geometry": {
-              "type": "Point",
-              "coordinates": [
-                -121.05866000000003,
-                38.75215
-              ]
-            }
-          },
-          {
-            "type": "Feature",
-            "properties": {
-              "id": "turnaround-lrg-turnaround",
-              "poiId": "turnaround-lrg-turnaround",
-              "title": "LRG Turnaround",
-              "type": "turnaround",
-              "variant": "MED",
-              "distanceMi": 7.933886821901155,
-              "distanceM": 12768.353153505694,
-              "passIndex": 0,
-              "system": false,
-              "locked": false
-            },
-            "geometry": {
-              "type": "Point",
-              "coordinates": [
-                -121.06864000000002,
-                38.74743
-              ]
-            }
-          },
-          {
-            "type": "Feature",
-            "properties": {
-              "id": "turnaround-lrg-turnaround",
-              "poiId": "turnaround-lrg-turnaround",
-              "title": "LRG Turnaround",
-              "type": "turnaround",
-              "variant": "MED",
-              "distanceMi": 7.950814570052454,
-              "distanceM": 12795.595723426497,
-              "passIndex": 1,
-              "system": false,
-              "locked": false
-            },
-            "geometry": {
-              "type": "Point",
-              "coordinates": [
-                -121.06864000000002,
-                38.74743
               ]
             }
           },

@@ -35,41 +35,6 @@
     ],
     "poiHighlights": [
       {
-        "id": "summit-summit",
-        "title": "Summit",
-        "type": "summit",
-        "category": "summit",
-        "distanceMi": 7.837175324917648
-      },
-      {
-        "id": "fork-xl-xxl-loop",
-        "title": "XL + XXL Loop",
-        "type": "fork",
-        "category": "fork",
-        "distanceMi": 6.218891249279806
-      },
-      {
-        "id": "summit-loma-alta",
-        "title": "Loma Alta",
-        "type": "summit",
-        "category": "summit",
-        "distanceMi": 6.789500444698516
-      },
-      {
-        "id": "summit-big-rock-ridge",
-        "title": "Big Rock Ridge",
-        "type": "summit",
-        "category": "summit",
-        "distanceMi": 12.376795277574619
-      },
-      {
-        "id": "fork-xxl-loop",
-        "title": "XXL Loop",
-        "type": "fork",
-        "category": "fork",
-        "distanceMi": 14.555119769408478
-      },
-      {
         "id": "viewpoint-regroup-viewpoint",
         "title": "Regroup / Viewpoint",
         "type": "viewpoint",
@@ -114,32 +79,11 @@
     ],
     "poiHighlights": [
       {
-        "id": "turnaround-med-turnaround",
-        "title": "MED Turnaround",
-        "type": "turnaround",
-        "category": "turnaround",
-        "distanceMi": 4.5117041449602295
-      },
-      {
         "id": "hazard-slippery-bridge",
         "title": "Slippery Bridge",
         "type": "hazard",
         "category": "hazard",
         "distanceMi": 5.932447220757535
-      },
-      {
-        "id": "turnaround-xl-turnaround",
-        "title": "XL Turnaround",
-        "type": "turnaround",
-        "category": "turnaround",
-        "distanceMi": 10.035800634019527
-      },
-      {
-        "id": "turnaround-lrg-turnaround",
-        "title": "LRG Turnaround",
-        "type": "turnaround",
-        "category": "turnaround",
-        "distanceMi": 7.933886821901155
       },
       {
         "id": "water-water-access",
@@ -182,22 +126,6 @@
         "label": "XXL",
         "statsUrl": "/routes/SUC-031-XXL.json",
         "geojsonUrl": "/routes/SUC-031-XXL.geojson"
-      }
-    ],
-    "poiHighlights": [
-      {
-        "id": "start-finish",
-        "title": "Start / Finish",
-        "type": "start-finish",
-        "category": "start-finish",
-        "distanceMi": 0
-      },
-      {
-        "id": "summit-mt-tam-summit",
-        "title": "Mt Tam Summit",
-        "type": "summit",
-        "category": "summit",
-        "distanceMi": 3.986918576997386
       }
     ]
   }
