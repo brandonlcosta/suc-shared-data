@@ -1,4 +1,254 @@
 {
   "version": 1,
-  "workouts": []
+  "workouts": [
+    {
+      "workoutId": "workout-ac6e6480-965e-4182-b05f-19f6113c4f88",
+      "version": 1,
+      "status": "published",
+      "name": "Threshold 90s + Tempo",
+      "description": "A mixed interval + tempo workout that challenges you to sustain your speed on fatigued and tired legs. Focus on a steady but fast pace for the tempo effort.",
+      "focus": [
+        "Threshold",
+        "Tempo",
+        "Combo"
+      ],
+      "coachNotes": "",
+      "tiers": {
+        "MED": {
+          "name": "Untitled Workout (MED)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "10min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 6,
+              "work": {
+                "duration": "1min 30sec",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z4"
+                },
+                "cues": []
+              },
+              "rest": {
+                "duration": "1min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              }
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "5min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "5min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z3"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "5min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "LRG": {
+          "name": "Untitled Workout (LRG)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "10min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 8,
+              "work": {
+                "duration": "1min 30sec",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z4"
+                },
+                "cues": []
+              },
+              "rest": {
+                "duration": "1min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              }
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "5min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "5min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z3"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "10min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "XL": {
+          "name": "Untitled Workout (XL)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "10min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 10,
+              "work": {
+                "duration": "1min 30sec",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z4"
+                },
+                "cues": []
+              },
+              "rest": {
+                "duration": "1min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              }
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "5min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "5min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z3"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        }
+      },
+      "createdAt": "2026-02-06T02:16:35.827Z",
+      "updatedAt": "2026-02-06T02:21:14.929Z",
+      "publishedAt": "2026-02-06T02:21:14.929Z"
+    }
+  ]
 }

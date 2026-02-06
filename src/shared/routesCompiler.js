@@ -2,6 +2,15 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import { SHARED_DATA_ROOT, getEventId, getRouteGroupIds } from './canonical.js';
 
+const SHOW_ALL_POIS = process.env.SHOW_ALL_POIS === 'true';
+let loggedShowAllPois = false;
+
+function logShowAllPoisOnce() {
+  if (!SHOW_ALL_POIS || loggedShowAllPois) return;
+  console.log('[DEBUG] SHOW_ALL_POIS enabled — bypassing POI filters');
+  loggedShowAllPois = true;
+}
+
 const ROUTE_COLOR_BY_LABEL = {
   MED: '#00FF99',
   LRG: '#13FFE2',
@@ -250,7 +259,13 @@ function compilePoisForVariant(poisDoc, label) {
 
   for (const poi of poisDoc.pois) {
     if (!poi || !poi.variants) continue;
-    const rawVariant = poi.variants[key] ?? poi.variants[key.toLowerCase()];
+    let rawVariant = poi.variants[key] ?? poi.variants[key.toLowerCase()];
+    if (SHOW_ALL_POIS && !rawVariant) {
+      const variantKeys = Object.keys(poi.variants);
+      if (variantKeys.length > 0) {
+        rawVariant = poi.variants[variantKeys[0]];
+      }
+    }
     const normalizedVariants = Array.isArray(rawVariant)
       ? rawVariant.map((entry) => normalizePoiVariant(entry)).filter(Boolean)
       : [normalizePoiVariant(rawVariant)].filter(Boolean);
@@ -305,6 +320,7 @@ function buildPoiFeatures(pois) {
 }
 
 async function compileRouteGroup(routeGroupId, options = {}) {
+  logShowAllPoisOnce();
   const meta = await readRouteMeta(routeGroupId);
   const poisDoc = await readRoutePois(routeGroupId);
   const variants = meta.variants || [];

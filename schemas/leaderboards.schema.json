@@ -1,0 +1,26 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SUC Leaderboards",
+  "description": "Current leaderboard snapshot.",
+  "type": "object",
+  "required": ["version", "entries"],
+  "properties": {
+    "version": { "type": "number" },
+    "updatedAt": { "type": ["string", "null"] },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["athleteId", "metric", "value"],
+        "properties": {
+          "athleteId": { "type": "string", "minLength": 1 },
+          "metric": { "type": "string", "minLength": 1 },
+          "value": { "type": "number" },
+          "rank": { "type": ["number", "integer"] }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

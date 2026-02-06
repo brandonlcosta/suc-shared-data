@@ -1,0 +1,54 @@
+{
+  "seasonId": "86e0b07d-b86a-4b24-99b4-cde47e8d77a7",
+  "status": "published",
+  "blocks": [
+    {
+      "blockId": "30da94a7-cea4-49ec-9a47-9307a352533f",
+      "name": "Salmon Falls Block",
+      "tags": [],
+      "weeks": [
+        {
+          "weekId": "0a91b815-6d18-4dc4-9bec-3fdebdab8842",
+          "focus": "hill-power",
+          "stress": "high",
+          "volume": "med-high",
+          "intensity": "high",
+          "days": {
+            "mon": {},
+            "tue": {},
+            "wed": {},
+            "thu": {
+              "workoutId": "workout-ac6e6480-965e-4182-b05f-19f6113c4f88"
+            },
+            "fri": {},
+            "sat": {},
+            "sun": {}
+          }
+        },
+        {
+          "weekId": "f9075f0f-6f51-4755-9fbe-547a9a6d744c",
+          "focus": "ultra",
+          "stress": "med-high",
+          "volume": "very-high",
+          "intensity": "med"
+        },
+        {
+          "weekId": "74a5611a-95ac-43c4-a2ba-b86a0097f7f7",
+          "focus": "deload",
+          "stress": "low",
+          "volume": "low",
+          "intensity": "low"
+        },
+        {
+          "weekId": "5ef4c872-d967-4527-9c0f-0c05575ff252",
+          "focus": "taper",
+          "stress": "low",
+          "volume": "low-med",
+          "intensity": "low"
+        }
+      ]
+    }
+  ],
+  "seasonMarkers": [],
+  "startDate": "2026-02-02"
+}

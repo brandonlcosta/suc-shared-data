@@ -1,0 +1,121 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SUC Season Schema",
+  "description": "Canonical season definition for training calendar output.",
+  "type": "object",
+  "required": ["seasonId", "status", "blocks"],
+  "properties": {
+    "seasonId": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Stable season identifier."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "published"],
+      "description": "Season publishing status."
+    },
+    "startDate": {
+      "type": ["string", "null"],
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}",
+      "description": "ISO start date (YYYY-MM-DD or date-time). Nullable until published."
+    },
+    "blocks": {
+      "type": "array",
+      "description": "Ordered training blocks.",
+      "items": {
+        "type": "object",
+        "required": ["blockId", "name", "weeks"],
+        "properties": {
+          "blockId": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Stable block identifier."
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Block display name."
+          },
+          "tags": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Optional block tags."
+          },
+          "weeks": {
+            "type": "array",
+            "description": "Ordered weeks in the block.",
+            "items": {
+              "type": "object",
+              "required": ["weekId", "focus", "stress", "volume", "intensity"],
+              "properties": {
+                "weekId": {
+                  "type": "string",
+                  "format": "uuid",
+                  "description": "Stable week identifier."
+                },
+                "focus": {
+                  "type": ["string", "null"],
+                  "description": "Primary training focus."
+                },
+                "stress": {
+                  "type": "string",
+                  "description": "Training stress label."
+                },
+                "volume": {
+                  "type": "string",
+                  "description": "Training volume label."
+                },
+                "intensity": {
+                  "type": "string",
+                  "description": "Training intensity label."
+                },
+                "days": {
+                  "type": "object",
+                  "description": "Optional day-level workout assignments.",
+                  "required": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
+                  "properties": {
+                    "mon": { "$ref": "#/definitions/dayAssignment" },
+                    "tue": { "$ref": "#/definitions/dayAssignment" },
+                    "wed": { "$ref": "#/definitions/dayAssignment" },
+                    "thu": { "$ref": "#/definitions/dayAssignment" },
+                    "fri": { "$ref": "#/definitions/dayAssignment" },
+                    "sat": { "$ref": "#/definitions/dayAssignment" },
+                    "sun": { "$ref": "#/definitions/dayAssignment" }
+                  },
+                  "additionalProperties": false
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "seasonMarkers": {
+      "type": "array",
+      "description": "Optional season markers or milestones.",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "definitions": {
+    "dayAssignment": {
+      "type": "object",
+      "properties": {
+        "workoutId": {
+          "type": "string",
+          "description": "Referenced workoutId from the workout library."
+        },
+        "notes": {
+          "type": "string",
+          "description": "Optional coach notes for the day."
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

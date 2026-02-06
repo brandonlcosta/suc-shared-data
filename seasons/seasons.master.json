@@ -1,0 +1,158 @@
+{
+  "version": 1,
+  "seasons": [
+    {
+      "seasonId": "9ed0b73a-b121-40bc-ae6b-1338cd417cc5",
+      "status": "draft",
+      "startDate": null,
+      "blocks": [
+        {
+          "blockId": "70d8440e-0ce7-4cde-81c8-b07994031ca7",
+          "name": "Salmon Falls",
+          "tags": [],
+          "weeks": [
+            {
+              "weekId": "a72b42a8-3fe1-4fdf-a3b3-b3a427930a2f",
+              "focus": "base",
+              "stress": "med",
+              "volume": "med",
+              "intensity": "low"
+            },
+            {
+              "weekId": "25d6eb80-dfb7-48ac-ae46-e060ccdcec3e",
+              "focus": "base",
+              "stress": "med",
+              "volume": "med",
+              "intensity": "low"
+            },
+            {
+              "weekId": "33b02e94-69f4-47a1-a7ca-3e018e39f4bd",
+              "focus": "speed",
+              "stress": "med-high",
+              "volume": "med",
+              "intensity": "high"
+            },
+            {
+              "weekId": "56b6ffa4-9172-4da0-95a0-afd3f79f06b0",
+              "focus": "taper",
+              "stress": "low",
+              "volume": "low-med",
+              "intensity": "low"
+            }
+          ]
+        },
+        {
+          "blockId": "9e4ac167-408e-4dc3-8fce-9b750444621a",
+          "name": "Canyons",
+          "tags": [],
+          "weeks": [
+            {
+              "weekId": "d8f34690-206e-4f7a-9df3-e543bb727d46",
+              "focus": "base",
+              "stress": "med",
+              "volume": "med",
+              "intensity": "low"
+            },
+            {
+              "weekId": "a85d78f8-5b21-44dc-90c1-1c2c9bbbb94b",
+              "focus": "base",
+              "stress": "med",
+              "volume": "med",
+              "intensity": "low"
+            },
+            {
+              "weekId": "98dfbccf-bb23-44f3-b1f0-8328debdd31c",
+              "focus": "hill-power",
+              "stress": "high",
+              "volume": "med-high",
+              "intensity": "high"
+            },
+            {
+              "weekId": "7dd35ab8-f587-4c49-9c68-358e52bd2d9b",
+              "focus": "hill-power",
+              "stress": "high",
+              "volume": "med-high",
+              "intensity": "high"
+            },
+            {
+              "weekId": "209ee1a4-2d2b-45b8-a7b3-f4445e53f8a8",
+              "focus": "taper",
+              "stress": "low",
+              "volume": "low-med",
+              "intensity": "low"
+            }
+          ]
+        },
+        {
+          "blockId": "61f330a9-71b4-42ff-b5b4-58bdf81de714",
+          "name": "Blank Block",
+          "tags": [],
+          "weeks": [
+            {
+              "weekId": "3274b7d2-955a-498c-8da2-1af001138085",
+              "focus": null,
+              "stress": "low",
+              "volume": "low",
+              "intensity": "low"
+            }
+          ]
+        }
+      ],
+      "seasonMarkers": []
+    },
+    {
+      "seasonId": "86e0b07d-b86a-4b24-99b4-cde47e8d77a7",
+      "status": "published",
+      "blocks": [
+        {
+          "blockId": "30da94a7-cea4-49ec-9a47-9307a352533f",
+          "name": "Salmon Falls Block",
+          "tags": [],
+          "weeks": [
+            {
+              "weekId": "0a91b815-6d18-4dc4-9bec-3fdebdab8842",
+              "focus": "hill-power",
+              "stress": "high",
+              "volume": "med-high",
+              "intensity": "high",
+              "days": {
+                "mon": {},
+                "tue": {},
+                "wed": {},
+                "thu": {
+                  "workoutId": "workout-ac6e6480-965e-4182-b05f-19f6113c4f88"
+                },
+                "fri": {},
+                "sat": {},
+                "sun": {}
+              }
+            },
+            {
+              "weekId": "f9075f0f-6f51-4755-9fbe-547a9a6d744c",
+              "focus": "ultra",
+              "stress": "med-high",
+              "volume": "very-high",
+              "intensity": "med"
+            },
+            {
+              "weekId": "74a5611a-95ac-43c4-a2ba-b86a0097f7f7",
+              "focus": "deload",
+              "stress": "low",
+              "volume": "low",
+              "intensity": "low"
+            },
+            {
+              "weekId": "5ef4c872-d967-4527-9c0f-0c05575ff252",
+              "focus": "taper",
+              "stress": "low",
+              "volume": "low-med",
+              "intensity": "low"
+            }
+          ]
+        }
+      ],
+      "seasonMarkers": [],
+      "startDate": "2026-02-02"
+    }
+  ]
+}

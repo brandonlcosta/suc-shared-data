@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "build": "node scripts/compile.js",
-    "ensure:start-finish": "node scripts/ensureStartFinishPoi.js"
+    "ensure:start-finish": "node scripts/ensureStartFinishPoi.js",
+    "export:media": "node scripts/exportMedia.js"
   }
 }

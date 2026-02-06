@@ -1,0 +1,22 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SUC Gear Review",
+  "description": "Gear review entries.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "type", "category", "summary", "body"],
+    "properties": {
+      "id": { "type": "string", "minLength": 1 },
+      "type": { "type": "string", "minLength": 1 },
+      "category": { "type": "string", "minLength": 1 },
+      "tags": { "type": "array", "items": { "type": "string" } },
+      "tier": { "type": "string", "minLength": 1 },
+      "summary": { "type": "string" },
+      "pros": { "type": "array", "items": { "type": "string" } },
+      "cons": { "type": "array", "items": { "type": "string" } },
+      "body": { "type": "string" }
+    },
+    "additionalProperties": true
+  }
+}

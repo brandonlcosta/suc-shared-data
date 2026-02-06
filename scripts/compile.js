@@ -2,17 +2,36 @@
 
 const fs = require('fs/promises');
 const path = require('path');
+const { execSync } = require('child_process');
 
 const ROOT = path.resolve(__dirname, '..');
 const COMPILED_DIR = path.join(ROOT, 'compiled');
+const SHOW_ALL_POIS = process.env.SHOW_ALL_POIS === 'true';
+let loggedShowAllPois = false;
 
 const log = (message) => {
   console.log(`[SUC-SHARED-DATA] ${message}`);
 };
 
+function logShowAllPoisOnce() {
+  if (!SHOW_ALL_POIS || loggedShowAllPois) return;
+  console.log('[DEBUG] SHOW_ALL_POIS enabled — bypassing POI filters');
+  loggedShowAllPois = true;
+}
+
 async function readJson(filePath) {
   const raw = await fs.readFile(filePath, 'utf8');
   return JSON.parse(raw);
+}
+
+async function readJsonIfExists(filePath, fallback) {
+  try {
+    return await readJson(filePath);
+  } catch (error) {
+    const code = error && typeof error === 'object' ? error.code : null;
+    if (code === 'ENOENT') return fallback;
+    throw error;
+  }
 }
 
 async function loadEventsMaster() {
@@ -31,6 +50,60 @@ async function loadEventsSelection() {
     throw new Error(`Invalid events.selection.json: ${filePath}`);
   }
   return parsed.selectedEventIds;
+}
+
+async function loadWorkoutsMaster() {
+  const filePath = path.join(ROOT, 'workouts', 'workouts.master.json');
+  const parsed = await readJson(filePath);
+  if (!parsed || !Array.isArray(parsed.workouts)) {
+    throw new Error(`Invalid workouts.master.json: ${filePath}`);
+  }
+  return parsed.workouts;
+}
+
+async function loadTrainingContentMaster() {
+  const filePath = path.join(ROOT, 'training-content', 'training-content.master.json');
+  const parsed = await readJsonIfExists(filePath, { items: [] });
+  if (!parsed || !Array.isArray(parsed.items)) {
+    throw new Error(`Invalid training-content.master.json: ${filePath}`);
+  }
+  return parsed.items;
+}
+
+async function loadGearReviewsMaster() {
+  const filePath = path.join(ROOT, 'gear-reviews', 'gear-reviews.master.json');
+  const parsed = await readJsonIfExists(filePath, { items: [] });
+  if (!parsed || !Array.isArray(parsed.items)) {
+    throw new Error(`Invalid gear-reviews.master.json: ${filePath}`);
+  }
+  return parsed.items;
+}
+
+async function loadCrewStoriesMaster() {
+  const filePath = path.join(ROOT, 'crew-stories', 'crew-stories.master.json');
+  const parsed = await readJsonIfExists(filePath, { items: [] });
+  if (!parsed || !Array.isArray(parsed.items)) {
+    throw new Error(`Invalid crew-stories.master.json: ${filePath}`);
+  }
+  return parsed.items;
+}
+
+async function loadLeaderboardsCurrent() {
+  const filePath = path.join(ROOT, 'leaderboards', 'leaderboards.current.json');
+  const parsed = await readJsonIfExists(filePath, { entries: [], updatedAt: null });
+  if (!parsed || !Array.isArray(parsed.entries)) {
+    throw new Error(`Invalid leaderboards.current.json: ${filePath}`);
+  }
+  return parsed;
+}
+
+async function loadRecapsMaster() {
+  const filePath = path.join(ROOT, 'recaps', 'recaps.master.json');
+  const parsed = await readJsonIfExists(filePath, { weeks: [] });
+  if (!parsed || !Array.isArray(parsed.weeks)) {
+    throw new Error(`Invalid recaps.master.json: ${filePath}`);
+  }
+  return parsed.weeks;
 }
 
 function getEventId(raw) {
@@ -117,6 +190,23 @@ function toNumber(value) {
 
 function normalizeVariantKey(label) {
   return String(label).toUpperCase();
+}
+
+function slugify(value) {
+  return String(value || '')
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+function normalizeStringArray(value) {
+  if (Array.isArray(value)) {
+    return value.map((entry) => String(entry || '').trim()).filter(Boolean);
+  }
+  if (value == null) return [];
+  const str = String(value).trim();
+  return str ? [str] : [];
 }
 
 function haversineMeters(a, b) {
@@ -329,7 +419,13 @@ function compilePoisForVariant(poisDoc, label) {
 
   for (const poi of poisDoc.pois) {
     if (!poi || !poi.variants) continue;
-    const rawVariant = poi.variants[key] ?? poi.variants[key.toLowerCase()];
+    let rawVariant = poi.variants[key] ?? poi.variants[key.toLowerCase()];
+    if (SHOW_ALL_POIS && !rawVariant) {
+      const variantKeys = Object.keys(poi.variants);
+      if (variantKeys.length > 0) {
+        rawVariant = poi.variants[variantKeys[0]];
+      }
+    }
     const normalizedVariants = Array.isArray(rawVariant)
       ? rawVariant.map((entry) => normalizePoiVariant(entry)).filter(Boolean)
       : [normalizePoiVariant(rawVariant)].filter(Boolean);
@@ -408,6 +504,50 @@ async function compileEventPoiHighlights(event, routeGroupCache, config) {
   const eventId = getEventId(event);
   const routeGroupIds = getRouteGroupIds(event);
   if (!eventId || !routeGroupIds.length) return [];
+
+  if (SHOW_ALL_POIS) {
+    logShowAllPoisOnce();
+    const highlightMap = new Map();
+
+    for (const routeGroupId of routeGroupIds) {
+      let cached = routeGroupCache.get(routeGroupId);
+      if (!cached) {
+        cached = {
+          meta: readRouteMeta(routeGroupId),
+          pois: readRoutePois(routeGroupId)
+        };
+        routeGroupCache.set(routeGroupId, cached);
+      }
+
+      // eslint-disable-next-line no-await-in-loop
+      const resolvedMeta = await cached.meta;
+      // eslint-disable-next-line no-await-in-loop
+      const resolvedPois = await cached.pois;
+
+      const variants = (resolvedMeta && resolvedMeta.variants) || [];
+      if (!resolvedPois || !Array.isArray(resolvedPois.pois)) continue;
+
+      for (const poi of resolvedPois.pois) {
+        const poiId = String(poi?.id ?? '');
+        if (!poiId || highlightMap.has(poiId)) continue;
+
+        const category = normalizePoiCategory(poi?.category ?? poi?.type ?? '');
+        const distanceMi = selectPoiDistance(poi, variants);
+
+        highlightMap.set(poiId, {
+          id: poiId,
+          title: String(poi?.title ?? ''),
+          type: String(poi?.type ?? ''),
+          category: category || undefined,
+          description: typeof poi?.description === 'string' ? poi.description : undefined,
+          notes: typeof poi?.notes === 'string' ? poi.notes : undefined,
+          distanceMi: distanceMi ?? undefined
+        });
+      }
+    }
+
+    return Array.from(highlightMap.values());
+  }
 
   const allowedCategories = (config.poiCategories || []).map(normalizePoiCategory);
   const highlightMap = new Map();
@@ -555,10 +695,126 @@ async function compileRoutesForEvents(selectedEvents) {
   return { routes, compiledRoutes, poiHighlightsByEvent };
 }
 
+function normalizeTrainingItem(raw) {
+  if (!raw || typeof raw !== 'object') return null;
+  const id = String(raw.id || '').trim();
+  if (!id) return null;
+  const topics = normalizeStringArray(raw.topics);
+  return {
+    ...raw,
+    id,
+    type: raw.type || 'training',
+    series: raw.series || null,
+    part: Number.isFinite(raw.part) ? raw.part : raw.part ? Number(raw.part) : undefined,
+    topics,
+    tier: raw.tier || 'team',
+    title: raw.title || '',
+    summary: raw.summary || '',
+    body: raw.body || ''
+  };
+}
+
+function compileTrainingContent(items) {
+  const normalized = items.map(normalizeTrainingItem).filter(Boolean);
+  const byTopic = new Map();
+  const bySeries = new Map();
+
+  for (const item of normalized) {
+    const seriesKey = slugify(item.series);
+    if (seriesKey) {
+      if (!bySeries.has(seriesKey)) bySeries.set(seriesKey, []);
+      bySeries.get(seriesKey).push(item);
+    }
+
+    for (const topic of item.topics || []) {
+      const topicKey = slugify(topic);
+      if (!topicKey) continue;
+      if (!byTopic.has(topicKey)) byTopic.set(topicKey, []);
+      byTopic.get(topicKey).push(item);
+    }
+  }
+
+  for (const [, entries] of bySeries) {
+    entries.sort((a, b) => (a.part || 0) - (b.part || 0));
+  }
+
+  return { index: normalized, byTopic, bySeries };
+}
+
+function normalizeGearReview(raw) {
+  if (!raw || typeof raw !== 'object') return null;
+  const id = String(raw.id || '').trim();
+  if (!id) return null;
+  return {
+    ...raw,
+    id,
+    type: raw.type || 'gear-review',
+    category: raw.category || '',
+    tags: normalizeStringArray(raw.tags),
+    tier: raw.tier || 'public',
+    summary: raw.summary || '',
+    pros: Array.isArray(raw.pros) ? raw.pros : [],
+    cons: Array.isArray(raw.cons) ? raw.cons : [],
+    body: raw.body || ''
+  };
+}
+
+function compileGearReviews(items) {
+  const normalized = items.map(normalizeGearReview).filter(Boolean);
+  const byCategory = new Map();
+  for (const item of normalized) {
+    const categoryKey = slugify(item.category);
+    if (!categoryKey) continue;
+    if (!byCategory.has(categoryKey)) byCategory.set(categoryKey, []);
+    byCategory.get(categoryKey).push(item);
+  }
+  return { index: normalized, byCategory };
+}
+
+function normalizeCrewStory(raw) {
+  if (!raw || typeof raw !== 'object') return null;
+  const id = String(raw.id || '').trim();
+  if (!id) return null;
+  return {
+    ...raw,
+    id,
+    type: raw.type || 'crew-story',
+    person: raw.person || '',
+    tags: normalizeStringArray(raw.tags),
+    tier: raw.tier || 'public',
+    summary: raw.summary || '',
+    body: raw.body || ''
+  };
+}
+
+function compileCrewStories(items) {
+  const normalized = items.map(normalizeCrewStory).filter(Boolean);
+  const byTag = new Map();
+  for (const item of normalized) {
+    for (const tag of item.tags || []) {
+      const tagKey = slugify(tag);
+      if (!tagKey) continue;
+      if (!byTag.has(tagKey)) byTag.set(tagKey, []);
+      byTag.get(tagKey).push(item);
+    }
+  }
+  return { index: normalized, byTag };
+}
+
+function getGitSha() {
+  try {
+    return execSync('git rev-parse --short HEAD', { cwd: ROOT }).toString().trim();
+  } catch (error) {
+    return 'unknown';
+  }
+}
+
 async function main() {
+  logShowAllPoisOnce();
   log('Compiling routes...');
   const eventsMaster = await loadEventsMaster();
   const selectedIds = await loadEventsSelection();
+  const workoutsMaster = await loadWorkoutsMaster();
 
   const selectedEvents = eventsMaster.filter((event) => {
     const eventId = getEventId(event);
@@ -596,6 +852,105 @@ async function main() {
 
   await fs.writeFile(path.join(COMPILED_DIR, 'events.json'), eventsJson, 'utf8');
   log('Wrote compiled/events.json');
+
+  log('Compiling training content...');
+  const trainingItems = await loadTrainingContentMaster();
+  const trainingCompiled = compileTrainingContent(trainingItems);
+  await fs.mkdir(path.join(COMPILED_DIR, 'training', 'by-topic'), { recursive: true });
+  await fs.mkdir(path.join(COMPILED_DIR, 'training', 'series'), { recursive: true });
+  await fs.writeFile(
+    path.join(COMPILED_DIR, 'training', 'index.json'),
+    JSON.stringify(trainingCompiled.index, null, 2),
+    'utf8'
+  );
+  for (const [topic, items] of trainingCompiled.byTopic) {
+    await fs.writeFile(
+      path.join(COMPILED_DIR, 'training', 'by-topic', `${topic}.json`),
+      JSON.stringify(items, null, 2),
+      'utf8'
+    );
+  }
+  for (const [series, items] of trainingCompiled.bySeries) {
+    await fs.writeFile(
+      path.join(COMPILED_DIR, 'training', 'series', `${series}.json`),
+      JSON.stringify(items, null, 2),
+      'utf8'
+    );
+  }
+  log('Wrote compiled/training/*');
+
+  log('Compiling gear reviews...');
+  const gearItems = await loadGearReviewsMaster();
+  const gearCompiled = compileGearReviews(gearItems);
+  await fs.mkdir(path.join(COMPILED_DIR, 'gear-reviews', 'by-category'), { recursive: true });
+  await fs.writeFile(
+    path.join(COMPILED_DIR, 'gear-reviews', 'index.json'),
+    JSON.stringify(gearCompiled.index, null, 2),
+    'utf8'
+  );
+  for (const [category, items] of gearCompiled.byCategory) {
+    await fs.writeFile(
+      path.join(COMPILED_DIR, 'gear-reviews', 'by-category', `${category}.json`),
+      JSON.stringify(items, null, 2),
+      'utf8'
+    );
+  }
+  log('Wrote compiled/gear-reviews/*');
+
+  log('Compiling crew stories...');
+  const crewItems = await loadCrewStoriesMaster();
+  const crewCompiled = compileCrewStories(crewItems);
+  await fs.mkdir(path.join(COMPILED_DIR, 'crew-stories', 'by-tag'), { recursive: true });
+  await fs.writeFile(
+    path.join(COMPILED_DIR, 'crew-stories', 'index.json'),
+    JSON.stringify(crewCompiled.index, null, 2),
+    'utf8'
+  );
+  for (const [tag, items] of crewCompiled.byTag) {
+    await fs.writeFile(
+      path.join(COMPILED_DIR, 'crew-stories', 'by-tag', `${tag}.json`),
+      JSON.stringify(items, null, 2),
+      'utf8'
+    );
+  }
+  log('Wrote compiled/crew-stories/*');
+
+  log('Compiling leaderboards...');
+  const leaderboards = await loadLeaderboardsCurrent();
+  await fs.mkdir(path.join(COMPILED_DIR, 'leaderboards'), { recursive: true });
+  await fs.writeFile(
+    path.join(COMPILED_DIR, 'leaderboards', 'current.json'),
+    JSON.stringify(leaderboards, null, 2),
+    'utf8'
+  );
+  log('Wrote compiled/leaderboards/current.json');
+
+  log('Compiling recaps...');
+  const recaps = await loadRecapsMaster();
+  await fs.mkdir(path.join(COMPILED_DIR, 'recaps', 'weekly'), { recursive: true });
+  for (const recap of recaps) {
+    if (!recap || !recap.date) continue;
+    const dateKey = String(recap.date).trim();
+    if (!dateKey) continue;
+    await fs.writeFile(
+      path.join(COMPILED_DIR, 'recaps', 'weekly', `${dateKey}.json`),
+      JSON.stringify(recap, null, 2),
+      'utf8'
+    );
+  }
+  log('Wrote compiled/recaps/weekly/*');
+
+  const meta = {
+    lastBuildAt: new Date().toISOString(),
+    commit: getGitSha(),
+    counts: {
+      routes: Object.keys(compiledRoutes.routes || {}).length,
+      events: normalizedEvents.length,
+      workouts: workoutsMaster.length
+    }
+  };
+  await fs.writeFile(path.join(COMPILED_DIR, '_meta.json'), JSON.stringify(meta, null, 2), 'utf8');
+  log('Wrote compiled/_meta.json');
 
   log('Done.');
 }
