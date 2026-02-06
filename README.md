@@ -22,6 +22,9 @@ Canonical training system (v2)
 - Training signals contract:
   - Week-level signals are required in week.schema.json: focus (string|null), stress (low/med/med-high/high), volume (low/low-med/med/med-high/high), intensity (low/med/high).
   - Block-level signals are optional in block.schema.json with the same enums and do not override week-level values.
+- Week-to-event linkage:
+  - Weeks may include optional `eventIds` to reference canonical SUC events by ID.
+  - Viewer calendars compile event metadata (name/date/location + derived link) from these references; canonical events remain in events/.
 
 Compile contract
 - npm run build executes scripts/compile.js and overwrites compiled/ deterministically.
