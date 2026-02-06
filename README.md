@@ -24,6 +24,7 @@ Canonical training system (v2)
   - Block-level signals are optional in block.schema.json with the same enums and do not override week-level values.
 - Week-to-event linkage:
   - Weeks may include optional `eventIds` to reference canonical SUC events by ID.
+  - Optional `eventRoles` can tag linked events as goal/tuneup/simulation/social for training semantics.
   - Viewer calendars compile event metadata (name/date/location + derived link) from these references; canonical events remain in events/.
 
 Compile contract

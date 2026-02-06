@@ -10,5 +10,11 @@
   "intensity": "low",
   "workouts": [
     "workout-ac6e6480-965e-4182-b05f-19f6113c4f88"
-  ]
+  ],
+  "eventIds": [
+    "SUC-035"
+  ],
+  "eventRoles": {
+    "SUC-035": "goal"
+  }
 }

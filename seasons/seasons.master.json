@@ -79,7 +79,13 @@
               "focus": "taper",
               "stress": "low",
               "volume": "low-med",
-              "intensity": "low"
+              "intensity": "low",
+              "eventIds": [
+                "SUC-036"
+              ],
+              "eventRoles": {
+                "SUC-036": "goal"
+              }
             }
           ]
         },
@@ -179,6 +185,12 @@
                 "fri": {},
                 "sat": {},
                 "sun": {}
+              },
+              "eventIds": [
+                "SUC-035"
+              ],
+              "eventRoles": {
+                "SUC-035": "goal"
               }
             }
           ]
