@@ -1,0 +1,16 @@
+{
+  "id": "workout-hill-intervals",
+  "title": "Hill Intervals",
+  "description": "Short hill repeats with full recovery.",
+  "tags": ["hills", "speed"],
+  "status": "draft",
+  "createdAt": "2026-02-06T00:00:00Z",
+  "updatedAt": "2026-02-06T00:00:00Z",
+  "type": "run",
+  "duration": 50,
+  "steps": [
+    { "label": "Warmup", "details": "15 min easy" },
+    { "label": "Intervals", "details": "6 x 45s uphill hard, jog down" },
+    { "label": "Cooldown", "details": "10 min easy" }
+  ]
+}

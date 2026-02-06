@@ -1,59 +1,38 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "SUC Week Schema",
-  "description": "Canonical week structure with daily workout references.",
-  "type": "array",
-  "items": {
-    "type": "object",
-    "required": ["weekId", "seasonId", "blockId", "startDate", "workouts"],
-    "properties": {
-      "weekId": {
-        "type": "string",
-        "pattern": "^[a-z0-9-]+$",
-        "description": "Stable week identifier."
-      },
-      "seasonId": {
-        "type": "string",
-        "pattern": "^[a-z0-9-]+$",
-        "description": "Parent season identifier."
-      },
-      "blockId": {
-        "type": "string",
-        "pattern": "^[a-z0-9-]+$",
-        "description": "Parent block identifier."
-      },
-      "startDate": {
-        "type": "string",
-        "format": "date",
-        "description": "Week start date (YYYY-MM-DD), Monday."
-      },
-      "workouts": {
-        "type": "object",
-        "required": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
-        "properties": {
-          "mon": { "$ref": "#/definitions/workoutRefOrNull" },
-          "tue": { "$ref": "#/definitions/workoutRefOrNull" },
-          "wed": { "$ref": "#/definitions/workoutRefOrNull" },
-          "thu": { "$ref": "#/definitions/workoutRefOrNull" },
-          "fri": { "$ref": "#/definitions/workoutRefOrNull" },
-          "sat": { "$ref": "#/definitions/workoutRefOrNull" },
-          "sun": { "$ref": "#/definitions/workoutRefOrNull" }
-        },
-        "additionalProperties": false,
-        "description": "Daily workout references in workoutId@vN format or null for rest."
-      }
-    },
-    "additionalProperties": false
-  },
-  "definitions": {
-    "workoutRefOrNull": {
-      "oneOf": [
-        {
-          "type": "string",
-          "pattern": "^[a-z0-9-]+@v[1-9][0-9]*$"
-        },
-        { "type": "null" }
-      ]
+  "title": "SUC Week",
+  "description": "Canonical training week object.",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "status",
+    "createdAt",
+    "updatedAt",
+    "focus",
+    "stress",
+    "volume",
+    "intensity",
+    "workouts"
+  ],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "title": { "type": "string", "minLength": 1 },
+    "description": { "type": "string" },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "status": { "type": "string", "enum": ["draft", "published"] },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "updatedAt": { "type": "string", "format": "date-time" },
+    "focus": { "type": ["string", "null"] },
+    "stress": { "type": "string", "enum": ["low", "med", "med-high", "high"] },
+    "volume": { "type": "string", "enum": ["low", "low-med", "med", "med-high", "high"] },
+    "intensity": { "type": "string", "enum": ["low", "med", "high"] },
+    "workouts": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Ordered list of workout IDs."
     }
-  }
+  },
+  "additionalProperties": false
 }

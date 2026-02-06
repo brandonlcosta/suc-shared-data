@@ -1,0 +1,16 @@
+{
+  "id": "workout-easy-run",
+  "title": "Easy Run",
+  "description": "Conversational aerobic run.",
+  "tags": ["base"],
+  "status": "draft",
+  "createdAt": "2026-02-06T00:00:00Z",
+  "updatedAt": "2026-02-06T00:00:00Z",
+  "type": "run",
+  "duration": 45,
+  "steps": [
+    { "label": "Warmup", "details": "10 min easy" },
+    { "label": "Main", "details": "25 min easy" },
+    { "label": "Cooldown", "details": "10 min easy" }
+  ]
+}

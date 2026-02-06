@@ -1,0 +1,10 @@
+{
+  "id": "block-salmon-falls",
+  "title": "Salmon Falls Block",
+  "description": "Aerobic base with light hills.",
+  "tags": ["base"],
+  "status": "draft",
+  "createdAt": "2026-02-06T00:00:00Z",
+  "updatedAt": "2026-02-06T00:00:00Z",
+  "weeks": ["week-salmon-falls-01"]
+}

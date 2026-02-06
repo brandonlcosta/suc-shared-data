@@ -1,0 +1,14 @@
+{
+  "id": "week-salmon-falls-01",
+  "title": "Salmon Falls Week 1",
+  "description": "Settle into volume and rhythm.",
+  "tags": ["base"],
+  "status": "draft",
+  "createdAt": "2026-02-06T00:00:00Z",
+  "updatedAt": "2026-02-06T00:00:00Z",
+  "focus": "Aerobic base",
+  "stress": "low",
+  "volume": "med",
+  "intensity": "low",
+  "workouts": ["workout-easy-run", "workout-hill-intervals"]
+}
