@@ -1,0 +1,14 @@
+{
+  "id": "5ef4c872-d967-4527-9c0f-0c05575ff252",
+  "title": "5ef4c872-d967-4527-9c0f-0c05575ff252",
+  "status": "published",
+  "createdAt": "2026-02-06T21:01:44.629Z",
+  "updatedAt": "2026-02-06T21:01:44.629Z",
+  "focus": "taper",
+  "stress": "low",
+  "volume": "low-med",
+  "intensity": "low",
+  "workouts": [
+    "workout-ac6e6480-965e-4182-b05f-19f6113c4f88"
+  ]
+}
