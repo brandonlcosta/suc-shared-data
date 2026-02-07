@@ -9,25 +9,49 @@
       "weeks": [
         {
           "weekId": "0a91b815-6d18-4dc4-9bec-3fdebdab8842",
-          "focus": "hill-power",
-          "stress": "high",
-          "volume": "med-high",
-          "intensity": "high",
+          "focus": "ultra",
+          "stress": "med-high",
+          "volume": "very-high",
+          "intensity": "med",
           "days": {
-            "mon": {},
-            "tue": {},
-            "wed": {},
+            "mon": {
+              "workoutIds": [
+                "workout-1869e82a-1ddd-4c6b-a75b-669a2062d0b1"
+              ]
+            },
+            "tue": {
+              "workoutIds": [
+                "workout-72dcf2a8-506e-4c9e-94ed-e783e57b9bd8"
+              ]
+            },
+            "wed": {
+              "workoutIds": [
+                "workout-3edf7e98-add7-4dc7-a7a5-b6273d7d5b50"
+              ]
+            },
             "thu": {
-              "workoutId": "workout-ac6e6480-965e-4182-b05f-19f6113c4f88",
-              "notes": ""
+              "notes": "",
+              "workoutIds": [
+                "workout-f87c7cf1-1ffb-411f-9773-9e50c9145339",
+                "workout-b481028e-180a-4f8b-a737-a1203354c535"
+              ]
             },
             "fri": {
               "workoutIds": [
+                "workout-247bdf6e-8207-4707-810e-87b210cecbbc",
                 "workout-1a154e07-07e3-4d10-b4a9-ef0002c24929"
               ]
             },
-            "sat": {},
-            "sun": {}
+            "sat": {
+              "workoutIds": [
+                "workout-157e446e-ec80-4972-b68b-8364e4d760be"
+              ]
+            },
+            "sun": {
+              "workoutIds": [
+                "workout-beb63419-1369-4f69-9254-b5b4f4404d28"
+              ]
+            }
           },
           "eventIds": [
             "SUC-035"
@@ -40,15 +64,43 @@
           "volume": "very-high",
           "intensity": "med",
           "days": {
-            "mon": {},
-            "tue": {},
-            "wed": {},
-            "thu": {
-              "workoutId": "workout-ac6e6480-965e-4182-b05f-19f6113c4f88"
+            "mon": {
+              "workoutIds": [
+                "workout-1869e82a-1ddd-4c6b-a75b-669a2062d0b1"
+              ]
             },
-            "fri": {},
-            "sat": {},
-            "sun": {}
+            "tue": {
+              "workoutIds": [
+                "workout-72dcf2a8-506e-4c9e-94ed-e783e57b9bd8"
+              ]
+            },
+            "wed": {
+              "workoutIds": [
+                "workout-3b617ea9-38a1-41ba-968c-7e0a6ecee68e"
+              ]
+            },
+            "thu": {
+              "workoutIds": [
+                "workout-578db8ec-e939-4782-9ba1-2793747072f2",
+                "workout-b481028e-180a-4f8b-a737-a1203354c535"
+              ]
+            },
+            "fri": {
+              "workoutIds": [
+                "workout-247bdf6e-8207-4707-810e-87b210cecbbc",
+                "workout-1a154e07-07e3-4d10-b4a9-ef0002c24929"
+              ]
+            },
+            "sat": {
+              "workoutIds": [
+                "workout-27b78894-65c5-462e-bbd7-759775e204e1"
+              ]
+            },
+            "sun": {
+              "workoutIds": [
+                "workout-f6ba97e8-8797-4317-933d-e98bced97624"
+              ]
+            }
           },
           "eventIds": [
             "SUC-036"
@@ -56,20 +108,47 @@
         },
         {
           "weekId": "74a5611a-95ac-43c4-a2ba-b86a0097f7f7",
-          "focus": "deload",
+          "focus": "taper",
           "stress": "low",
-          "volume": "low",
+          "volume": "low-med",
           "intensity": "low",
           "days": {
-            "mon": {},
-            "tue": {},
-            "wed": {},
-            "thu": {
-              "workoutId": "workout-ac6e6480-965e-4182-b05f-19f6113c4f88"
+            "mon": {
+              "workoutIds": [
+                "workout-1869e82a-1ddd-4c6b-a75b-669a2062d0b1"
+              ]
             },
-            "fri": {},
-            "sat": {},
-            "sun": {}
+            "tue": {
+              "workoutIds": [
+                "workout-72dcf2a8-506e-4c9e-94ed-e783e57b9bd8"
+              ]
+            },
+            "wed": {
+              "workoutIds": [
+                "workout-3edf7e98-add7-4dc7-a7a5-b6273d7d5b50"
+              ]
+            },
+            "thu": {
+              "workoutIds": [
+                "workout-f0a00c03-b742-45c9-acd0-1de9aedc3f43"
+              ]
+            },
+            "fri": {
+              "workoutIds": [
+                "workout-247bdf6e-8207-4707-810e-87b210cecbbc",
+                "workout-1a154e07-07e3-4d10-b4a9-ef0002c24929"
+              ]
+            },
+            "sat": {
+              "workoutIds": [
+                "workout-157e446e-ec80-4972-b68b-8364e4d760be"
+              ]
+            },
+            "sun": {
+              "workoutIds": [
+                "workout-f6ba97e8-8797-4317-933d-e98bced97624"
+              ]
+            }
           }
         },
         {
@@ -79,14 +158,34 @@
           "volume": "low-med",
           "intensity": "low",
           "days": {
-            "mon": {},
-            "tue": {},
-            "wed": {},
-            "thu": {
-              "workoutId": "workout-ac6e6480-965e-4182-b05f-19f6113c4f88"
+            "mon": {
+              "workoutIds": [
+                "workout-1a154e07-07e3-4d10-b4a9-ef0002c24929"
+              ]
             },
-            "fri": {},
-            "sat": {},
+            "tue": {
+              "workoutIds": [
+                "workout-72dcf2a8-506e-4c9e-94ed-e783e57b9bd8"
+              ]
+            },
+            "wed": {
+              "workoutIds": [
+                "workout-72dcf2a8-506e-4c9e-94ed-e783e57b9bd8"
+              ]
+            },
+            "thu": {
+              "workoutIds": [
+                "workout-f0a00c03-b742-45c9-acd0-1de9aedc3f43"
+              ]
+            },
+            "fri": {
+              "workoutIds": [
+                "workout-f6ba97e8-8797-4317-933d-e98bced97624"
+              ]
+            },
+            "sat": {
+              "notes": "Salmon Falls Race Day!"
+            },
             "sun": {}
           }
         }

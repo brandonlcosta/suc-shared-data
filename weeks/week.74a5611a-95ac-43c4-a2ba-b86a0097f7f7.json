@@ -2,13 +2,20 @@
   "id": "74a5611a-95ac-43c4-a2ba-b86a0097f7f7",
   "title": "74a5611a-95ac-43c4-a2ba-b86a0097f7f7",
   "status": "published",
-  "createdAt": "2026-02-07T02:38:19.591Z",
-  "updatedAt": "2026-02-07T02:38:19.591Z",
-  "focus": "deload",
+  "createdAt": "2026-02-07T07:47:02.142Z",
+  "updatedAt": "2026-02-07T07:47:02.142Z",
+  "focus": "taper",
   "stress": "low",
-  "volume": "low",
+  "volume": "low-med",
   "intensity": "low",
   "workouts": [
-    "workout-ac6e6480-965e-4182-b05f-19f6113c4f88"
+    "workout-1869e82a-1ddd-4c6b-a75b-669a2062d0b1",
+    "workout-72dcf2a8-506e-4c9e-94ed-e783e57b9bd8",
+    "workout-3edf7e98-add7-4dc7-a7a5-b6273d7d5b50",
+    "workout-f0a00c03-b742-45c9-acd0-1de9aedc3f43",
+    "workout-247bdf6e-8207-4707-810e-87b210cecbbc",
+    "workout-1a154e07-07e3-4d10-b4a9-ef0002c24929",
+    "workout-157e446e-ec80-4972-b68b-8364e4d760be",
+    "workout-f6ba97e8-8797-4317-933d-e98bced97624"
   ]
 }

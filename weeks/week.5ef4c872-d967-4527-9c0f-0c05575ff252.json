@@ -2,13 +2,18 @@
   "id": "5ef4c872-d967-4527-9c0f-0c05575ff252",
   "title": "5ef4c872-d967-4527-9c0f-0c05575ff252",
   "status": "published",
-  "createdAt": "2026-02-07T02:38:19.591Z",
-  "updatedAt": "2026-02-07T02:38:19.591Z",
+  "createdAt": "2026-02-07T07:47:02.142Z",
+  "updatedAt": "2026-02-07T07:47:02.142Z",
   "focus": "taper",
   "stress": "low",
   "volume": "low-med",
   "intensity": "low",
   "workouts": [
-    "workout-ac6e6480-965e-4182-b05f-19f6113c4f88"
+    "workout-1a154e07-07e3-4d10-b4a9-ef0002c24929",
+    "workout-72dcf2a8-506e-4c9e-94ed-e783e57b9bd8",
+    "workout-72dcf2a8-506e-4c9e-94ed-e783e57b9bd8",
+    "workout-f0a00c03-b742-45c9-acd0-1de9aedc3f43",
+    "workout-f6ba97e8-8797-4317-933d-e98bced97624",
+    "workout-347aab24cbfc"
   ]
 }

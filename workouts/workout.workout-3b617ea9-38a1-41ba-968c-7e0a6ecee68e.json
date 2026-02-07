@@ -1,0 +1,14 @@
+{
+  "id": "workout-3b617ea9-38a1-41ba-968c-7e0a6ecee68e",
+  "title": "5 min Ramp Up",
+  "description": "This workout is designed to enhance your ability to sustain and surge past threshold pace, simulating race conditions and boosting your speed endurance.\n\nStart each rep at a Threshold effort and increase the pace with 90 seconds to go. \n\nSave some energy for the final 90 seconds so you can really push the pace.",
+  "tags": [
+    "threshold",
+    "intervals",
+    "ramp-up"
+  ],
+  "status": "published",
+  "createdAt": "2026-02-07T07:47:02.142Z",
+  "updatedAt": "2026-02-07T07:47:02.142Z",
+  "type": "run"
+}

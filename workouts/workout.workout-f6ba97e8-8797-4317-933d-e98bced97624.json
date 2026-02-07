@@ -1,0 +1,13 @@
+{
+  "id": "workout-f6ba97e8-8797-4317-933d-e98bced97624",
+  "title": "Recovery Run",
+  "description": "Focus on active recovery! Keep the pace very slow and effort very low (3-5 RPE)\n\nYou should feel better after this run than when you started",
+  "tags": [
+    "recovery",
+    "easy"
+  ],
+  "status": "published",
+  "createdAt": "2026-02-07T07:47:02.142Z",
+  "updatedAt": "2026-02-07T07:47:02.142Z",
+  "type": "run"
+}

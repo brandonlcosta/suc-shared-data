@@ -323,6 +323,2144 @@
       "createdAt": "2026-02-07T02:33:39.757Z",
       "updatedAt": "2026-02-07T02:36:49.886Z",
       "publishedAt": "2026-02-07T02:36:49.886Z"
+    },
+    {
+      "workoutId": "workout-3b617ea9-38a1-41ba-968c-7e0a6ecee68e",
+      "version": 1,
+      "status": "published",
+      "domain": "run",
+      "strengthType": null,
+      "name": "5 min Ramp Up",
+      "description": "This workout is designed to enhance your ability to sustain and surge past threshold pace, simulating race conditions and boosting your speed endurance.\n\nStart each rep at a Threshold effort and increase the pace with 90 seconds to go. \n\nSave some energy for the final 90 seconds so you can really push the pace.",
+      "focus": [
+        "threshold",
+        "intervals",
+        "ramp-up"
+      ],
+      "coachNotes": "",
+      "tiers": {
+        "MED": {
+          "name": "Easy + Strides (MED)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 3,
+              "work": {
+                "duration": "5min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z4"
+                },
+                "cues": []
+              },
+              "rest": {
+                "duration": "2min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              }
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "LRG": {
+          "name": "5 min Ramp Up (LRG)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 4,
+              "work": {
+                "duration": "5min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z4"
+                },
+                "cues": []
+              },
+              "rest": {
+                "duration": "2min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              }
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "XL": {
+          "name": "5 min Ramp Up (XL)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 4,
+              "work": {
+                "duration": "6min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z4"
+                },
+                "cues": []
+              },
+              "rest": {
+                "duration": "2min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              }
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "2min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "10min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z3"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        }
+      },
+      "createdAt": "2026-02-07T06:33:46.315Z",
+      "updatedAt": "2026-02-07T06:44:11.554Z",
+      "publishedAt": "2026-02-07T06:44:11.554Z"
+    },
+    {
+      "workoutId": "workout-578db8ec-e939-4782-9ba1-2793747072f2",
+      "version": 1,
+      "status": "archived",
+      "domain": "run",
+      "strengthType": null,
+      "name": "Aerobic Rollers",
+      "description": "Aerobic base building run. The goal is to keep a steady pace that feels relaxed and smooth.\n\nRun on a rolling road or trail, with significant vert and try to push on the downhills while keeping HR low on uphills.\n\nBreathing is conversational, but its not an easy run. This effort falls between easy and tempo. Steady.",
+      "focus": [],
+      "coachNotes": "",
+      "tiers": {
+        "MED": {
+          "name": "Untitled Workout (MED)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "30min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z3"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "LRG": {
+          "name": "Aerobic Rollers (LRG)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "40min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z3"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "XL": {
+          "name": "Aerobic Rollers (XL)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "50min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z3"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        }
+      },
+      "createdAt": "2026-02-07T06:44:23.000Z",
+      "updatedAt": "2026-02-07T06:50:33.695Z",
+      "publishedAt": "2026-02-07T06:50:05.497Z"
+    },
+    {
+      "workoutId": "workout-0ef338a1-08fe-480b-86a9-8d41f23362be",
+      "version": 1,
+      "status": "archived",
+      "domain": "run",
+      "strengthType": null,
+      "name": "Aerobic Rollers",
+      "description": "Aerobic base building run. The goal is to keep a steady pace that feels relaxed and smooth.\n\nRun on a rolling road or trail, with significant vert and try to push on the downhills while keeping HR low on uphills.\n\nBreathing is conversational, but its not an easy run. This effort falls between easy and tempo. Steady.",
+      "focus": [
+        "trail",
+        "tempo",
+        "rollers"
+      ],
+      "coachNotes": "",
+      "tiers": {
+        "MED": {
+          "name": "Untitled Workout (MED)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "30min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z3"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "LRG": {
+          "name": "Aerobic Rollers (LRG)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "40min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z3"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "XL": {
+          "name": "Aerobic Rollers (XL)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "50min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z3"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        }
+      },
+      "createdAt": "2026-02-07T06:44:23.000Z",
+      "updatedAt": "2026-02-07T06:50:37.443Z",
+      "publishedAt": "2026-02-07T06:50:22.778Z"
+    },
+    {
+      "workoutId": "workout-997164a4-3007-47fc-9a90-3786cbd83a32",
+      "version": 1,
+      "status": "published",
+      "domain": "run",
+      "strengthType": null,
+      "name": "Aerobic Rollers",
+      "description": "Aerobic base building run. The goal is to keep a steady pace that feels relaxed and smooth.\n\nRun on a rolling road or trail, with significant vert and try to push on the downhills while keeping HR low on uphills.\n\nBreathing is conversational, but its not an easy run. This effort falls between easy and tempo. Steady.",
+      "focus": [
+        "trail",
+        "tempo",
+        "rollers"
+      ],
+      "coachNotes": "",
+      "tiers": {
+        "MED": {
+          "name": "Untitled Workout (MED)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "30min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z3"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "LRG": {
+          "name": "Aerobic Rollers (LRG)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "40min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z3"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "XL": {
+          "name": "Aerobic Rollers (XL)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "50min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z3"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        }
+      },
+      "createdAt": "2026-02-07T06:44:23.000Z",
+      "updatedAt": "2026-02-07T06:50:43.941Z",
+      "publishedAt": "2026-02-07T06:50:43.941Z"
+    },
+    {
+      "workoutId": "workout-27b78894-65c5-462e-bbd7-759775e204e1",
+      "version": 1,
+      "status": "published",
+      "domain": "run",
+      "strengthType": null,
+      "name": "Vert Heavy Trail Run",
+      "description": "Head out for a longer, steady-paced trail run. Focus on maintaining a consistent, comfortable effort throughout the run.\n\nAim for 3k+ feet of climbing on terrain that is similar or steeper than your goal race.\n\nThis run is key to building the stamina and strength you'll need for your upcoming trail race. Remember to bring hydration and fuel to keep your energy levels stable throughout.",
+      "focus": [
+        "vert",
+        "trail",
+        "long-run"
+      ],
+      "coachNotes": "",
+      "tiers": {
+        "MED": {
+          "name": "Untitled Workout (MED)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "3hr",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "LRG": {
+          "name": "Untitled Workout (LRG)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "4hr",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "XL": {
+          "name": "Untitled Workout (XL)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "5hr",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        }
+      },
+      "createdAt": "2026-02-07T06:55:20.383Z",
+      "updatedAt": "2026-02-07T06:56:25.696Z",
+      "publishedAt": "2026-02-07T06:56:25.696Z"
+    },
+    {
+      "workoutId": "workout-f6ba97e8-8797-4317-933d-e98bced97624",
+      "version": 1,
+      "status": "published",
+      "domain": "run",
+      "strengthType": null,
+      "name": "Recovery Run",
+      "description": "Focus on active recovery! Keep the pace very slow and effort very low (3-5 RPE)\n\nYou should feel better after this run than when you started",
+      "focus": [
+        "recovery",
+        "easy"
+      ],
+      "coachNotes": "",
+      "tiers": {
+        "MED": {
+          "name": "Recovery Run (MED)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "40min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "LRG": {
+          "name": "Recovery Run (LRG)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "50min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "XL": {
+          "name": "Recovery Run (XL)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "60min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        }
+      },
+      "createdAt": "2026-02-07T06:56:35.233Z",
+      "updatedAt": "2026-02-07T06:57:28.461Z",
+      "publishedAt": "2026-02-07T06:57:28.461Z"
+    },
+    {
+      "workoutId": "workout-72dcf2a8-506e-4c9e-94ed-e783e57b9bd8",
+      "version": 1,
+      "status": "published",
+      "domain": "run",
+      "strengthType": null,
+      "name": "Strides",
+      "description": "Easy aerobic effort with short strides at the end to turn the legs over.\n\nStay strictly in Z2 for the main run (RPE 4–5). Add 4–6 strides near the end — 20–30 seconds at quick, relaxed effort with full recovery. These aren’t sprints. Smooth, powerful, and under control.",
+      "focus": [
+        "strides",
+        "easy",
+        "daily"
+      ],
+      "coachNotes": "",
+      "tiers": {
+        "MED": {
+          "name": "Untitled Workout (MED)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "20min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 4,
+              "work": {
+                "duration": "20sec",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z5",
+                  "paceTag": "strides"
+                },
+                "cues": []
+              },
+              "rest": {
+                "duration": "2min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              }
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "LRG": {
+          "name": "Untitled Workout (LRG)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "30min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 6,
+              "work": {
+                "duration": "20sec",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z5",
+                  "paceTag": "strides"
+                },
+                "cues": []
+              },
+              "rest": {
+                "duration": "2min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              }
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "10min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "XL": {
+          "name": "Untitled Workout (XL)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "40min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 6,
+              "work": {
+                "duration": "20sec",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z5",
+                  "paceTag": "strides"
+                },
+                "cues": []
+              },
+              "rest": {
+                "duration": "2min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              }
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        }
+      },
+      "createdAt": "2026-02-07T06:57:36.440Z",
+      "updatedAt": "2026-02-07T07:02:02.123Z",
+      "publishedAt": "2026-02-07T07:02:02.123Z"
+    },
+    {
+      "workoutId": "workout-f0a00c03-b742-45c9-acd0-1de9aedc3f43",
+      "version": 1,
+      "status": "published",
+      "domain": "run",
+      "strengthType": null,
+      "name": "Aerobic Maintenance",
+      "description": "Aerobic maintenance, to maintain aerobic gains without taxing the system. The goal is to keep a steady pace that feels relaxed and smooth.\n\nBreathing is conversational, but its not an easy run. This effort falls between easy and tempo. Steady.",
+      "focus": [
+        "aerobic",
+        "daily"
+      ],
+      "coachNotes": "",
+      "tiers": {
+        "MED": {
+          "name": "Untitled Workout (MED)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "45min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "LRG": {
+          "name": "Aerobic Maintenance (LRG)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "1hr",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "XL": {
+          "name": "Aerobic Maintenance (XL)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "1hr 15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        }
+      },
+      "createdAt": "2026-02-07T07:02:07.655Z",
+      "updatedAt": "2026-02-07T07:03:17.944Z",
+      "publishedAt": "2026-02-07T07:03:17.944Z"
+    },
+    {
+      "workoutId": "workout-157e446e-ec80-4972-b68b-8364e4d760be",
+      "version": 1,
+      "status": "published",
+      "domain": "run",
+      "strengthType": null,
+      "name": " Race Sim + Gear Check",
+      "description": "This is your longest controlled nutrition rehearsal.\n\nGoal: Have your race kit dialed in. Know what goes in what pocket. Where each bottle is going.\n\nTreat this as a dress rehearsal: nutrition, gear, pacing, terrain — everything.\n\nEarly effort must stay boring and easy (RPE 3-4). This is not a speed day — it’s a gut training day. The final 90-120min may allow light progression if you’re handling fuel well.\n\nLay out your gear and fuel the day before.\n\nTest fluid intake, sodium, gels, calories\n\nGear & pack should mirror race setup\n\nSocks, Shoes, anti chafing, use all your race day gear. No exceptions.",
+      "focus": [
+        "trail",
+        "long-run",
+        "race-sim"
+      ],
+      "coachNotes": "",
+      "tiers": {
+        "MED": {
+          "name": "Race Sim + Gear Check (MED)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "2hr",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "LRG": {
+          "name": "Race Sim + Gear Check (LRG)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "3hr",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "XL": {
+          "name": "Race Sim + Gear Check (XL)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "3hr 30min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        }
+      },
+      "createdAt": "2026-02-07T07:04:01.182Z",
+      "updatedAt": "2026-02-07T07:06:28.244Z",
+      "publishedAt": "2026-02-07T07:06:28.244Z"
+    },
+    {
+      "workoutId": "workout-1869e82a-1ddd-4c6b-a75b-669a2062d0b1",
+      "version": 1,
+      "status": "published",
+      "domain": "strength",
+      "strengthType": "strength_general",
+      "name": "Jumping + Posterior Chain",
+      "description": "Mixed strength workout hitting some fast twitch muscles and some heavier lifting.\n\nFocused on legs, glutes and explosiveness.",
+      "focus": [],
+      "coachNotes": "",
+      "tiers": {},
+      "strengthStructure": [
+        {
+          "type": "mobility_block",
+          "id": "strength-1770448070362-3swg",
+          "name": "Mobility Flow",
+          "duration": "8min",
+          "cues": ""
+        },
+        {
+          "type": "circuit_block",
+          "id": "strength-1770448180198-ncg5",
+          "rounds": 3,
+          "exercises": [
+            {
+              "type": "strength_exercise",
+              "id": "exercise-1770448222730-0xj9",
+              "name": "Quick Hops",
+              "sets": 3,
+              "reps": "8-10",
+              "load": "",
+              "notes": ""
+            },
+            {
+              "type": "strength_exercise",
+              "id": "exercise-1770448228804-4isa",
+              "name": "Lateral Bound (Skater Jump)",
+              "sets": 3,
+              "reps": "8-10",
+              "load": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "type": "circuit_block",
+          "id": "strength-1770448207113-gipq",
+          "rounds": 3,
+          "exercises": [
+            {
+              "type": "strength_exercise",
+              "id": "exercise-1770448254828-09m5",
+              "name": "Deadlift",
+              "sets": 3,
+              "reps": "8-10",
+              "load": "",
+              "notes": ""
+            },
+            {
+              "type": "strength_exercise",
+              "id": "exercise-1770448258221-83gj",
+              "name": "Hip Thrust",
+              "sets": 3,
+              "reps": "8-10",
+              "load": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "type": "circuit_block",
+          "id": "strength-1770448208775-mr4r",
+          "rounds": 3,
+          "exercises": [
+            {
+              "type": "strength_exercise",
+              "id": "exercise-1770448237570-7j7r",
+              "name": "Heavy Sled Push",
+              "sets": 3,
+              "reps": "8-10",
+              "load": "",
+              "notes": ""
+            },
+            {
+              "type": "strength_exercise",
+              "id": "exercise-1770448244337-mh8b",
+              "name": "Single-arm Farmer Carry",
+              "sets": 3,
+              "reps": "8-10",
+              "load": "",
+              "notes": ""
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-02-07T07:07:37.176Z",
+      "updatedAt": "2026-02-07T07:12:30.780Z",
+      "publishedAt": "2026-02-07T07:12:30.780Z"
+    },
+    {
+      "workoutId": "workout-beb63419-1369-4f69-9254-b5b4f4404d28",
+      "version": 1,
+      "status": "published",
+      "domain": "run",
+      "strengthType": null,
+      "name": "Back-to-Back",
+      "description": "Head out for a longer, steady-paced trail run. Focus on maintaining a consistent, comfortable effort throughout the run.\n\nNo need to push pace, focus on fueling and positive mindset. Enjoy a low pressure day on the trails.. with tried legs.\n\nThis run is key to building the stamina and strength you'll need for your upcoming trail race. Remember to bring hydration and fuel to keep your energy levels stable throughout.",
+      "focus": [
+        "back-to-back",
+        "long-run",
+        "trail"
+      ],
+      "coachNotes": "",
+      "tiers": {
+        "MED": {
+          "name": "Untitled Workout (MED)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "2hr 30min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "LRG": {
+          "name": "Back-to-Back (LRG)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "3hr",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "XL": {
+          "name": "Back-to-Back (XL)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "3hr 30min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        }
+      },
+      "createdAt": "2026-02-07T07:17:45.257Z",
+      "updatedAt": "2026-02-07T07:22:20.042Z",
+      "publishedAt": "2026-02-07T07:22:20.042Z"
+    },
+    {
+      "workoutId": "workout-1869e82a-1ddd-4c6b-a75b-669a2062d0b1",
+      "version": 2,
+      "status": "published",
+      "domain": "strength",
+      "strengthType": "strength_general",
+      "name": "Explosiveness + Power",
+      "description": "Mixed strength workout hitting some fast twitch muscles and some heavier lifting.\n\nFocused on legs, glutes and explosiveness.",
+      "focus": [],
+      "coachNotes": "",
+      "tiers": {},
+      "strengthStructure": [
+        {
+          "type": "mobility_block",
+          "id": "strength-1770448070362-3swg",
+          "name": "Mobility Flow",
+          "duration": "8min",
+          "cues": ""
+        },
+        {
+          "type": "circuit_block",
+          "id": "strength-1770448180198-ncg5",
+          "rounds": 3,
+          "exercises": [
+            {
+              "type": "strength_exercise",
+              "id": "exercise-1770448222730-0xj9",
+              "name": "Quick Hops",
+              "sets": 3,
+              "reps": "8-10",
+              "load": "",
+              "notes": ""
+            },
+            {
+              "type": "strength_exercise",
+              "id": "exercise-1770448228804-4isa",
+              "name": "Lateral Bound (Skater Jump)",
+              "sets": 3,
+              "reps": "8-10",
+              "load": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "type": "circuit_block",
+          "id": "strength-1770448207113-gipq",
+          "rounds": 3,
+          "exercises": [
+            {
+              "type": "strength_exercise",
+              "id": "exercise-1770448254828-09m5",
+              "name": "Deadlift",
+              "sets": 3,
+              "reps": "8-10",
+              "load": "",
+              "notes": ""
+            },
+            {
+              "type": "strength_exercise",
+              "id": "exercise-1770448258221-83gj",
+              "name": "Hip Thrust",
+              "sets": 3,
+              "reps": "8-10",
+              "load": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "type": "circuit_block",
+          "id": "strength-1770448208775-mr4r",
+          "rounds": 3,
+          "exercises": [
+            {
+              "type": "strength_exercise",
+              "id": "exercise-1770448237570-7j7r",
+              "name": "Heavy Sled Push",
+              "sets": 3,
+              "reps": "8-10",
+              "load": "",
+              "notes": ""
+            },
+            {
+              "type": "strength_exercise",
+              "id": "exercise-1770448244337-mh8b",
+              "name": "Single-arm Farmer Carry",
+              "sets": 3,
+              "reps": "8-10",
+              "load": "",
+              "notes": ""
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-02-07T07:07:37.176Z",
+      "updatedAt": "2026-02-07T07:24:06.309Z",
+      "publishedAt": "2026-02-07T07:24:06.309Z"
+    },
+    {
+      "workoutId": "workout-247bdf6e-8207-4707-810e-87b210cecbbc",
+      "version": 1,
+      "status": "published",
+      "domain": "run",
+      "strengthType": null,
+      "name": "Strength Day Shakeout",
+      "description": "An easy shakeout before or after your mobility workout. Purpose is to loosen up the legs and get ready for your next big workout.",
+      "focus": [
+        "easy",
+        "recovery",
+        "daily"
+      ],
+      "coachNotes": "",
+      "tiers": {
+        "MED": {
+          "name": "Strength Day Shakeout (MED)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "20min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "LRG": {
+          "name": "Strength Day Shakeout (LRG)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "30min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "XL": {
+          "name": "Strength Day Shakeout (XL)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "45min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        }
+      },
+      "createdAt": "2026-02-07T07:25:23.815Z",
+      "updatedAt": "2026-02-07T07:26:27.177Z",
+      "publishedAt": "2026-02-07T07:26:27.177Z"
+    },
+    {
+      "workoutId": "workout-3edf7e98-add7-4dc7-a7a5-b6273d7d5b50",
+      "version": 1,
+      "status": "published",
+      "domain": "run",
+      "strengthType": null,
+      "name": "Mixed Intervals - 30s + 2min",
+      "description": "This mixed interval workout has some fast, interval effort on the front and tail end, with some steady threshold efforts in between.\n\nThis workout is intended to be run hard in the middle. The last set of 30 second reps is time to let loose.",
+      "focus": [
+        "mixed",
+        "combo",
+        "intervals"
+      ],
+      "coachNotes": "",
+      "tiers": {
+        "MED": {
+          "name": "Untitled Workout (MED)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 4,
+              "work": {
+                "duration": "30sec",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z5"
+                },
+                "cues": []
+              },
+              "rest": {
+                "duration": "45sec",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              }
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "1min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 2,
+              "work": {
+                "duration": "2min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z4"
+                },
+                "cues": []
+              },
+              "rest": {
+                "duration": "1min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              }
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "2min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 4,
+              "work": {
+                "duration": "30sec",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z5"
+                },
+                "cues": []
+              },
+              "rest": {
+                "duration": "45sec",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              }
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "LRG": {
+          "name": "Untitled Workout (LRG)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 4,
+              "work": {
+                "duration": "30sec",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z5"
+                },
+                "cues": []
+              },
+              "rest": {
+                "duration": "45sec",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              }
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "1min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 4,
+              "work": {
+                "duration": "2min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z4"
+                },
+                "cues": []
+              },
+              "rest": {
+                "duration": "1min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              }
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "2min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 4,
+              "work": {
+                "duration": "30sec",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z5"
+                },
+                "cues": []
+              },
+              "rest": {
+                "duration": "45sec",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              }
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "XL": {
+          "name": "Untitled Workout (XL)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 6,
+              "work": {
+                "duration": "30sec",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z5"
+                },
+                "cues": []
+              },
+              "rest": {
+                "duration": "45sec",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              }
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "1min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 6,
+              "work": {
+                "duration": "2min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z4"
+                },
+                "cues": []
+              },
+              "rest": {
+                "duration": "1min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              }
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "2min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 7,
+              "work": {
+                "duration": "30sec",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z5"
+                },
+                "cues": []
+              },
+              "rest": {
+                "duration": "45sec",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              }
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        }
+      },
+      "createdAt": "2026-02-07T07:27:27.070Z",
+      "updatedAt": "2026-02-07T07:35:36.447Z",
+      "publishedAt": "2026-02-07T07:35:36.447Z"
+    },
+    {
+      "workoutId": "workout-f87c7cf1-1ffb-411f-9773-9e50c9145339",
+      "version": 1,
+      "status": "published",
+      "domain": "run",
+      "strengthType": null,
+      "name": "Aerobic Builder",
+      "description": "Aerobic base building run. The goal is to keep a steady pace that feels relaxed and smooth. Practice fueling and even pacing.\n\nBreathing is conversational, but its not an easy run. This effort falls between easy and tempo. Steady.",
+      "focus": [
+        "aerobic",
+        "easy",
+        "daily"
+      ],
+      "coachNotes": "",
+      "tiers": {
+        "MED": {
+          "name": "Aerobic Builder (MED)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "30min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z3"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "LRG": {
+          "name": "Aerobic Builder (LRG)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "40min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z3"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "XL": {
+          "name": "Aerobic Builder (XL)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "50min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z3"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        }
+      },
+      "createdAt": "2026-02-07T07:36:39.396Z",
+      "updatedAt": "2026-02-07T07:38:45.360Z",
+      "publishedAt": "2026-02-07T07:38:45.360Z"
+    },
+    {
+      "workoutId": "workout-b481028e-180a-4f8b-a737-a1203354c535",
+      "version": 1,
+      "status": "published",
+      "domain": "run",
+      "strengthType": null,
+      "name": "Evening Double",
+      "description": "Aerobic base building run. The goal is to keep a steady pace that feels relaxed and smooth. Practice fueling and even pacing.\n\nBreathing is conversational, but its not an easy run. This effort falls between easy and tempo. Steady.",
+      "focus": [
+        "recovery",
+        "daily",
+        "double"
+      ],
+      "coachNotes": "",
+      "tiers": {
+        "MED": {
+          "name": "Untitled Workout (MED)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "20min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "LRG": {
+          "name": "Untitled Workout (LRG)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "30min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "XL": {
+          "name": "Untitled Workout (XL)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "45min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        }
+      },
+      "createdAt": "2026-02-07T07:38:57.273Z",
+      "updatedAt": "2026-02-07T07:39:57.095Z",
+      "publishedAt": "2026-02-07T07:39:57.095Z"
+    },
+    {
+      "workoutId": "workout-b8585136-c817-4336-a289-fce572ec372f",
+      "version": 1,
+      "status": "published",
+      "domain": "run",
+      "strengthType": null,
+      "name": "Aerobic Maintenance",
+      "description": "Aerobic maintenance, to maintain aerobic gains without taxing the system. The goal is to keep a steady pace that feels relaxed and smooth.\n\nBreathing is conversational, but its not an easy run. This effort falls between easy and tempo. Steady.",
+      "focus": [
+        "easy",
+        "aerobic",
+        "daily"
+      ],
+      "coachNotes": "",
+      "tiers": {
+        "MED": {
+          "name": "Aerobic Maintenance (MED)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "45min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "LRG": {
+          "name": "Aerobic Maintenance (LRG)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "1hr",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "XL": {
+          "name": "Aerobic Maintenance (XL)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "1hr 10min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        }
+      },
+      "createdAt": "2026-02-07T07:43:34.345Z",
+      "updatedAt": "2026-02-07T07:44:08.329Z",
+      "publishedAt": "2026-02-07T07:44:08.329Z"
     }
   ]
 }

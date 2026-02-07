@@ -2,15 +2,22 @@
   "id": "0a91b815-6d18-4dc4-9bec-3fdebdab8842",
   "title": "0a91b815-6d18-4dc4-9bec-3fdebdab8842",
   "status": "published",
-  "createdAt": "2026-02-07T02:38:19.591Z",
-  "updatedAt": "2026-02-07T02:38:19.591Z",
-  "focus": "hill-power",
-  "stress": "high",
-  "volume": "med-high",
-  "intensity": "high",
+  "createdAt": "2026-02-07T07:47:02.142Z",
+  "updatedAt": "2026-02-07T07:47:02.142Z",
+  "focus": "ultra",
+  "stress": "med-high",
+  "volume": "high",
+  "intensity": "med",
   "workouts": [
-    "workout-ac6e6480-965e-4182-b05f-19f6113c4f88",
-    "workout-1a154e07-07e3-4d10-b4a9-ef0002c24929"
+    "workout-1869e82a-1ddd-4c6b-a75b-669a2062d0b1",
+    "workout-72dcf2a8-506e-4c9e-94ed-e783e57b9bd8",
+    "workout-3edf7e98-add7-4dc7-a7a5-b6273d7d5b50",
+    "workout-f87c7cf1-1ffb-411f-9773-9e50c9145339",
+    "workout-b481028e-180a-4f8b-a737-a1203354c535",
+    "workout-247bdf6e-8207-4707-810e-87b210cecbbc",
+    "workout-1a154e07-07e3-4d10-b4a9-ef0002c24929",
+    "workout-157e446e-ec80-4972-b68b-8364e4d760be",
+    "workout-beb63419-1369-4f69-9254-b5b4f4404d28"
   ],
   "eventIds": [
     "SUC-035"
