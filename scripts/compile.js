@@ -716,10 +716,12 @@ function normalizeTrainingItem(raw) {
 
 function compileTrainingContent(items) {
   const normalized = items.map(normalizeTrainingItem).filter(Boolean);
+  // Only include published items (filter out drafts)
+  const published = normalized.filter((item) => item.status !== 'draft');
   const byTopic = new Map();
   const bySeries = new Map();
 
-  for (const item of normalized) {
+  for (const item of published) {
     const seriesKey = slugify(item.series);
     if (seriesKey) {
       if (!bySeries.has(seriesKey)) bySeries.set(seriesKey, []);
@@ -738,7 +740,7 @@ function compileTrainingContent(items) {
     entries.sort((a, b) => (a.part || 0) - (b.part || 0));
   }
 
-  return { index: normalized, byTopic, bySeries };
+  return { index: published, byTopic, bySeries };
 }
 
 function normalizeGearReview(raw) {

@@ -1,5 +1,6 @@
 [
   {
+    "id": "week-2026-01-26",
     "weekId": "week-2026-01-26",
     "seasonId": "season-2026-foundation",
     "blockId": "block-2026-foundation-a",
@@ -15,6 +16,7 @@
     }
   },
   {
+    "id": "week-2026-02-02",
     "weekId": "week-2026-02-02",
     "seasonId": "season-2026-foundation",
     "blockId": "block-2026-foundation-a",
@@ -30,6 +32,7 @@
     }
   },
   {
+    "id": "week-2026-02-09",
     "weekId": "week-2026-02-09",
     "seasonId": "season-2026-foundation",
     "blockId": "block-2026-foundation-b",
@@ -45,6 +48,7 @@
     }
   },
   {
+    "id": "week-2026-02-16",
     "weekId": "week-2026-02-16",
     "seasonId": "season-2026-foundation",
     "blockId": "block-2026-foundation-b",

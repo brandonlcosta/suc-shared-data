@@ -1,5 +1,6 @@
 [
   {
+    "id": "block-2026-foundation-a",
     "blockId": "block-2026-foundation-a",
     "name": "Foundation Base",
     "intent": "Aerobic base + rhythm",
@@ -9,6 +10,7 @@
     ]
   },
   {
+    "id": "block-2026-foundation-b",
     "blockId": "block-2026-foundation-b",
     "name": "Foundation Build",
     "intent": "Strength + tempo integration",

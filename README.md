@@ -26,6 +26,8 @@ Canonical training system (v2)
   - Weeks may include optional `eventIds` to reference canonical SUC events by ID.
   - Optional `eventRoles` can tag linked events as goal/tuneup/simulation/social for training semantics.
   - Viewer calendars compile event metadata (name/date/location + derived link) from these references; canonical events remain in events/.
+- Event typing:
+  - Canonical events may include `type` (crew-run, training-run, race, camp, social) for Studio authoring and filtering.
 
 Compile contract
 - npm run build executes scripts/compile.js and overwrites compiled/ deterministically.

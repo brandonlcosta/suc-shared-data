@@ -126,12 +126,20 @@
                 "tue": {},
                 "wed": {},
                 "thu": {
-                  "workoutId": "workout-ac6e6480-965e-4182-b05f-19f6113c4f88"
+                  "workoutId": "workout-ac6e6480-965e-4182-b05f-19f6113c4f88",
+                  "notes": ""
                 },
-                "fri": {},
+                "fri": {
+                  "workoutIds": [
+                    "workout-1a154e07-07e3-4d10-b4a9-ef0002c24929"
+                  ]
+                },
                 "sat": {},
                 "sun": {}
-              }
+              },
+              "eventIds": [
+                "SUC-035"
+              ]
             },
             {
               "weekId": "f9075f0f-6f51-4755-9fbe-547a9a6d744c",
@@ -149,7 +157,10 @@
                 "fri": {},
                 "sat": {},
                 "sun": {}
-              }
+              },
+              "eventIds": [
+                "SUC-036"
+              ]
             },
             {
               "weekId": "74a5611a-95ac-43c4-a2ba-b86a0097f7f7",
@@ -185,12 +196,6 @@
                 "fri": {},
                 "sat": {},
                 "sun": {}
-              },
-              "eventIds": [
-                "SUC-035"
-              ],
-              "eventRoles": {
-                "SUC-035": "goal"
               }
             }
           ]

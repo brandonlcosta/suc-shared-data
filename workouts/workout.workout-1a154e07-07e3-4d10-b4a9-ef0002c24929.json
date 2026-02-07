@@ -1,0 +1,14 @@
+{
+  "id": "workout-1a154e07-07e3-4d10-b4a9-ef0002c24929",
+  "title": "Strength for Runners",
+  "description": "A routine that includes mobility, single leg strength and can be done before or after an easy aerobic run.",
+  "tags": [
+    "ecofitness",
+    "mobility",
+    "strength"
+  ],
+  "status": "published",
+  "createdAt": "2026-02-07T02:38:19.591Z",
+  "updatedAt": "2026-02-07T02:38:19.591Z",
+  "type": "run"
+}

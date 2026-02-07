@@ -1,24 +1,46 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "SUC Gear Review",
-  "description": "General gear review for packs, poles, hydration, apparel, etc.",
+  "title": "SUC Footwear Review",
+  "description": "Structured footwear review with specific attributes.",
   "type": "object",
-  "required": ["id", "name", "gearType", "topics", "tier", "author", "publishedAt"],
+  "required": ["id", "brand", "model", "category", "topics", "tier", "author", "publishedAt"],
   "properties": {
     "id": { "type": "string", "minLength": 1 },
-    "name": { "type": "string", "minLength": 1 },
-    "brand": { "type": "string" },
-    "gearType": {
+    "brand": { "type": "string", "minLength": 1 },
+    "model": { "type": "string", "minLength": 1 },
+    "category": {
       "type": "string",
-      "enum": ["pack", "vest", "poles", "headlamp", "hydration", "apparel", "watch", "nutrition", "accessories"]
+      "enum": ["trail", "road", "ultra", "recovery", "racing"]
     },
     "useCase": {
       "type": "array",
       "items": {
         "type": "string",
-        "enum": ["racing", "training", "daily", "ultras", "fastpacking"]
+        "enum": ["racing", "training", "daily", "long-runs", "speed-work"]
       }
     },
+    "terrain": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["rocky", "muddy", "mixed", "smooth", "technical"]
+      }
+    },
+    "fit": {
+      "type": "string",
+      "enum": ["narrow", "medium", "wide"]
+    },
+    "cushioning": {
+      "type": "string",
+      "enum": ["minimal", "low", "medium", "high", "maximal"]
+    },
+    "stability": {
+      "type": "string",
+      "enum": ["neutral", "support", "motion-control"]
+    },
+    "drop": { "type": "number" },
+    "stackHeight": { "type": "number" },
+    "weight": { "type": "number", "description": "Weight in ounces" },
     "pros": {
       "type": "array",
       "items": { "type": "string", "minLength": 1 }
@@ -33,8 +55,9 @@
     "topics": {
       "type": "array",
       "items": { "type": "string" },
-      "minItems": 1,
-      "maxItems": 3
+      "minItems": 2,
+      "maxItems": 2,
+      "description": "Must be ['gear', 'footwear']"
     },
     "tier": { "type": "string", "enum": ["team", "public"] },
     "author": { "type": "string", "minLength": 1 },
@@ -53,4 +76,3 @@
   },
   "additionalProperties": false
 }
-

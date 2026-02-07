@@ -1,0 +1,18 @@
+[
+  {
+    "id": "heat-training-basics",
+    "type": "training-tip",
+    "title": "Heat Training Fundamentals",
+    "summary": "Learn the core principles of heat acclimation and how to safely build tolerance for hot-weather running.",
+    "body": "# Heat Training Fundamentals\n\nHeat acclimation is a critical skill for ultrarunners, especially those racing in hot climates. Here's how to build heat tolerance safely:\n\n## The Science\n\nYour body needs 10-14 days of consistent heat exposure to fully adapt. During this period, your blood plasma volume increases, sweating begins earlier and at a higher rate, and your core temperature threshold rises.\n\n## Implementation\n\n1. **Start Conservatively**: Begin with 20-30 minute sessions at reduced intensity\n2. **Gradual Progression**: Add 5-10 minutes each session until you're hitting 60-90 minutes\n3. **Monitor Hydration**: Weigh yourself before and after runs to dial in fluid needs\n4. **Timing Matters**: Train during the hottest part of the day (12-3 PM)\n\n## Safety Protocols\n\n- Never train alone in extreme heat\n- Carry extra water and electrolytes\n- Know the signs of heat exhaustion: dizziness, nausea, confusion\n- Back off if your heart rate is 10+ bpm higher than normal for a given effort\n\n## Pro Tips\n\n- Overdressing indoors can simulate heat when weather doesn't cooperate\n- Hot baths (15-20 min at 104°F) post-run can supplement outdoor sessions\n- Don't schedule heat training during high-volume weeks\n\nRemember: heat training is a tool, not a daily requirement. Use it strategically in your build to a goal race.",
+    "topics": [
+      "heat",
+      "acclimation",
+      "training"
+    ],
+    "tier": "team",
+    "author": "Coach Brandon",
+    "publishedAt": "2026-01-15T08:00:00Z",
+    "series": null
+  }
+]

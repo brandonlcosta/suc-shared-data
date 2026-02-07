@@ -2,21 +2,41 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "SUC Training Content",
   "description": "Training tips, workshops, and strategy content.",
-  "type": "array",
-  "items": {
-    "type": "object",
-    "required": ["id", "type", "title", "summary", "body"],
-    "properties": {
-      "id": { "type": "string", "minLength": 1 },
-      "type": { "type": "string", "minLength": 1 },
-      "series": { "type": ["string", "null"] },
-      "part": { "type": ["number", "integer", "null"] },
-      "topics": { "type": "array", "items": { "type": "string" } },
-      "tier": { "type": "string", "minLength": 1 },
-      "title": { "type": "string", "minLength": 1 },
-      "summary": { "type": "string" },
-      "body": { "type": "string" }
+  "type": "object",
+  "required": ["id", "type", "title", "summary", "body", "topics", "tier", "author", "publishedAt"],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "type": { "type": "string", "enum": ["training-tip", "workshop"] },
+    "title": { "type": "string", "minLength": 1 },
+    "summary": { "type": "string", "minLength": 1 },
+    "body": { "type": "string", "minLength": 1 },
+    "topics": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "maxItems": 3
     },
-    "additionalProperties": true
-  }
+    "tier": { "type": "string", "enum": ["team", "public"] },
+    "series": { "type": ["string", "null"] },
+    "part": { "type": ["integer", "null"] },
+    "author": { "type": "string", "minLength": 1 },
+    "publishedAt": { "type": "string", "format": "date-time" },
+    "status": { "type": "string", "enum": ["draft", "published"] },
+    "references": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "media": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": { "type": "string", "enum": ["image", "video"] },
+          "url": { "type": "string" },
+          "caption": { "type": "string" }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
 }

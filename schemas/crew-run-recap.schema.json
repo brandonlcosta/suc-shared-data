@@ -1,40 +1,33 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "SUC Gear Review",
-  "description": "General gear review for packs, poles, hydration, apparel, etc.",
+  "title": "SUC Crew Run Recap",
+  "description": "Weekend SUC crew run recap.",
   "type": "object",
-  "required": ["id", "name", "gearType", "topics", "tier", "author", "publishedAt"],
+  "required": ["id", "eventName", "eventDate", "topics", "tier", "author", "publishedAt"],
   "properties": {
     "id": { "type": "string", "minLength": 1 },
-    "name": { "type": "string", "minLength": 1 },
-    "brand": { "type": "string" },
-    "gearType": {
-      "type": "string",
-      "enum": ["pack", "vest", "poles", "headlamp", "hydration", "apparel", "watch", "nutrition", "accessories"]
-    },
-    "useCase": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "enum": ["racing", "training", "daily", "ultras", "fastpacking"]
-      }
-    },
-    "pros": {
+    "eventName": { "type": "string", "minLength": 1 },
+    "eventDate": { "type": "string", "format": "date" },
+    "routeId": { "type": "string" },
+    "routeName": { "type": "string" },
+    "distance": { "type": "string" },
+    "vert": { "type": "string" },
+    "conditions": { "type": "string" },
+    "highlights": {
       "type": "array",
       "items": { "type": "string", "minLength": 1 }
     },
-    "cons": {
+    "crewShoutouts": {
       "type": "array",
       "items": { "type": "string", "minLength": 1 }
     },
-    "verdict": { "type": "string", "minLength": 1 },
-    "rating": { "type": "number", "minimum": 1, "maximum": 5 },
     "body": { "type": "string" },
     "topics": {
       "type": "array",
       "items": { "type": "string" },
       "minItems": 1,
-      "maxItems": 3
+      "maxItems": 3,
+      "description": "Typically ['crew', 'weekend-runs']"
     },
     "tier": { "type": "string", "enum": ["team", "public"] },
     "author": { "type": "string", "minLength": 1 },
@@ -53,4 +46,3 @@
   },
   "additionalProperties": false
 }
-

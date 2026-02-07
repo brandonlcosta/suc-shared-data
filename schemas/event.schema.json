@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SUC Event",
+  "description": "Canonical event object stored in events.master.json.",
+  "type": "object",
+  "required": ["event_id", "event_name"],
+  "properties": {
+    "event_id": { "type": "string", "minLength": 1 },
+    "event_name": { "type": "string", "minLength": 1 },
+    "event_description": { "type": "string" },
+    "event_date": { "type": "string" },
+    "event_time": { "type": "string" },
+    "type": {
+      "type": "string",
+      "enum": ["crew-run", "training-run", "race", "camp", "social"]
+    },
+    "start_location_name": { "type": "string" },
+    "start_location_url": { "type": "string" },
+    "start_lat": { "type": "number" },
+    "start_lng": { "type": "number" },
+    "route_group_ids": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    }
+  },
+  "additionalProperties": true
+}

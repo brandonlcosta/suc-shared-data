@@ -2,13 +2,17 @@
   "id": "0a91b815-6d18-4dc4-9bec-3fdebdab8842",
   "title": "0a91b815-6d18-4dc4-9bec-3fdebdab8842",
   "status": "published",
-  "createdAt": "2026-02-06T21:01:44.629Z",
-  "updatedAt": "2026-02-06T21:01:44.629Z",
+  "createdAt": "2026-02-07T02:38:19.591Z",
+  "updatedAt": "2026-02-07T02:38:19.591Z",
   "focus": "hill-power",
   "stress": "high",
   "volume": "med-high",
   "intensity": "high",
   "workouts": [
-    "workout-ac6e6480-965e-4182-b05f-19f6113c4f88"
+    "workout-ac6e6480-965e-4182-b05f-19f6113c4f88",
+    "workout-1a154e07-07e3-4d10-b4a9-ef0002c24929"
+  ],
+  "eventIds": [
+    "SUC-035"
   ]
 }

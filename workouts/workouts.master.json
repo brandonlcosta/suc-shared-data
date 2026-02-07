@@ -5,6 +5,7 @@
       "workoutId": "workout-ac6e6480-965e-4182-b05f-19f6113c4f88",
       "version": 1,
       "status": "published",
+      "domain": "run",
       "name": "Threshold 90s + Tempo",
       "description": "A mixed interval + tempo workout that challenges you to sustain your speed on fatigued and tired legs. Focus on a steady but fast pace for the tempo effort.",
       "focus": [
@@ -249,6 +250,79 @@
       "createdAt": "2026-02-06T02:16:35.827Z",
       "updatedAt": "2026-02-06T02:21:14.929Z",
       "publishedAt": "2026-02-06T02:21:14.929Z"
+    },
+    {
+      "workoutId": "workout-1a154e07-07e3-4d10-b4a9-ef0002c24929",
+      "version": 1,
+      "status": "published",
+      "domain": "strength",
+      "strengthType": "circuit",
+      "name": "Strength for Runners",
+      "description": "A routine that includes mobility, single leg strength and can be done before or after an easy aerobic run.",
+      "focus": [
+        "ecofitness",
+        "mobility",
+        "strength"
+      ],
+      "coachNotes": "",
+      "tiers": {},
+      "strengthStructure": [
+        {
+          "type": "mobility_block",
+          "id": "strength-1770431737994-lkl4",
+          "name": "Mobility Flow",
+          "duration": "10min",
+          "cues": ""
+        },
+        {
+          "type": "strength_exercise",
+          "id": "strength-1770431639875-ckhf",
+          "name": "Toe Touch",
+          "sets": 3,
+          "reps": "8-10",
+          "load": "",
+          "notes": ""
+        },
+        {
+          "type": "strength_exercise",
+          "id": "strength-1770431682955-axz9",
+          "name": "Single-arm Farmer Carry",
+          "sets": 3,
+          "reps": "8-10",
+          "load": "",
+          "notes": ""
+        },
+        {
+          "type": "strength_exercise",
+          "id": "strength-1770431690921-omkx",
+          "name": "Reverse Lunge",
+          "sets": 3,
+          "reps": "8-10",
+          "load": "",
+          "notes": ""
+        },
+        {
+          "type": "strength_exercise",
+          "id": "strength-1770431674850-7suo",
+          "name": "Deadlift",
+          "sets": 3,
+          "reps": "30 sec",
+          "load": "",
+          "notes": ""
+        },
+        {
+          "type": "strength_exercise",
+          "id": "strength-1770431701392-7736",
+          "name": "Heavy Sled Push",
+          "sets": 3,
+          "reps": "8-10",
+          "load": "",
+          "notes": ""
+        }
+      ],
+      "createdAt": "2026-02-07T02:33:39.757Z",
+      "updatedAt": "2026-02-07T02:36:49.886Z",
+      "publishedAt": "2026-02-07T02:36:49.886Z"
     }
   ]
 }
