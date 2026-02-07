@@ -2461,6 +2461,205 @@
       "createdAt": "2026-02-07T07:43:34.345Z",
       "updatedAt": "2026-02-07T07:44:08.329Z",
       "publishedAt": "2026-02-07T07:44:08.329Z"
+    },
+    {
+      "workoutId": "workout-3b617ea9-38a1-41ba-968c-7e0a6ecee68e",
+      "version": 2,
+      "status": "published",
+      "domain": "run",
+      "strengthType": null,
+      "name": "5 min Ramp Up",
+      "description": "This workout is designed to enhance your ability to sustain and surge past threshold pace, simulating race conditions and boosting your speed endurance.\n\nStart each rep at a Threshold effort and increase the pace with 90 seconds to go. \n\nSave some energy for the final 90 seconds so you can really push the pace.",
+      "focus": [
+        "threshold",
+        "intervals",
+        "ramp-up"
+      ],
+      "coachNotes": "",
+      "tiers": {
+        "MED": {
+          "name": "Easy + Strides (MED)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 3,
+              "work": {
+                "duration": "5min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z4"
+                },
+                "cues": []
+              },
+              "rest": {
+                "duration": "2min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              }
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "LRG": {
+          "name": "5 min Ramp Up (LRG)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 4,
+              "work": {
+                "duration": "5min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z4"
+                },
+                "cues": []
+              },
+              "rest": {
+                "duration": "2min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              }
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "XL": {
+          "name": "5 min Ramp Up (XL)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 4,
+              "work": {
+                "duration": "5min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z4"
+                },
+                "cues": []
+              },
+              "rest": {
+                "duration": "2min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              }
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "2min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "10min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z3"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z1"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        }
+      },
+      "createdAt": "2026-02-07T06:33:46.315Z",
+      "updatedAt": "2026-02-07T21:42:40.609Z",
+      "publishedAt": "2026-02-07T21:42:40.609Z"
     }
   ]
 }
