@@ -1,0 +1,34 @@
+[
+  {
+    "id": "trail-shoe-selection-guide",
+    "type": "training-tip",
+    "title": "Trail Shoe Selection: Finding Your Perfect Match",
+    "summary": "A comprehensive guide to choosing trail running shoes based on terrain, distance, and foot type.",
+    "body": "# Trail Shoe Selection Guide\n\nChoosing the right trail shoe can make or break your ultra experience. Here's how to find your perfect match.\n\n## Key Factors\n\n### 1. Terrain Type\n\n**Rocky Technical Trails**\n- Rock plate protection essential\n- Stiffer midsole for foot fatigue\n- Aggressive lugs (4-5mm)\n- Examples: Speedgoat, Altra Olympus\n\n**Smooth Buff Trails**\n- Lighter, more flexible\n- Moderate cushion\n- 3-4mm lugs sufficient\n- Examples: Sense Ride, Pegasus Trail\n\n**Mud & Wet Conditions**\n- Deep, spaced lugs (5-6mm)\n- Water-resistant upper\n- Sticky rubber compound\n- Examples: Speedcross, Peregrine\n\n### 2. Distance Considerations\n\n**50K and Under**\n- Can prioritize responsiveness\n- Less cushion acceptable\n- Stack height: 20-28mm\n\n**50 Miler to 100K**\n- Balance cushion and ground feel\n- Stack height: 28-35mm\n- Consider wider toe box\n\n**100 Milers**\n- Maximum cushion priority\n- Stack height: 33-40mm\n- Room for foot swelling\n- Rocker geometry helps late-race\n\n### 3. Fit Philosophy\n\n**The Thumbnail Test**: Full thumbnail's width between longest toe and shoe end when standing\n\n**Width Matters**: \n- Narrow: Salomon, Nike\n- Medium: Hoka, Brooks\n- Wide: Altra, Topo\n\n## Common Mistakes\n\n❌ Buying race day shoes without testing in training\n❌ Going too minimal for ultra distance\n❌ Ignoring drop if switching from road shoes\n❌ Not accounting for foot swelling\n\n## Pro Tips\n\n- Buy shoes in the evening when feet are swollen\n- Train in shoes for 40-60 miles before racing\n- Have 2-3 pairs in rotation to extend life\n- Replace every 300-400 miles for ultras\n- Don't change shoes within 4 weeks of race day\n\n## The Bottom Line\n\nThe best shoe is the one that disappears on your feet. Ignore hype and brand loyalty—your feet will tell you what works.",
+    "topics": [
+      "gear",
+      "footwear"
+    ],
+    "tier": "team",
+    "author": "Coach Brandon",
+    "publishedAt": "2026-02-03T08:00:00Z",
+    "status": "published",
+    "series": null
+  },
+  {
+    "id": "hydration-systems-comparison",
+    "type": "training-tip",
+    "title": "Hydration Systems: Vest vs Handheld vs Belt",
+    "summary": "Compare different hydration carrying systems and learn which works best for your racing style.",
+    "body": "# Hydration Systems Compared\n\nChoosing how to carry water is as personal as shoe selection. Let's break down the options.\n\n## Hydration Vests\n\n**Pros:**\n- Hands-free running\n- Carry 1-3L capacity\n- Storage for nutrition, layers, mandatory gear\n- Weight distributed across shoulders and torso\n\n**Cons:**\n- Expensive ($100-200)\n- Can feel bulky on hot days\n- Requires proper fit\n- Cleaning bladder is tedious\n\n**Best for:** 50K+ races, self-supported long runs, mountain courses\n\n**Top picks:** Salomon ADV Skin 12, Ultimate Direction Fast Pack\n\n## Handhelds\n\n**Pros:**\n- Quick sip access\n- Lightweight and minimal\n- Easy to refill at aid stations\n- Natural arm swing cadence\n\n**Cons:**\n- Limited capacity (500ml typically)\n- Hand fatigue on long efforts\n- Awkward for technical terrain\n- Minimal storage\n\n**Best for:** Training runs under 2 hours, supported races with close aid, flat courses\n\n**Top picks:** Nathan SpeedDraw Plus, Salomon Soft Flask\n\n## Hydration Belts\n\n**Pros:**\n- Lower center of gravity than vest\n- Less bounce than vest (when fitted right)\n- Cooler on hot days\n- Modular flask system\n\n**Cons:**\n- Limited capacity (usually 2 flasks max)\n- Can ride up or bounce if poorly fitted\n- Less storage than vest\n- Learning curve for comfort\n\n**Best for:** 50K races, hot weather events, runners who hate vest bounce\n\n**Top picks:** Naked Running Band, FlipBelt\n\n## My Recommendation\n\n**Training:** Handheld for runs under 90 minutes, vest for anything longer\n\n**Racing:**\n- **50K**: Vest or belt depending on aid station spacing\n- **50M-100K**: Vest (non-negotiable for safety)\n- **100M**: Vest with 2L+ capacity\n\n## Hydration Strategy\n\nRegardless of system:\n- Drink to thirst (20-24 oz/hour baseline)\n- Add electrolytes to every bottle\n- Practice in training at race effort\n- Refill at every aid station opportunity\n\n**Pro tip:** In a vest, use soft flasks in front pockets for quick access. Save bladder for backup capacity.",
+    "topics": [
+      "gear",
+      "hydration"
+    ],
+    "tier": "team",
+    "author": "Coach Brandon",
+    "publishedAt": "2026-02-05T08:00:00Z",
+    "status": "published",
+    "series": null
+  }
+]

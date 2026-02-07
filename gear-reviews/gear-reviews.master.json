@@ -1,4 +1,29 @@
 {
   "version": 1,
-  "items": []
+  "items": [
+    {
+      "id": "salomon-adv-skin-12-review",
+      "name": "ADV Skin 12",
+      "brand": "Salomon",
+      "gearType": "vest",
+      "useCase": ["racing", "training", "ultras"],
+      "pros": [
+        "Stable carry with minimal bounce",
+        "Plenty of storage for mandatory kit",
+        "Soft flasks are easy to access on the move"
+      ],
+      "cons": [
+        "Back compartment access requires practice",
+        "Sizing can feel tight if layered heavily"
+      ],
+      "verdict": "A benchmark ultra vest that balances comfort, storage, and stability for long efforts.",
+      "rating": 4.7,
+      "body": "The ADV Skin 12 rides close to the body without restricting breathing, and the front storage layout keeps nutrition organized. It shines on long mountain days where you need gear access without taking the vest off.",
+      "topics": ["gear", "hydration"],
+      "tier": "team",
+      "author": "Coach Brandon",
+      "publishedAt": "2026-02-07T08:00:00Z",
+      "status": "published"
+    }
+  ]
 }

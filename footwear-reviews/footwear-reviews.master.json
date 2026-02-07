@@ -1,4 +1,36 @@
 {
   "version": 1,
-  "items": []
+  "items": [
+    {
+      "id": "hoka-speedgoat-5-review",
+      "brand": "Hoka",
+      "model": "Speedgoat 5",
+      "category": "trail",
+      "useCase": ["training", "long-runs", "racing"],
+      "terrain": ["rocky", "technical", "mixed"],
+      "fit": "medium",
+      "cushioning": "high",
+      "stability": "neutral",
+      "drop": 4,
+      "stackHeight": 38,
+      "weight": 10.2,
+      "pros": [
+        "Excellent traction on wet rock",
+        "Plush cushioning for long descents",
+        "Secure midfoot lockdown"
+      ],
+      "cons": [
+        "Upper runs warm in summer",
+        "Heel can feel bulky at faster paces"
+      ],
+      "verdict": "A dependable long-run and race-day trail shoe for technical terrain where cushioning and grip matter most.",
+      "rating": 4.5,
+      "body": "The Speedgoat 5 feels built for rugged terrain and long days. The Vibram outsole sticks to wet rock, and the ride stays consistent late in the run. It is not the lightest option, but the security and protection are excellent for mountain routes.",
+      "topics": ["gear", "footwear"],
+      "tier": "team",
+      "author": "Coach Brandon",
+      "publishedAt": "2026-02-07T08:00:00Z",
+      "status": "published"
+    }
+  ]
 }

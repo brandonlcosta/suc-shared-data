@@ -6,13 +6,43 @@
     "summary": "Learn the core principles of heat acclimation and how to safely build tolerance for hot-weather running.",
     "body": "# Heat Training Fundamentals\n\nHeat acclimation is a critical skill for ultrarunners, especially those racing in hot climates. Here's how to build heat tolerance safely:\n\n## The Science\n\nYour body needs 10-14 days of consistent heat exposure to fully adapt. During this period, your blood plasma volume increases, sweating begins earlier and at a higher rate, and your core temperature threshold rises.\n\n## Implementation\n\n1. **Start Conservatively**: Begin with 20-30 minute sessions at reduced intensity\n2. **Gradual Progression**: Add 5-10 minutes each session until you're hitting 60-90 minutes\n3. **Monitor Hydration**: Weigh yourself before and after runs to dial in fluid needs\n4. **Timing Matters**: Train during the hottest part of the day (12-3 PM)\n\n## Safety Protocols\n\n- Never train alone in extreme heat\n- Carry extra water and electrolytes\n- Know the signs of heat exhaustion: dizziness, nausea, confusion\n- Back off if your heart rate is 10+ bpm higher than normal for a given effort\n\n## Pro Tips\n\n- Overdressing indoors can simulate heat when weather doesn't cooperate\n- Hot baths (15-20 min at 104°F) post-run can supplement outdoor sessions\n- Don't schedule heat training during high-volume weeks\n\nRemember: heat training is a tool, not a daily requirement. Use it strategically in your build to a goal race.",
     "topics": [
-      "heat",
-      "acclimation",
-      "training"
+      "training",
+      "heat-acclimation"
     ],
     "tier": "team",
     "author": "Coach Brandon",
     "publishedAt": "2026-01-15T08:00:00Z",
+    "series": null
+  },
+  {
+    "id": "vert-training-progression",
+    "type": "training-tip",
+    "title": "Building Vertical Tolerance: A Progressive Approach",
+    "summary": "How to systematically build climbing strength and downhill resilience for mountain ultras.",
+    "body": "# Building Vertical Tolerance\n\nMountain ultras demand specific adaptations. Here's how to build climbing strength and eccentric resilience progressively.\n\n## Phase 1: Foundation (Weeks 1-4)\n\n**Goal**: Build basic climbing endurance without destroying your legs\n\n- **Volume**: 1-2 vert sessions per week\n- **Target**: 1,000-2,000 ft per session\n- **Grade**: 4-8% sustained climbs\n- **Effort**: Conversational pace (Zone 2)\n- **Recovery**: Gentle downhills, walk the steeps\n\n## Phase 2: Load (Weeks 5-8)\n\n**Goal**: Increase vertical volume and introduce steeper grades\n\n- **Volume**: 2-3 vert sessions per week\n- **Target**: 2,000-4,000 ft per session\n- **Grade**: Mix of 4-8% and 8-12% pitches\n- **Effort**: Mostly Zone 2, some Zone 3 on climbs\n- **Recovery**: Start running moderate downhills\n\n## Phase 3: Specificity (Weeks 9-12)\n\n**Goal**: Simulate race-day vert and grade\n\n- **Volume**: 2-3 vert sessions per week\n- **Target**: 3,000-6,000 ft per session\n- **Grade**: Race-specific (include 12%+ if racing steep terrain)\n- **Effort**: Zone 2-3 on climbs, practice race-day effort\n- **Recovery**: Run all downhills at race effort\n\n## Key Principles\n\n1. **Progression is Non-Linear**: Some weeks step back in volume\n2. **Downhills Build Slowly**: Eccentric damage is real—respect it\n3. **Power Hiking**: Don't force running on steep grades (>12%)\n4. **Strength Work**: Add single-leg exercises to bulletproof knees\n\n## Common Mistakes\n\n❌ Too much vert too soon\n❌ Ignoring downhill practice\n❌ Running when you should hike\n❌ Skipping strength work\n\n## Sample Week (Phase 3)\n\n- **Monday**: Easy 60 min flat\n- **Tuesday**: Vert workout: 4,000 ft climbing (Zone 2-3)\n- **Wednesday**: Recovery 45 min\n- **Thursday**: Tempo run with rolling hills\n- **Friday**: Rest or easy 30 min\n- **Saturday**: Long run with 2,000-3,000 ft vert\n- **Sunday**: Easy 60-90 min\n\n**Remember**: Vert training is cumulative. Your body adapts slowly to eccentric load. Be patient and consistent.",
+    "topics": [
+      "training",
+      "climbing"
+    ],
+    "tier": "team",
+    "author": "Coach Brandon",
+    "publishedAt": "2026-02-01T08:00:00Z",
+    "series": null
+  },
+  {
+    "id": "downhill-eccentric-resilience",
+    "type": "training-tip",
+    "title": "Downhill Resilience: Protecting Quads and Knees",
+    "summary": "Practical strategies to build eccentric strength and keep downhill running from wrecking your legs.",
+    "body": "# Downhill Resilience\n\nDownhills are where races are won and quads are blown. The goal is to build eccentric tolerance without adding injury risk.\n\n## The 3-Part Progression\n\n### 1. Strength Base (2-3x/week)\n- Split squats: 3x8 each side\n- Step-downs: 3x10 each side (slow 4-5 sec lowering)\n- Calf raises: 3x12 (pause at bottom)\n\n### 2. Controlled Exposure (1x/week)\n- Short downhill repeats: 6-10 x 45-60 sec\n- Easy effort, focus on cadence and soft footstrike\n- Walk back up for full recovery\n\n### 3. Specificity (every 10-14 days)\n- 20-40 min continuous downhill on runnable grade\n- Effort stays conversational\n- Stop if form breaks down\n\n## Form Cues\n- Quick feet (aim 175-185 cadence)\n- Slight forward lean from ankles\n- Land under hips, not out in front\n\n## Recovery Rules\n- Expect soreness for 24-48 hours after new downhill load\n- Prioritize easy running the next day\n- No back-to-back hard downhill sessions\n\n## Race Week Tip\nDo one short downhill refresher 7-10 days out, then let your legs absorb it.\n\n**Bottom line:** Build downhill fitness gradually, and you will gain speed without the quad shutdown.",
+    "topics": [
+      "training",
+      "downhills"
+    ],
+    "tier": "team",
+    "author": "Coach Brandon",
+    "publishedAt": "2026-02-07T08:00:00Z",
+    "status": "published",
     "series": null
   }
 ]

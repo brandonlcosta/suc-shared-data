@@ -1,0 +1,37 @@
+[
+  {
+    "id": "canyon-ridge-50k-2026",
+    "raceName": "Canyon Ridge 50K",
+    "raceDate": "2026-01-18",
+    "distance": "50K",
+    "vert": "6,200 ft",
+    "conditions": "Cold start, clear skies, light wind on the ridgeline",
+    "strategySummary": "Start conservative on the first climb, fuel early, and push the final 10K once the legs felt settled.",
+    "whatWorked": [
+      "Short hike breaks on the steepest pitches",
+      "Consistent fueling every 30 minutes",
+      "Running the descents with quick cadence"
+    ],
+    "whatDidnt": [
+      "Skipped salt on the second climb",
+      "Went too hard on the last ridge and cramped slightly"
+    ],
+    "lessons": [
+      "Salt timing matters in cold, dry conditions",
+      "Stick to a steady effort and avoid surges late"
+    ],
+    "result": "Finished strong with a negative split.",
+    "finishTime": "5:12:34",
+    "placement": "12th overall, 3rd in age group",
+    "body": "The early miles were controlled, and the nutrition plan stayed on track until the last ridge. A small cramp surfaced when I pushed too hard, but easing up for two minutes cleared it. The final descent was smooth and the pacing felt even across the day.",
+    "topics": [
+      "strategy",
+      "race-recaps",
+      "50k"
+    ],
+    "tier": "team",
+    "author": "Coach Brandon",
+    "publishedAt": "2026-02-07T08:00:00Z",
+    "status": "published"
+  }
+]

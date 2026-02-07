@@ -1,0 +1,31 @@
+[
+  {
+    "id": "sunday-ridge-loop-crew-run-2026-02-02",
+    "eventName": "Sunday Ridge Loop Crew Run",
+    "eventDate": "2026-02-02",
+    "routeId": "ridge-loop-12m",
+    "routeName": "Ridge Loop 12M",
+    "distance": "12 miles",
+    "vert": "2,100 ft",
+    "conditions": "Overcast, 38F at start, light drizzle after mile 6",
+    "highlights": [
+      "Sunrise views on the west ridge",
+      "Smooth pacing with regroup points every 3 miles",
+      "Post-run coffee stop with the full crew"
+    ],
+    "crewShoutouts": [
+      "Sarah for leading the warmup",
+      "Dylan for hauling extra layers",
+      "Maya for the steady downhill pacing"
+    ],
+    "body": "A relaxed crew run with a steady climb to the ridge and a clean descent on damp trails. Everyone stayed together with quick regroups, and the rain held off until the final stretch.",
+    "topics": [
+      "crew",
+      "weekend-runs"
+    ],
+    "tier": "team",
+    "author": "Coach Brandon",
+    "publishedAt": "2026-02-07T08:00:00Z",
+    "status": "published"
+  }
+]

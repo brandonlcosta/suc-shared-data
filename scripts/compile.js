@@ -106,6 +106,24 @@ async function loadRecapsMaster() {
   return parsed.weeks;
 }
 
+async function loadFootwearReviewsMaster() {
+  const filePath = path.join(ROOT, 'footwear-reviews', 'footwear-reviews.master.json');
+  const parsed = await readJsonIfExists(filePath, { version: 1, items: [] });
+  return parsed.items || [];
+}
+
+async function loadRaceRecapsMaster() {
+  const filePath = path.join(ROOT, 'race-recaps', 'race-recaps.master.json');
+  const parsed = await readJsonIfExists(filePath, { version: 1, items: [] });
+  return parsed.items || [];
+}
+
+async function loadCrewRunRecapsMaster() {
+  const filePath = path.join(ROOT, 'crew-run-recaps', 'crew-run-recaps.master.json');
+  const parsed = await readJsonIfExists(filePath, { version: 1, items: [] });
+  return parsed.items || [];
+}
+
 function getEventId(raw) {
   if (!raw || typeof raw !== 'object') return null;
   return raw.event_id || raw.eventId || raw.id || null;
@@ -803,6 +821,105 @@ function compileCrewStories(items) {
   return { index: normalized, byTag };
 }
 
+// Footwear reviews compilation
+function normalizeFootwearReview(raw) {
+  if (!raw || typeof raw !== 'object') return null;
+  const id = String(raw.id || '').trim();
+  if (!id) return null;
+  return {
+    ...raw,
+    id,
+    brand: raw.brand || '',
+    model: raw.model || '',
+    topics: normalizeStringArray(raw.topics),
+    tier: raw.tier || 'team',
+    status: raw.status || 'published'
+  };
+}
+
+function compileFootwearReviews(items) {
+  const normalized = items.map(normalizeFootwearReview).filter(Boolean);
+  const published = normalized.filter((item) => item.status !== 'draft');
+  const byTopic = new Map();
+
+  for (const item of published) {
+    for (const topic of item.topics || []) {
+      const topicKey = slugify(topic);
+      if (!topicKey) continue;
+      if (!byTopic.has(topicKey)) byTopic.set(topicKey, []);
+      byTopic.get(topicKey).push(item);
+    }
+  }
+
+  return { index: published, byTopic };
+}
+
+// Race recaps compilation
+function normalizeRaceRecap(raw) {
+  if (!raw || typeof raw !== 'object') return null;
+  const id = String(raw.id || '').trim();
+  if (!id) return null;
+  return {
+    ...raw,
+    id,
+    raceName: raw.raceName || '',
+    distance: raw.distance || '',
+    topics: normalizeStringArray(raw.topics),
+    tier: raw.tier || 'team',
+    status: raw.status || 'published'
+  };
+}
+
+function compileRaceRecaps(items) {
+  const normalized = items.map(normalizeRaceRecap).filter(Boolean);
+  const published = normalized.filter((item) => item.status !== 'draft');
+  const byTopic = new Map();
+
+  for (const item of published) {
+    for (const topic of item.topics || []) {
+      const topicKey = slugify(topic);
+      if (!topicKey) continue;
+      if (!byTopic.has(topicKey)) byTopic.set(topicKey, []);
+      byTopic.get(topicKey).push(item);
+    }
+  }
+
+  return { index: published, byTopic };
+}
+
+// Crew run recaps compilation
+function normalizeCrewRunRecap(raw) {
+  if (!raw || typeof raw !== 'object') return null;
+  const id = String(raw.id || '').trim();
+  if (!id) return null;
+  return {
+    ...raw,
+    id,
+    eventName: raw.eventName || '',
+    eventDate: raw.eventDate || '',
+    topics: normalizeStringArray(raw.topics),
+    tier: raw.tier || 'team',
+    status: raw.status || 'published'
+  };
+}
+
+function compileCrewRunRecaps(items) {
+  const normalized = items.map(normalizeCrewRunRecap).filter(Boolean);
+  const published = normalized.filter((item) => item.status !== 'draft');
+  const byTopic = new Map();
+
+  for (const item of published) {
+    for (const topic of item.topics || []) {
+      const topicKey = slugify(topic);
+      if (!topicKey) continue;
+      if (!byTopic.has(topicKey)) byTopic.set(topicKey, []);
+      byTopic.get(topicKey).push(item);
+    }
+  }
+
+  return { index: published, byTopic };
+}
+
 function getGitSha() {
   try {
     return execSync('git rev-parse --short HEAD', { cwd: ROOT }).toString().trim();
@@ -916,6 +1033,60 @@ async function main() {
     );
   }
   log('Wrote compiled/crew-stories/*');
+
+  log('Compiling footwear reviews...');
+  const footwearItems = await loadFootwearReviewsMaster();
+  const footwearCompiled = compileFootwearReviews(footwearItems);
+  await fs.mkdir(path.join(COMPILED_DIR, 'footwear-reviews', 'by-topic'), { recursive: true });
+  await fs.writeFile(
+    path.join(COMPILED_DIR, 'footwear-reviews', 'index.json'),
+    JSON.stringify(footwearCompiled.index, null, 2),
+    'utf8'
+  );
+  for (const [topic, items] of footwearCompiled.byTopic) {
+    await fs.writeFile(
+      path.join(COMPILED_DIR, 'footwear-reviews', 'by-topic', `${topic}.json`),
+      JSON.stringify(items, null, 2),
+      'utf8'
+    );
+  }
+  log('Wrote compiled/footwear-reviews/*');
+
+  log('Compiling race recaps...');
+  const raceRecapItems = await loadRaceRecapsMaster();
+  const raceRecapCompiled = compileRaceRecaps(raceRecapItems);
+  await fs.mkdir(path.join(COMPILED_DIR, 'race-recaps', 'by-topic'), { recursive: true });
+  await fs.writeFile(
+    path.join(COMPILED_DIR, 'race-recaps', 'index.json'),
+    JSON.stringify(raceRecapCompiled.index, null, 2),
+    'utf8'
+  );
+  for (const [topic, items] of raceRecapCompiled.byTopic) {
+    await fs.writeFile(
+      path.join(COMPILED_DIR, 'race-recaps', 'by-topic', `${topic}.json`),
+      JSON.stringify(items, null, 2),
+      'utf8'
+    );
+  }
+  log('Wrote compiled/race-recaps/*');
+
+  log('Compiling crew run recaps...');
+  const crewRunRecapItems = await loadCrewRunRecapsMaster();
+  const crewRunRecapCompiled = compileCrewRunRecaps(crewRunRecapItems);
+  await fs.mkdir(path.join(COMPILED_DIR, 'crew-run-recaps', 'by-topic'), { recursive: true });
+  await fs.writeFile(
+    path.join(COMPILED_DIR, 'crew-run-recaps', 'index.json'),
+    JSON.stringify(crewRunRecapCompiled.index, null, 2),
+    'utf8'
+  );
+  for (const [topic, items] of crewRunRecapCompiled.byTopic) {
+    await fs.writeFile(
+      path.join(COMPILED_DIR, 'crew-run-recaps', 'by-topic', `${topic}.json`),
+      JSON.stringify(items, null, 2),
+      'utf8'
+    );
+  }
+  log('Wrote compiled/crew-run-recaps/*');
 
   log('Compiling leaderboards...');
   const leaderboards = await loadLeaderboardsCurrent();

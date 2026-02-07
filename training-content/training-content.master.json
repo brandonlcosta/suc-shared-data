@@ -7,10 +7,14 @@
       "title": "Heat Training Fundamentals",
       "summary": "Learn the core principles of heat acclimation and how to safely build tolerance for hot-weather running.",
       "body": "# Heat Training Fundamentals\n\nHeat acclimation is a critical skill for ultrarunners, especially those racing in hot climates. Here's how to build heat tolerance safely:\n\n## The Science\n\nYour body needs 10-14 days of consistent heat exposure to fully adapt. During this period, your blood plasma volume increases, sweating begins earlier and at a higher rate, and your core temperature threshold rises.\n\n## Implementation\n\n1. **Start Conservatively**: Begin with 20-30 minute sessions at reduced intensity\n2. **Gradual Progression**: Add 5-10 minutes each session until you're hitting 60-90 minutes\n3. **Monitor Hydration**: Weigh yourself before and after runs to dial in fluid needs\n4. **Timing Matters**: Train during the hottest part of the day (12-3 PM)\n\n## Safety Protocols\n\n- Never train alone in extreme heat\n- Carry extra water and electrolytes\n- Know the signs of heat exhaustion: dizziness, nausea, confusion\n- Back off if your heart rate is 10+ bpm higher than normal for a given effort\n\n## Pro Tips\n\n- Overdressing indoors can simulate heat when weather doesn't cooperate\n- Hot baths (15-20 min at 104°F) post-run can supplement outdoor sessions\n- Don't schedule heat training during high-volume weeks\n\nRemember: heat training is a tool, not a daily requirement. Use it strategically in your build to a goal race.",
-      "topics": ["training", "heat-acclimation"],
+      "topics": [
+        "training",
+        "heat-acclimation"
+      ],
       "tier": "team",
       "author": "Coach Brandon",
-      "publishedAt": "2026-01-15T08:00:00Z"
+      "publishedAt": "2026-01-15T08:00:00Z",
+      "series": null
     },
     {
       "id": "fueling-strategy-101-pt1",
@@ -20,7 +24,10 @@
       "title": "Fueling Strategy 101: Understanding Your Energy Systems",
       "summary": "Part 1 of our fueling workshop series covers the science of energy systems and how to fuel for different effort zones.",
       "body": "# Fueling Strategy 101: Energy Systems\n\n## Your Body's Fuel Tanks\n\nThink of your body as having three fuel tanks:\n\n### 1. Phosphocreatine (PCr) System\n- **Duration**: 0-10 seconds\n- **Use case**: All-out sprints, explosive efforts\n- **Fueling**: Not relevant for ultras\n\n### 2. Glycolytic System (Carbs)\n- **Duration**: 10 seconds - 2 minutes at max, but sustains moderate-hard efforts\n- **Storage**: ~2000 calories (liver + muscle glycogen)\n- **Use case**: Tempo runs, threshold efforts, hard climbs\n- **Fueling needs**: 60-90g carbs/hour during racing\n\n### 3. Oxidative System (Fat)\n- **Duration**: Unlimited (practically)\n- **Storage**: 50,000+ calories for most runners\n- **Use case**: Easy runs, recovery, ultra pace\n- **Fueling needs**: Minimal external fuel needed if trained\n\n## The Zone 2 Sweet Spot\n\nAt ultra pace (Zone 2-3), you're burning roughly:\n- 60-70% fat\n- 30-40% carbs\n\nThis is why base building matters—you're training your body to preferentially burn fat, sparing glycogen for when you need it.\n\n## Racing Implications\n\n**Key insight**: Even fat-adapted runners need carbs during races because:\n1. Any intensity above pure Zone 2 requires glycogen\n2. Your gut can only absorb ~60-90g carbs/hour\n3. You're burning ~400-600 cal/hour\n4. Fat oxidation can't keep pace with demand\n\n**Next up**: Part 2 will cover practical fueling protocols for training and racing.\n\n---\n\n*This is part of our Fueling Strategy 101 series. Stay tuned for Part 2: Race Day Fueling Tactics.*",
-      "topics": ["fueling", "race-day"],
+      "topics": [
+        "fueling",
+        "race-day"
+      ],
       "tier": "team",
       "author": "Coach Brandon",
       "publishedAt": "2026-01-22T08:00:00Z"
@@ -31,10 +38,14 @@
       "title": "Building Vertical Tolerance: A Progressive Approach",
       "summary": "How to systematically build climbing strength and downhill resilience for mountain ultras.",
       "body": "# Building Vertical Tolerance\n\nMountain ultras demand specific adaptations. Here's how to build climbing strength and eccentric resilience progressively.\n\n## Phase 1: Foundation (Weeks 1-4)\n\n**Goal**: Build basic climbing endurance without destroying your legs\n\n- **Volume**: 1-2 vert sessions per week\n- **Target**: 1,000-2,000 ft per session\n- **Grade**: 4-8% sustained climbs\n- **Effort**: Conversational pace (Zone 2)\n- **Recovery**: Gentle downhills, walk the steeps\n\n## Phase 2: Load (Weeks 5-8)\n\n**Goal**: Increase vertical volume and introduce steeper grades\n\n- **Volume**: 2-3 vert sessions per week\n- **Target**: 2,000-4,000 ft per session\n- **Grade**: Mix of 4-8% and 8-12% pitches\n- **Effort**: Mostly Zone 2, some Zone 3 on climbs\n- **Recovery**: Start running moderate downhills\n\n## Phase 3: Specificity (Weeks 9-12)\n\n**Goal**: Simulate race-day vert and grade\n\n- **Volume**: 2-3 vert sessions per week\n- **Target**: 3,000-6,000 ft per session\n- **Grade**: Race-specific (include 12%+ if racing steep terrain)\n- **Effort**: Zone 2-3 on climbs, practice race-day effort\n- **Recovery**: Run all downhills at race effort\n\n## Key Principles\n\n1. **Progression is Non-Linear**: Some weeks step back in volume\n2. **Downhills Build Slowly**: Eccentric damage is real—respect it\n3. **Power Hiking**: Don't force running on steep grades (>12%)\n4. **Strength Work**: Add single-leg exercises to bulletproof knees\n\n## Common Mistakes\n\n❌ Too much vert too soon\n❌ Ignoring downhill practice\n❌ Running when you should hike\n❌ Skipping strength work\n\n## Sample Week (Phase 3)\n\n- **Monday**: Easy 60 min flat\n- **Tuesday**: Vert workout: 4,000 ft climbing (Zone 2-3)\n- **Wednesday**: Recovery 45 min\n- **Thursday**: Tempo run with rolling hills\n- **Friday**: Rest or easy 30 min\n- **Saturday**: Long run with 2,000-3,000 ft vert\n- **Sunday**: Easy 60-90 min\n\n**Remember**: Vert training is cumulative. Your body adapts slowly to eccentric load. Be patient and consistent.",
-      "topics": ["training", "climbing"],
+      "topics": [
+        "training",
+        "climbing"
+      ],
       "tier": "team",
       "author": "Coach Brandon",
-      "publishedAt": "2026-02-01T08:00:00Z"
+      "publishedAt": "2026-02-01T08:00:00Z",
+      "series": null
     },
     {
       "id": "trail-shoe-selection-guide",
@@ -42,11 +53,15 @@
       "title": "Trail Shoe Selection: Finding Your Perfect Match",
       "summary": "A comprehensive guide to choosing trail running shoes based on terrain, distance, and foot type.",
       "body": "# Trail Shoe Selection Guide\n\nChoosing the right trail shoe can make or break your ultra experience. Here's how to find your perfect match.\n\n## Key Factors\n\n### 1. Terrain Type\n\n**Rocky Technical Trails**\n- Rock plate protection essential\n- Stiffer midsole for foot fatigue\n- Aggressive lugs (4-5mm)\n- Examples: Speedgoat, Altra Olympus\n\n**Smooth Buff Trails**\n- Lighter, more flexible\n- Moderate cushion\n- 3-4mm lugs sufficient\n- Examples: Sense Ride, Pegasus Trail\n\n**Mud & Wet Conditions**\n- Deep, spaced lugs (5-6mm)\n- Water-resistant upper\n- Sticky rubber compound\n- Examples: Speedcross, Peregrine\n\n### 2. Distance Considerations\n\n**50K and Under**\n- Can prioritize responsiveness\n- Less cushion acceptable\n- Stack height: 20-28mm\n\n**50 Miler to 100K**\n- Balance cushion and ground feel\n- Stack height: 28-35mm\n- Consider wider toe box\n\n**100 Milers**\n- Maximum cushion priority\n- Stack height: 33-40mm\n- Room for foot swelling\n- Rocker geometry helps late-race\n\n### 3. Fit Philosophy\n\n**The Thumbnail Test**: Full thumbnail's width between longest toe and shoe end when standing\n\n**Width Matters**: \n- Narrow: Salomon, Nike\n- Medium: Hoka, Brooks\n- Wide: Altra, Topo\n\n## Common Mistakes\n\n❌ Buying race day shoes without testing in training\n❌ Going too minimal for ultra distance\n❌ Ignoring drop if switching from road shoes\n❌ Not accounting for foot swelling\n\n## Pro Tips\n\n- Buy shoes in the evening when feet are swollen\n- Train in shoes for 40-60 miles before racing\n- Have 2-3 pairs in rotation to extend life\n- Replace every 300-400 miles for ultras\n- Don't change shoes within 4 weeks of race day\n\n## The Bottom Line\n\nThe best shoe is the one that disappears on your feet. Ignore hype and brand loyalty—your feet will tell you what works.",
-      "topics": ["gear", "footwear"],
+      "topics": [
+        "gear",
+        "footwear"
+      ],
       "tier": "team",
       "author": "Coach Brandon",
       "publishedAt": "2026-02-03T08:00:00Z",
-      "status": "published"
+      "status": "published",
+      "series": null
     },
     {
       "id": "hydration-systems-comparison",
@@ -54,11 +69,15 @@
       "title": "Hydration Systems: Vest vs Handheld vs Belt",
       "summary": "Compare different hydration carrying systems and learn which works best for your racing style.",
       "body": "# Hydration Systems Compared\n\nChoosing how to carry water is as personal as shoe selection. Let's break down the options.\n\n## Hydration Vests\n\n**Pros:**\n- Hands-free running\n- Carry 1-3L capacity\n- Storage for nutrition, layers, mandatory gear\n- Weight distributed across shoulders and torso\n\n**Cons:**\n- Expensive ($100-200)\n- Can feel bulky on hot days\n- Requires proper fit\n- Cleaning bladder is tedious\n\n**Best for:** 50K+ races, self-supported long runs, mountain courses\n\n**Top picks:** Salomon ADV Skin 12, Ultimate Direction Fast Pack\n\n## Handhelds\n\n**Pros:**\n- Quick sip access\n- Lightweight and minimal\n- Easy to refill at aid stations\n- Natural arm swing cadence\n\n**Cons:**\n- Limited capacity (500ml typically)\n- Hand fatigue on long efforts\n- Awkward for technical terrain\n- Minimal storage\n\n**Best for:** Training runs under 2 hours, supported races with close aid, flat courses\n\n**Top picks:** Nathan SpeedDraw Plus, Salomon Soft Flask\n\n## Hydration Belts\n\n**Pros:**\n- Lower center of gravity than vest\n- Less bounce than vest (when fitted right)\n- Cooler on hot days\n- Modular flask system\n\n**Cons:**\n- Limited capacity (usually 2 flasks max)\n- Can ride up or bounce if poorly fitted\n- Less storage than vest\n- Learning curve for comfort\n\n**Best for:** 50K races, hot weather events, runners who hate vest bounce\n\n**Top picks:** Naked Running Band, FlipBelt\n\n## My Recommendation\n\n**Training:** Handheld for runs under 90 minutes, vest for anything longer\n\n**Racing:**\n- **50K**: Vest or belt depending on aid station spacing\n- **50M-100K**: Vest (non-negotiable for safety)\n- **100M**: Vest with 2L+ capacity\n\n## Hydration Strategy\n\nRegardless of system:\n- Drink to thirst (20-24 oz/hour baseline)\n- Add electrolytes to every bottle\n- Practice in training at race effort\n- Refill at every aid station opportunity\n\n**Pro tip:** In a vest, use soft flasks in front pockets for quick access. Save bladder for backup capacity.",
-      "topics": ["gear", "hydration"],
+      "topics": [
+        "gear",
+        "hydration"
+      ],
       "tier": "team",
       "author": "Coach Brandon",
       "publishedAt": "2026-02-05T08:00:00Z",
-      "status": "published"
+      "status": "published",
+      "series": null
     },
     {
       "id": "sleep-optimization-for-ultras",
@@ -66,11 +85,15 @@
       "title": "Sleep Optimization for Peak Ultra Performance",
       "summary": "Evidence-based sleep strategies to maximize recovery and race-day performance.",
       "body": "# Sleep Optimization for Ultras\n\nSleep is your most powerful recovery tool. Here's how to optimize it for ultra training and racing.\n\n## The Science\n\n**What Happens During Sleep:**\n- Growth hormone release (muscle repair)\n- Glycogen replenishment\n- Immune system strengthening\n- Neural pathway consolidation\n- Inflammation reduction\n\n**Research shows:**\n- <7 hours sleep = 30% increased injury risk\n- Poor sleep = reduced time to exhaustion\n- Sleep debt accumulates and can't be \"caught up\" on weekends\n\n## Training Phase Sleep Targets\n\n### Base Building\n- **Target:** 8-9 hours nightly\n- **Why:** Maximum adaptation to aerobic stimulus\n- **Priority:** Consistency over quantity\n\n### Build/Peak Weeks\n- **Target:** 9+ hours nightly\n- **Why:** Harder training requires more recovery\n- **Strategy:** Add 30-60 min nap on hard training days\n\n### Taper\n- **Target:** 8-9 hours (same as base)\n- **Why:** Sleep debt repayment, nervous system priming\n- **Note:** Don't oversleep—disrupts circadian rhythm\n\n## Sleep Hygiene Protocols\n\n### 3 Hours Before Bed\n- Finish eating (digestion disrupts sleep)\n- Limit fluids (reduce bathroom trips)\n- No alcohol (ruins REM sleep)\n\n### 1 Hour Before Bed\n- Dim lights (triggers melatonin)\n- Cool room to 65-68°F\n- Blue light blocking (glasses or screen filters)\n- Light reading or meditation\n\n### Bedtime\n- Same time every night (±30 min)\n- Dark room (blackout curtains or eye mask)\n- White noise if needed\n- No phone in bedroom\n\n## Race Week Sleep Strategy\n\n**Days 7-3 Before Race:**\n- Maintain normal schedule\n- 8-9 hours nightly\n- Avoid sleep debt\n\n**Days 2-1 Before Race:**\n- Don't stress about poor sleep (normal pre-race anxiety)\n- Focus on relaxation over forcing sleep\n- The sleep 2 nights before matters most\n\n**Race Night (for 100M):**\n- If racing through night, nap 2-3 hours in afternoon\n- Don't change sleep schedule week before\n\n## Common Mistakes\n\n❌ Training late (within 3 hours of bedtime)\n❌ Inconsistent sleep schedule\n❌ Alcohol to \"help\" sleep\n❌ Overthinking one bad night\n❌ Napping too late (after 3 PM)\n\n## When to Nap\n\n**Best practices:**\n- 20-30 min power nap (avoid sleep inertia)\n- Between 1-3 PM (aligns with circadian dip)\n- After hard workouts\n- Never as replacement for nightly sleep\n\n**The Bottom Line:** Treat sleep as seriously as your training. It's not recovery if you're not sleeping.",
-      "topics": ["recovery", "sleep"],
+      "topics": [
+        "recovery",
+        "sleep"
+      ],
       "tier": "team",
       "author": "Coach Brandon",
       "publishedAt": "2026-02-06T08:00:00Z",
-      "status": "published"
+      "status": "published",
+      "series": null
     },
     {
       "id": "knee-bulletproofing-exercises",
@@ -78,11 +101,31 @@
       "title": "Bulletproofing Your Knees: Essential Exercises",
       "summary": "Prevent knee injuries with these targeted strengthening exercises for ultrarunners.",
       "body": "# Bulletproofing Your Knees\n\nKnee pain sidelines more ultrarunners than any other injury. Here's how to build resilient, bombproof knees.\n\n## Why Knees Fail\n\n**The Culprits:**\n1. Weak glutes (poor hip stability)\n2. Quad dominance (imbalanced leg strength)\n3. Tight IT band and TFL\n4. Poor eccentric strength (downhill running)\n5. Overstriding (excessive braking forces)\n\n## The Essential 4 Exercises\n\nDo these 2-3x per week, year-round:\n\n### 1. Single-Leg Romanian Deadlift (RDL)\n\n**Why:** Builds glute and hamstring strength, improves hip stability\n\n**How:**\n- Stand on one leg, slight knee bend\n- Hinge at hip, reach opposite hand toward floor\n- Keep back flat, standing leg heel planted\n- Feel stretch in hamstring\n- Return to standing, squeeze glute\n\n**Progression:**\n- Bodyweight: 3x12 each leg\n- Dumbbell: 3x10 each leg (10-25 lbs)\n- Advanced: 3x8 each leg (30-40 lbs)\n\n### 2. Terminal Knee Extensions (TKEs)\n\n**Why:** Strengthens VMO (inner quad), stabilizes patella\n\n**How:**\n- Loop resistance band around sturdy anchor at knee height\n- Step into band, position behind knee\n- Slight bend in knee to start\n- Squeeze quad, straighten leg fully\n- Slow return to start\n\n**Progression:**\n- Light band: 3x15 each leg\n- Medium band: 3x12 each leg\n- Heavy band: 3x10 each leg\n\n### 3. Step-Downs\n\n**Why:** Builds eccentric strength for downhill running\n\n**How:**\n- Stand on step/box (6-12 inches high)\n- Slowly lower opposite heel toward ground (5 sec descent)\n- Tap floor lightly, return to start\n- Keep knee tracking over 2nd toe\n- No knee valgus (inward collapse)\n\n**Progression:**\n- 6\" box: 3x10 each leg\n- 8\" box: 3x12 each leg\n- 12\" box: 3x15 each leg\n- Advanced: Add weight vest\n\n### 4. Clamshells\n\n**Why:** Activates glute medius, prevents IT band syndrome\n\n**How:**\n- Lie on side, knees bent 90°\n- Feet together, open top knee like clamshell\n- Keep pelvis stable (don't rotate back)\n- Pause at top, slow return\n\n**Progression:**\n- Bodyweight: 3x20 each side\n- Light band: 3x15 each side\n- Heavy band: 3x12 each side\n\n## Sample Weekly Integration\n\n**Option A: Pre-Run Activation**\n- 2x10 TKEs each leg\n- 2x15 clamshells each side\n- Takes 5 minutes, primes knees for run\n\n**Option B: Post-Run Strength**\n- Full protocol above\n- 15-20 minutes\n- 2-3x per week\n\n**Option C: Dedicated Strength Day**\n- Full protocol + additional leg work\n- 30-40 minutes\n- 1-2x per week\n\n## Red Flags to Watch\n\n🚨 Sharp pain during exercises → Stop, consult PT\n🚨 Swelling that doesn't resolve overnight → Rest day\n🚨 Pain that alters your gait → See professional\n\n**The Bottom Line:** An ounce of prevention is worth a pound of cure. These exercises take 15 minutes but can save your season.",
-      "topics": ["injury-prevention", "knee-health"],
+      "topics": [
+        "injury-prevention",
+        "knee-health"
+      ],
       "tier": "team",
       "author": "Coach Brandon",
       "publishedAt": "2026-02-04T08:00:00Z",
-      "status": "published"
+      "status": "published",
+      "series": null
+    },
+    {
+      "id": "downhill-eccentric-resilience",
+      "type": "training-tip",
+      "title": "Downhill Resilience: Protecting Quads and Knees",
+      "summary": "Practical strategies to build eccentric strength and keep downhill running from wrecking your legs.",
+      "body": "# Downhill Resilience\n\nDownhills are where races are won and quads are blown. The goal is to build eccentric tolerance without adding injury risk.\n\n## The 3-Part Progression\n\n### 1. Strength Base (2-3x/week)\n- Split squats: 3x8 each side\n- Step-downs: 3x10 each side (slow 4-5 sec lowering)\n- Calf raises: 3x12 (pause at bottom)\n\n### 2. Controlled Exposure (1x/week)\n- Short downhill repeats: 6-10 x 45-60 sec\n- Easy effort, focus on cadence and soft footstrike\n- Walk back up for full recovery\n\n### 3. Specificity (every 10-14 days)\n- 20-40 min continuous downhill on runnable grade\n- Effort stays conversational\n- Stop if form breaks down\n\n## Form Cues\n- Quick feet (aim 175-185 cadence)\n- Slight forward lean from ankles\n- Land under hips, not out in front\n\n## Recovery Rules\n- Expect soreness for 24-48 hours after new downhill load\n- Prioritize easy running the next day\n- No back-to-back hard downhill sessions\n\n## Race Week Tip\nDo one short downhill refresher 7-10 days out, then let your legs absorb it.\n\n**Bottom line:** Build downhill fitness gradually, and you will gain speed without the quad shutdown.",
+      "topics": [
+        "training",
+        "downhills"
+      ],
+      "tier": "team",
+      "author": "Coach Brandon",
+      "publishedAt": "2026-02-07T08:00:00Z",
+      "status": "published",
+      "series": null
     }
   ]
 }
