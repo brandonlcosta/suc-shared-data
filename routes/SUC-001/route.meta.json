@@ -1,0 +1,10 @@
+{
+  "routeGroupId": "SUC-001",
+  "name": "SUC 001",
+  "location": "Overlook",
+  "source": "SUC",
+  "notes": "",
+  "variants": [
+    "LRG"
+  ]
+}

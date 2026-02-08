@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SUC Race Intel",
+  "description": "Narrative-only race intel linked to events and routes.",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "eventId",
+    "routeId",
+    "distanceVariantIds",
+    "sections",
+    "visibility",
+    "createdAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "type": { "const": "race-intel" },
+    "eventId": { "type": "string", "minLength": 1 },
+    "routeId": { "type": "string", "minLength": 1 },
+    "distanceVariantIds": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "sections": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/section" }
+    },
+    "visibility": { "type": "string", "enum": ["public", "private"] },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "updatedAt": { "type": "string", "format": "date-time" }
+  },
+  "definitions": {
+    "section": {
+      "type": "object",
+      "required": ["sectionKey", "notes"],
+      "properties": {
+        "sectionKey": { "type": "string", "minLength": 1 },
+        "notes": {
+          "type": "object",
+          "properties": {
+            "terrain": { "type": "string" },
+            "pacing": { "type": "string" },
+            "nutrition": { "type": "string" },
+            "crew": { "type": "string" }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,6 +1,28 @@
 # SUC Shared Data
 
-This repository is the canonical source of truth for the SUC ecosystem.
+**This repository is the canonical source of truth for the SUC ecosystem.**
+
+## 📚 SUC-OS Platform Documentation
+
+This repo is the **Data Layer** in the SUC-OS platform architecture.
+
+**Quick Links**:
+- [SUC-OS Overview](docs/SUC-OS-README.md) - Platform architecture and philosophy
+- [Architecture](docs/ARCHITECTURE.md) - System design and layer model
+- [Data Flow](docs/DATA_FLOW.md) - How data moves through the platform
+- [Developer Onboarding](docs/DEVELOPER_ONBOARDING.md) - Get started developing locally
+- [Contributor Workflow](docs/CONTRIBUTOR_WORKFLOW.md) - How to add/modify content
+- [Anti-Patterns](docs/ANTI_PATTERNS.md) - What NOT to do
+
+**Role in SUC-OS**:
+- **Layer**: Data (Source of Truth)
+- **Responsibility**: Store, version, and validate all canonical content
+- **Upstream**: Receives validated commits from `suc-studio`
+- **Downstream**: Read by `suc-broadcast` for compilation
+
+---
+
+## Repository Rules
 
 Rules
 - Store structured reality only; no UI or presentation logic.

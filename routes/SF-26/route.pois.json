@@ -1,0 +1,96 @@
+{
+  "routeGroupId": "SF-26",
+  "pois": [
+    {
+      "id": "as-1",
+      "title": "Pedro Hill",
+      "type": "aid-station",
+      "variants": {},
+      "routePointIndex": 263,
+      "metadata": {
+        "water": true,
+        "nutrition": true,
+        "crewAccess": true,
+        "dropBags": false
+      }
+    },
+    {
+      "id": "as-2",
+      "title": "South Fork Trail",
+      "type": "aid-station",
+      "variants": {},
+      "routePointIndex": 530,
+      "metadata": {
+        "water": true,
+        "nutrition": true,
+        "crewAccess": true,
+        "dropBags": false
+      }
+    },
+    {
+      "id": "as-3",
+      "title": "Salmon Falls Ranch",
+      "type": "aid-station",
+      "variants": {},
+      "routePointIndex": 776,
+      "metadata": {
+        "water": true,
+        "nutrition": true,
+        "crewAccess": true,
+        "dropBags": false
+      }
+    },
+    {
+      "id": "as-4",
+      "title": "Sweetwater",
+      "type": "aid-station",
+      "variants": {},
+      "routePointIndex": 1070,
+      "metadata": {
+        "water": true,
+        "nutrition": true,
+        "crewAccess": true,
+        "dropBags": false
+      }
+    },
+    {
+      "id": "as-5",
+      "title": "Monte Vista",
+      "type": "aid-station",
+      "variants": {},
+      "routePointIndex": 1285,
+      "metadata": {
+        "water": true,
+        "nutrition": true,
+        "crewAccess": true,
+        "dropBags": false
+      }
+    },
+    {
+      "id": "as-6",
+      "title": "NY Creek Bridge",
+      "type": "aid-station",
+      "variants": {},
+      "routePointIndex": 1587,
+      "metadata": {
+        "water": true,
+        "nutrition": true,
+        "crewAccess": false,
+        "dropBags": false
+      }
+    },
+    {
+      "id": "as-7",
+      "title": "Planeta Way",
+      "type": "aid-station",
+      "variants": {},
+      "routePointIndex": 1843,
+      "metadata": {
+        "water": true,
+        "nutrition": true,
+        "crewAccess": false,
+        "dropBags": false
+      }
+    }
+  ]
+}

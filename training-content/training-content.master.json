@@ -45,7 +45,10 @@
       "tier": "team",
       "author": "Coach Brandon",
       "publishedAt": "2026-02-01T08:00:00Z",
-      "series": null
+      "status": "draft",
+      "series": null,
+      "part": null,
+      "references": []
     },
     {
       "id": "trail-shoe-selection-guide",

@@ -1,0 +1,11 @@
+{
+  "routeGroupId": "SF-26",
+  "name": "Salmon Falls",
+  "location": "Salmon Falls",
+  "source": "SUC",
+  "notes": "",
+  "variants": [
+    "LRG",
+    "XXL"
+  ]
+}

@@ -75,7 +75,7 @@
       "items": { "$ref": "#/definitions/variantPlacement" },
       "description": "Multiple snapped placements for a single variant."
     },
-    "poi": {
+    "routePoi": {
       "type": "object",
       "required": ["id", "title", "type", "variants"],
       "properties": {
@@ -91,7 +91,7 @@
         "type": {
           "type": "string",
           "pattern": "^[a-z0-9-]+$",
-          "description": "Category label (e.g., aid, water, hazard, viewpoint)."
+          "description": "Category label (e.g., aid, water, hazard, viewpoint, aid-station)."
         },
         "system": {
           "type": "boolean",
@@ -104,6 +104,22 @@
         "notes": {
           "type": "string",
           "description": "Optional internal notes."
+        },
+        "routePointIndex": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Optional GPX point index anchor for aid-station POIs."
+        },
+        "metadata": {
+          "type": "object",
+          "description": "Aid-station capabilities metadata.",
+          "properties": {
+            "water": { "type": "boolean" },
+            "nutrition": { "type": "boolean" },
+            "crewAccess": { "type": "boolean" },
+            "dropBags": { "type": "boolean" }
+          },
+          "additionalProperties": false
         },
         "drop": {
           "$ref": "#/definitions/point",
@@ -141,6 +157,47 @@
           "additionalProperties": false
         }
       }
+    },
+    "workoutPoi": {
+      "type": "object",
+      "required": ["id", "type", "label", "routePointIndex"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "description": "Stable workout POI identifier."
+        },
+        "type": {
+          "const": "workout",
+          "description": "Workout section boundary marker."
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Display label for workout POIs."
+        },
+        "routePointIndex": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "GPX point index anchor for workout POIs."
+        },
+        "system": {
+          "type": "boolean",
+          "description": "Marks a system-generated POI."
+        },
+        "locked": {
+          "type": "boolean",
+          "description": "Marks a POI as non-editable in authoring tools."
+        },
+        "notes": {
+          "type": "string",
+          "description": "Optional internal notes."
+        }
+      },
+      "additionalProperties": false
+    },
+    "poi": {
+      "oneOf": [{ "$ref": "#/definitions/routePoi" }, { "$ref": "#/definitions/workoutPoi" }]
     }
   }
 }

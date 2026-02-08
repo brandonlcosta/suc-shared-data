@@ -45,6 +45,21 @@
       "route_group_ids": [
         "SUC-031"
       ]
+    },
+    {
+      "event_id": "SF-26",
+      "event_name": "Salmon Falls Endurance Run",
+      "event_description": "",
+      "event_date": "Feb 28 2026",
+      "event_time": "7:30am",
+      "type": "race",
+      "start_location_name": "Magnolia Ranch",
+      "start_location_url": "https://maps.app.goo.gl/z2c9UDY2em3Mherq7",
+      "start_lat": 0,
+      "start_lng": 0,
+      "route_group_ids": [
+        "SF-26"
+      ]
     }
   ]
 }

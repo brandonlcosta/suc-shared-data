@@ -187,7 +187,10 @@
               "notes": "Salmon Falls Race Day!"
             },
             "sun": {}
-          }
+          },
+          "eventIds": [
+            "SF-26"
+          ]
         }
       ]
     }

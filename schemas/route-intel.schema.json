@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Route Intel",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "type",
+    "eventId",
+    "routes",
+    "visibility",
+    "createdAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "type": { "const": "route-intel" },
+    "eventId": { "type": "string" },
+    "routes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["routeId", "distanceVariantIds", "sections"],
+        "properties": {
+          "routeId": { "type": "string" },
+          "distanceVariantIds": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "sections": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["sectionKey", "blocks"],
+              "properties": {
+                "sectionKey": {
+                  "type": "string",
+                  "minLength": 1,
+                  "description": "Must match route.sections[].sectionKey from the referenced route definition."
+                },
+                "enabled": { "type": "boolean", "default": true },
+                "blocks": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": ["blockId", "type", "content"],
+                    "properties": {
+                      "blockId": { "type": "string" },
+                      "type": { "enum": ["text", "callout", "note"] },
+                      "title": { "type": "string" },
+                      "content": { "type": "string" },
+                      "tags": {
+                        "type": "array",
+                        "items": { "type": "string" }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "visibility": { "enum": ["public", "private"] },
+    "publish": { "type": "boolean", "default": true },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "updatedAt": { "type": "string", "format": "date-time" }
+  }
+}

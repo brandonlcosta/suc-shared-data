@@ -15,6 +15,20 @@
     "type": { "type": "string", "minLength": 1 },
     "duration": { "type": "number", "minimum": 0 },
     "distance": { "type": "number", "minimum": 0 },
+    "routeId": { "type": "string", "minLength": 1 },
+    "routeMode": { "type": "string", "enum": ["fixed-sections"] },
+    "sectionEfforts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["sectionKey", "effort"],
+        "properties": {
+          "sectionKey": { "type": "string", "minLength": 1 },
+          "effort": { "type": "string", "minLength": 1 }
+        },
+        "additionalProperties": false
+      }
+    },
     "steps": {
       "type": "array",
       "items": {

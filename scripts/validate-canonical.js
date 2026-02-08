@@ -39,6 +39,12 @@ const canonicalSets = [
     schemaPath: "schemas/workout.schema.json",
     refs: null,
   },
+  {
+    label: "race-intel",
+    dir: "race-intel",
+    schemaPath: "schemas/race-intel.schema.json",
+    refs: null,
+  },
 ];
 
 function fail(message) {

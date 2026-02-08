@@ -1,0 +1,41 @@
+{
+  "routeGroupId": "SUC-001",
+  "pois": [
+    {
+      "id": "k2-climb",
+      "type": "workout",
+      "label": "K2 Climb Starts",
+      "routePointIndex": 295
+    },
+    {
+      "id": "k2-climb-ends",
+      "type": "workout",
+      "label": "K2 Climb Ends",
+      "routePointIndex": 352
+    },
+    {
+      "id": "tempo-to-cool",
+      "type": "workout",
+      "label": "Tempo to Cool",
+      "routePointIndex": 380
+    },
+    {
+      "id": "recovery-at-cool",
+      "type": "workout",
+      "label": "Recovery at Cool",
+      "routePointIndex": 421
+    },
+    {
+      "id": "downhill-push",
+      "type": "workout",
+      "label": "Downhill Push",
+      "routePointIndex": 454
+    },
+    {
+      "id": "recovery-to-overlook",
+      "type": "workout",
+      "label": "Recovery to Overlook",
+      "routePointIndex": 587
+    }
+  ]
+}
