@@ -5,7 +5,9 @@
       "id": "as-1",
       "title": "Pedro Hill",
       "type": "aid-station",
-      "variants": {},
+      "variants": {
+        "LRG": false
+      },
       "routePointIndex": 263,
       "metadata": {
         "water": true,
@@ -18,7 +20,9 @@
       "id": "as-2",
       "title": "South Fork Trail",
       "type": "aid-station",
-      "variants": {},
+      "variants": {
+        "LRG": false
+      },
       "routePointIndex": 530,
       "metadata": {
         "water": true,
@@ -31,7 +35,9 @@
       "id": "as-3",
       "title": "Salmon Falls Ranch",
       "type": "aid-station",
-      "variants": {},
+      "variants": {
+        "LRG": false
+      },
       "routePointIndex": 776,
       "metadata": {
         "water": true,
