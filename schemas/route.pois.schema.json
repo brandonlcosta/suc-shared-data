@@ -77,7 +77,7 @@
     },
     "routePoi": {
       "type": "object",
-      "required": ["id", "title", "type", "variants"],
+      "required": ["id", "title", "variants"],
       "properties": {
         "id": {
           "type": "string",
@@ -90,8 +90,9 @@
         },
         "type": {
           "type": "string",
-          "pattern": "^[a-z0-9-]+$",
-          "description": "Category label (e.g., aid, water, hazard, viewpoint, aid-station)."
+          "enum": ["aid", "water", "climb", "summit", "hazard", "view", "turn", "custom"],
+          "default": "custom",
+          "description": "Category label for route sectioning + display."
         },
         "system": {
           "type": "boolean",

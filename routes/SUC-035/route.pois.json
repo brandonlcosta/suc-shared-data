@@ -4,7 +4,7 @@
     {
       "id": "turnaround-med-turnaround",
       "title": "MED Turnaround",
-      "type": "turnaround",
+      "type": "turn",
       "variants": {
         "LRG": {
           "lat": 38.74347189938628,
@@ -112,7 +112,7 @@
     {
       "id": "turnaround-xl-turnaround",
       "title": "XL Turnaround",
-      "type": "turnaround",
+      "type": "turn",
       "variants": {
         "XL": {
           "lat": 38.75215,
@@ -139,7 +139,7 @@
     {
       "id": "turnaround-lrg-turnaround",
       "title": "LRG Turnaround",
-      "type": "turnaround",
+      "type": "turn",
       "variants": {
         "LRG": [
           {

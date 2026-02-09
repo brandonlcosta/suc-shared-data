@@ -9,40 +9,7 @@
         "LRG",
         "XXL"
       ],
-      "sections": [
-        {
-          "sectionKey": "start_to_as_1",
-          "blocks": []
-        },
-        {
-          "sectionKey": "as_1_to_as_2",
-          "blocks": []
-        },
-        {
-          "sectionKey": "as_2_to_as_3",
-          "blocks": []
-        },
-        {
-          "sectionKey": "as_3_to_as_4",
-          "blocks": []
-        },
-        {
-          "sectionKey": "as_4_to_as_5",
-          "blocks": []
-        },
-        {
-          "sectionKey": "as_5_to_as_6",
-          "blocks": []
-        },
-        {
-          "sectionKey": "as_6_to_as_7",
-          "blocks": []
-        },
-        {
-          "sectionKey": "as_7_to_finish",
-          "blocks": []
-        }
-      ]
+      "sectionMode": "all-poi"
     }
   ],
   "visibility": "public",

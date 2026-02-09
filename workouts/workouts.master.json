@@ -2660,6 +2660,57 @@
       "createdAt": "2026-02-07T06:33:46.315Z",
       "updatedAt": "2026-02-07T21:42:40.609Z",
       "publishedAt": "2026-02-07T21:42:40.609Z"
+    },
+    {
+      "workoutId": "workout-318f134e-b31a-453e-b74e-c33204927a03",
+      "version": 1,
+      "status": "published",
+      "domain": "run",
+      "strengthType": null,
+      "name": "Uphill / Roller / Downhill Threshold",
+      "description": "",
+      "focus": [
+        "threshold",
+        "trail",
+        "tempo"
+      ],
+      "coachNotes": "",
+      "tiers": {},
+      "routeId": "SUC-001",
+      "routeMode": "fixed-sections",
+      "sectionEfforts": [
+        {
+          "sectionKey": "start_to_wk_1",
+          "effort": "warm-up"
+        },
+        {
+          "sectionKey": "wk_1_to_wk_2",
+          "effort": "threshold"
+        },
+        {
+          "sectionKey": "wk_2_to_wk_3",
+          "effort": "aerobic"
+        },
+        {
+          "sectionKey": "wk_3_to_wk_4",
+          "effort": "threshold"
+        },
+        {
+          "sectionKey": "wk_4_to_wk_5",
+          "effort": "aerobic"
+        },
+        {
+          "sectionKey": "wk_5_to_wk_6",
+          "effort": "threshold"
+        },
+        {
+          "sectionKey": "wk_6_to_finish",
+          "effort": "recovery"
+        }
+      ],
+      "createdAt": "2026-02-09T09:03:35.399Z",
+      "updatedAt": "2026-02-09T09:06:16.086Z",
+      "publishedAt": "2026-02-09T09:06:16.086Z"
     }
   ]
 }

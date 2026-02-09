@@ -28,6 +28,11 @@ function normalizeVariantKey(label) {
   return String(label ?? '').toUpperCase();
 }
 
+function normalizePoiType(value) {
+  const raw = typeof value === 'string' ? value.trim() : '';
+  return raw ? raw : 'custom';
+}
+
 function haversineMeters(a, b) {
   const R = 6371000;
   const toRad = (deg) => (deg * Math.PI) / 180;
@@ -273,11 +278,12 @@ function compilePoisForVariant(poisDoc, label) {
 
     for (let i = 0; i < normalizedVariants.length; i += 1) {
       const normalized = normalizedVariants[i];
+      const poiType = normalizePoiType(poi.type);
       compiled.push({
         id: String(poi.id ?? ''),
         poiId: String(poi.id ?? ''),
         title: String(poi.title ?? ''),
-        type: String(poi.type ?? ''),
+        type: poiType,
         variant: key,
         distanceMi: normalized.distanceMi,
         distanceM: normalized.distanceM,
@@ -378,9 +384,25 @@ async function compileRoutesForEvents(events, options = {}) {
       const compiledVariants = routeGroupCache.get(routeGroupId) ?? [];
       for (const variant of compiledVariants) {
         const routeId = variant.stats.id;
-        if (!compiledRoutes.routes[routeId]) {
-          compiledRoutes.routes[routeId] = variant;
+        const existing = compiledRoutes.routes[routeId];
+        if (existing) {
+          const existingEventId = existing.stats?.eventId;
+          if (existingEventId && existingEventId !== eventId) {
+            throw new Error(
+              `[BROADCAST] Route ${routeId} already bound to event ${existingEventId}, cannot rebind to ${eventId}.`
+            );
+          }
         }
+
+        const statsWithEvent = {
+          ...variant.stats,
+          eventId
+        };
+
+        compiledRoutes.routes[routeId] = {
+          ...variant,
+          stats: statsWithEvent
+        };
         routes.push({
           route_id: routeId,
           event_id: eventId,

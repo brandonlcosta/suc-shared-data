@@ -16,6 +16,7 @@ function logShowAllPoisOnce() {
 type RouteStats = {
   id: string;
   routeGroupId: string;
+  eventId?: string;
   label: RouteLabel;
   name: string;
   description: string;
@@ -62,6 +63,11 @@ function toNumber(value: unknown): number | null {
 
 function normalizeVariantKey(label: unknown): string {
   return String(label ?? '').toUpperCase();
+}
+
+function normalizePoiType(value: unknown): string {
+  const raw = typeof value === 'string' ? value.trim() : '';
+  return raw ? raw : 'custom';
 }
 
 function haversineMeters(a: { lat: number; lon: number }, b: { lat: number; lon: number }) {
@@ -321,11 +327,12 @@ function compilePoisForVariant(poisDoc: { pois: any[] } | null, label: string) {
 
     for (let i = 0; i < normalizedVariants.length; i += 1) {
       const normalized = normalizedVariants[i] as NonNullable<ReturnType<typeof normalizePoiVariant>>;
+      const poiType = normalizePoiType(poi.type);
       compiled.push({
         id: String(poi.id ?? ''),
         poiId: String(poi.id ?? ''),
         title: String(poi.title ?? ''),
-        type: String(poi.type ?? ''),
+        type: poiType,
         variant: key,
         distanceMi: normalized.distanceMi,
         distanceM: normalized.distanceM,
@@ -451,9 +458,25 @@ export async function compileRoutesForEvents(events: unknown[], options: UrlOpti
       const compiledVariants = routeGroupCache.get(routeGroupId) ?? [];
       for (const variant of compiledVariants) {
         const routeId = variant.stats.id;
-        if (!compiledRoutes.routes[routeId]) {
-          compiledRoutes.routes[routeId] = variant;
+        const existing = compiledRoutes.routes[routeId];
+        if (existing) {
+          const existingEventId = existing.stats?.eventId;
+          if (existingEventId && existingEventId !== eventId) {
+            throw new Error(
+              `[BROADCAST] Route ${routeId} already bound to event ${existingEventId}, cannot rebind to ${eventId}.`
+            );
+          }
         }
+
+        const statsWithEvent: RouteStats = {
+          ...variant.stats,
+          eventId
+        };
+
+        compiledRoutes.routes[routeId] = {
+          ...variant,
+          stats: statsWithEvent
+        };
         routes.push({
           route_id: routeId,
           event_id: eventId,

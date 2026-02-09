@@ -21,46 +21,22 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["routeId", "distanceVariantIds", "sections"],
+        "required": ["routeId", "distanceVariantIds"],
         "properties": {
           "routeId": { "type": "string" },
           "distanceVariantIds": {
             "type": "array",
             "items": { "type": "string" }
           },
-          "sections": {
+          "sectionMode": {
+            "type": "string",
+            "enum": ["race", "all-poi"],
+            "default": "all-poi"
+          },
+          "enabledPoiIds": {
             "type": "array",
-            "items": {
-              "type": "object",
-              "additionalProperties": false,
-              "required": ["sectionKey", "blocks"],
-              "properties": {
-                "sectionKey": {
-                  "type": "string",
-                  "minLength": 1,
-                  "description": "Must match route.sections[].sectionKey from the referenced route definition."
-                },
-                "enabled": { "type": "boolean", "default": true },
-                "blocks": {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "additionalProperties": false,
-                    "required": ["blockId", "type", "content"],
-                    "properties": {
-                      "blockId": { "type": "string" },
-                      "type": { "enum": ["text", "callout", "note"] },
-                      "title": { "type": "string" },
-                      "content": { "type": "string" },
-                      "tags": {
-                        "type": "array",
-                        "items": { "type": "string" }
-                      }
-                    }
-                  }
-                }
-              }
-            }
+            "items": { "type": "string" },
+            "description": "Explicit list of POI ids included as section boundaries. If omitted, derive from sectionMode."
           }
         }
       }

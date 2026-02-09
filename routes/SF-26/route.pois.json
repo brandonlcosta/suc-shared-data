@@ -4,7 +4,7 @@
     {
       "id": "as-1",
       "title": "Pedro Hill",
-      "type": "aid-station",
+      "type": "aid",
       "variants": {
         "LRG": false
       },
@@ -19,7 +19,7 @@
     {
       "id": "as-2",
       "title": "South Fork Trail",
-      "type": "aid-station",
+      "type": "aid",
       "variants": {
         "LRG": false
       },
@@ -34,7 +34,7 @@
     {
       "id": "as-3",
       "title": "Salmon Falls Ranch",
-      "type": "aid-station",
+      "type": "aid",
       "variants": {
         "LRG": false
       },
@@ -49,7 +49,7 @@
     {
       "id": "as-4",
       "title": "Sweetwater",
-      "type": "aid-station",
+      "type": "aid",
       "variants": {},
       "routePointIndex": 1070,
       "metadata": {
@@ -62,7 +62,7 @@
     {
       "id": "as-5",
       "title": "Monte Vista",
-      "type": "aid-station",
+      "type": "aid",
       "variants": {},
       "routePointIndex": 1285,
       "metadata": {
@@ -75,7 +75,7 @@
     {
       "id": "as-6",
       "title": "NY Creek Bridge",
-      "type": "aid-station",
+      "type": "aid",
       "variants": {},
       "routePointIndex": 1587,
       "metadata": {
@@ -88,7 +88,7 @@
     {
       "id": "as-7",
       "title": "Planeta Way",
-      "type": "aid-station",
+      "type": "aid",
       "variants": {},
       "routePointIndex": 1843,
       "metadata": {
@@ -100,3 +100,4 @@
     }
   ]
 }
+

@@ -2,9 +2,9 @@
   "routeGroupId": "SUC-031",
   "pois": [
     {
-      "id": "start-finish",
+      "id": "custom",
       "title": "Start / Finish",
-      "type": "start-finish",
+      "type": "custom",
       "system": true,
       "locked": true,
       "drop": {

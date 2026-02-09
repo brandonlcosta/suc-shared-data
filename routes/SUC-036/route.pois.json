@@ -36,7 +36,7 @@
     {
       "id": "fork-xl-xxl-loop",
       "title": "XL + XXL Loop",
-      "type": "fork",
+      "type": "turn",
       "variants": {
         "MED": {
           "lat": 38.01953,
@@ -139,7 +139,7 @@
     {
       "id": "fork-xxl-loop",
       "title": "XXL Loop",
-      "type": "fork",
+      "type": "turn",
       "variants": {
         "LRG": {
           "lat": 38.04542,
@@ -171,7 +171,7 @@
     {
       "id": "viewpoint-regroup-viewpoint",
       "title": "Regroup / Viewpoint",
-      "type": "viewpoint",
+      "type": "view",
       "variants": {
         "MED": {
           "lat": 38.02729,
@@ -205,6 +205,126 @@
       "drop": {
         "lat": 38.02729,
         "lon": -122.59932
+      }
+    },
+    {
+      "id": "custom",
+      "title": "Start / Finish",
+      "type": "custom",
+      "system": true,
+      "locked": true,
+      "drop": {
+        "lat": 38.02816,
+        "lon": -122.5519
+      },
+      "variants": {
+        "MED": [
+          {
+            "lat": 38.02816,
+            "lon": -122.5519,
+            "snapIndex": 0,
+            "distanceM": 0,
+            "distanceMi": 0,
+            "passIndex": 0
+          },
+          {
+            "lat": 38.0281,
+            "lon": -122.55191,
+            "snapIndex": 775,
+            "distanceM": 18835.518107251643,
+            "distanceMi": 11.703848342710845,
+            "passIndex": 1
+          }
+        ],
+        "LRG": [
+          {
+            "lat": 38.02816,
+            "lon": -122.5519,
+            "snapIndex": 0,
+            "distanceM": 0,
+            "distanceMi": 0,
+            "passIndex": 0
+          },
+          {
+            "lat": 38.028180000000006,
+            "lon": -122.55189000000001,
+            "snapIndex": 1127,
+            "distanceM": 28042.21684142272,
+            "distanceMi": 17.42462571173268,
+            "passIndex": 1
+          }
+        ],
+        "XL": [
+          {
+            "lat": 38.02816,
+            "lon": -122.5519,
+            "snapIndex": 0,
+            "distanceM": 0,
+            "distanceMi": 0,
+            "passIndex": 0
+          },
+          {
+            "lat": 38.028180000000006,
+            "lon": -122.55189000000001,
+            "snapIndex": 1522,
+            "distanceM": 36774.47298019581,
+            "distanceMi": 22.850598119603895,
+            "passIndex": 1
+          }
+        ],
+        "XXL": [
+          {
+            "lat": 38.02816,
+            "lon": -122.5519,
+            "snapIndex": 0,
+            "distanceM": 0,
+            "distanceMi": 0,
+            "passIndex": 0
+          },
+          {
+            "lat": 38.028180000000006,
+            "lon": -122.55189000000001,
+            "snapIndex": 2110,
+            "distanceM": 48970.759533230106,
+            "distanceMi": 30.42901923593098,
+            "passIndex": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "water-crew-water-drop",
+      "title": "Crew Water Drop",
+      "type": "water",
+      "variants": {
+        "LRG": {
+          "lat": 38.04766,
+          "lon": -122.62192000000002,
+          "snapIndex": 543,
+          "distanceM": 14154.642597202746,
+          "distanceMi": 8.795287146317223,
+          "passIndex": 0
+        },
+        "XL": {
+          "lat": 38.04766,
+          "lon": -122.62192000000002,
+          "snapIndex": 938,
+          "distanceM": 22886.898735975872,
+          "distanceMi": 14.221259554188459,
+          "passIndex": 0
+        },
+        "XXL": {
+          "lat": 38.04766,
+          "lon": -122.62192000000002,
+          "snapIndex": 938,
+          "distanceM": 22886.898735975872,
+          "distanceMi": 14.221259554188459,
+          "passIndex": 0
+        }
+      },
+      "drop": {
+        "lat": 38.04766,
+        "lon": -122.62192000000002
       }
     }
   ]
