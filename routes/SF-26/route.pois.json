@@ -97,7 +97,55 @@
         "crewAccess": false,
         "dropBags": false
       }
+    },
+    {
+      "id": "start-finish",
+      "title": "Start / Finish",
+      "type": "start-finish",
+      "system": true,
+      "locked": true,
+      "drop": {
+        "lat": 38.771480000000004,
+        "lon": -121.04309
+      },
+      "variants": {
+        "LRG": [
+          {
+            "lat": 38.771480000000004,
+            "lon": -121.04309,
+            "snapIndex": 0,
+            "distanceM": 0,
+            "distanceMi": 0,
+            "passIndex": 0
+          },
+          {
+            "lat": 38.71869,
+            "lon": -121.10198000000001,
+            "snapIndex": 858,
+            "distanceM": 21523.51106836244,
+            "distanceMi": 13.374089733681823,
+            "passIndex": 1
+          }
+        ],
+        "XXL": [
+          {
+            "lat": 38.82536,
+            "lon": -120.95618,
+            "snapIndex": 0,
+            "distanceM": 0,
+            "distanceMi": 0,
+            "passIndex": 0
+          },
+          {
+            "lat": 38.71894,
+            "lon": -121.10199000000001,
+            "snapIndex": 1959,
+            "distanceM": 49742.22185928908,
+            "distanceMi": 30.908383701240428,
+            "passIndex": 1
+          }
+        ]
+      }
     }
   ]
 }
-
