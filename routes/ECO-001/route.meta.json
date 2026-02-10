@@ -1,0 +1,10 @@
+{
+  "routeGroupId": "ECO-001",
+  "name": "McKinley Loop",
+  "location": "Sacramento Ecofitness",
+  "source": "SUC",
+  "notes": "",
+  "variants": [
+    "MED"
+  ]
+}

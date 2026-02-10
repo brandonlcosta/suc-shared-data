@@ -1,0 +1,55 @@
+{
+  "routeGroupId": "ECO-001",
+  "pois": [
+    {
+      "id": "start-finish",
+      "title": "Start / Finish",
+      "type": "start-finish",
+      "system": true,
+      "locked": true,
+      "drop": {
+        "lat": 38.574225,
+        "lon": -121.482073
+      },
+      "variants": {
+        "MED": [
+          {
+            "lat": 38.574225,
+            "lon": -121.482073,
+            "snapIndex": 0,
+            "distanceM": 0,
+            "distanceMi": 0,
+            "passIndex": 0
+          },
+          {
+            "lat": 38.574218,
+            "lon": -121.481947,
+            "snapIndex": 2388,
+            "distanceM": 6017.079243140643,
+            "distanceMi": 3.738839703096816,
+            "passIndex": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "water-water-fountain",
+      "title": "Water Fountain",
+      "type": "water",
+      "variants": {
+        "MED": {
+          "lat": 38.576787,
+          "lon": -121.45765500000005,
+          "snapIndex": 1209,
+          "distanceM": 2987.3455912968357,
+          "distanceMi": 1.856250491689058,
+          "passIndex": 0
+        }
+      },
+      "drop": {
+        "lat": 38.576778,
+        "lon": -121.45762
+      }
+    }
+  ]
+}

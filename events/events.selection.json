@@ -2,6 +2,8 @@
   "version": 1,
   "selectedEventIds": [
     "SUC-036",
-    "SF-26"
+    "SF-26",
+    "TEAM-SUC-001",
+    "ECO-001"
   ]
 }
