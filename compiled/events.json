@@ -37,7 +37,7 @@
       {
         "id": "viewpoint-regroup-viewpoint",
         "title": "Regroup / Viewpoint",
-        "type": "viewpoint",
+        "type": "view",
         "category": "view",
         "distanceMi": 4.743210025775685
       },

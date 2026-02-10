@@ -2711,6 +2711,108 @@
       "createdAt": "2026-02-09T09:03:35.399Z",
       "updatedAt": "2026-02-09T09:06:16.086Z",
       "publishedAt": "2026-02-09T09:06:16.086Z"
+    },
+    {
+      "workoutId": "workout-1869e82a-1ddd-4c6b-a75b-669a2062d0b1",
+      "version": 0,
+      "status": "draft",
+      "domain": "strength",
+      "strengthType": "strength_general",
+      "name": "Explosiveness + Power",
+      "description": "Mixed strength workout hitting some fast twitch muscles and some heavier lifting.\n\nFocused on legs, glutes and explosiveness.",
+      "focus": [],
+      "coachNotes": "",
+      "tiers": {},
+      "strengthStructure": [
+        {
+          "type": "mobility_block",
+          "id": "strength-1770448070362-3swg",
+          "name": "Mobility Flow",
+          "duration": "8min",
+          "cues": ""
+        },
+        {
+          "type": "circuit_block",
+          "id": "strength-1770448180198-ncg5",
+          "rounds": 3,
+          "exercises": [
+            {
+              "type": "strength_exercise",
+              "id": "exercise-1770448222730-0xj9",
+              "name": "Quick Hops",
+              "sets": 3,
+              "reps": "8-10",
+              "load": "",
+              "notes": ""
+            },
+            {
+              "type": "strength_exercise",
+              "id": "exercise-1770448228804-4isa",
+              "name": "Lateral Bound (Skater Jump)",
+              "sets": 3,
+              "reps": "8-10",
+              "load": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "type": "circuit_block",
+          "id": "strength-1770448207113-gipq",
+          "rounds": 3,
+          "exercises": [
+            {
+              "type": "strength_exercise",
+              "id": "exercise-1770448254828-09m5",
+              "name": "Deadlift",
+              "sets": 3,
+              "reps": "8-10",
+              "load": "",
+              "notes": ""
+            },
+            {
+              "type": "strength_exercise",
+              "id": "exercise-1770448258221-83gj",
+              "name": "Hip Thrust",
+              "sets": 3,
+              "reps": "8-10",
+              "load": "",
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "type": "circuit_block",
+          "id": "strength-1770448208775-mr4r",
+          "rounds": 3,
+          "exercises": [
+            {
+              "type": "strength_exercise",
+              "id": "exercise-1770448237570-7j7r",
+              "name": "Heavy Sled Push",
+              "sets": 3,
+              "reps": "8-10",
+              "load": "",
+              "notes": ""
+            },
+            {
+              "type": "strength_exercise",
+              "id": "exercise-1770448244337-mh8b",
+              "name": "Single-arm Farmer Carry",
+              "sets": 3,
+              "reps": "8-10",
+              "load": "",
+              "notes": ""
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-02-07T07:07:37.176Z",
+      "updatedAt": "2026-02-10T05:47:54.140Z",
+      "publishedAt": null,
+      "routeId": null,
+      "routeMode": null,
+      "sectionEfforts": []
     }
   ]
 }

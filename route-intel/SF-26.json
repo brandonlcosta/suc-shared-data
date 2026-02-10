@@ -6,14 +6,13 @@
     {
       "routeId": "SF-26",
       "distanceVariantIds": [
-        "LRG",
         "XXL"
       ],
-      "sectionMode": "all-poi"
+      "sectionMode": "race"
     }
   ],
   "visibility": "public",
-  "createdAt": "2026-02-08T08:59:45.338Z",
-  "updatedAt": "2026-02-08T16:26:16.963Z",
-  "publish": true
+  "publish": true,
+  "createdAt": "2026-02-10T05:15:33.835Z",
+  "updatedAt": "2026-02-10T05:16:06.237Z"
 }

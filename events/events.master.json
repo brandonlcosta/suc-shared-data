@@ -49,7 +49,7 @@
     {
       "event_id": "SF-26",
       "event_name": "Salmon Falls Endurance Run",
-      "event_description": "",
+      "event_description": "Sac Ultra Crew's first goal race of 2026. See you there?",
       "event_date": "Feb 28 2026",
       "event_time": "7:30am",
       "type": "race",
@@ -59,6 +59,21 @@
       "start_lng": 0,
       "route_group_ids": [
         "SF-26"
+      ]
+    },
+    {
+      "event_id": "TEAM-SUC-001",
+      "event_name": "Team SUC Hill Workout",
+      "event_description": "Join Team SUC and Mo Miles Run Club for a mixed terrain hill workout. Bring a headlamp or light.",
+      "event_date": "Feb 11 2026",
+      "event_time": "6:00 PM",
+      "type": "training-run",
+      "start_location_name": "Overlook Park",
+      "start_location_url": "https://maps.app.goo.gl/bf5vgKMKvfoYhbeC8",
+      "start_lat": 0,
+      "start_lng": 0,
+      "route_group_ids": [
+        "TEAM-SUC-001"
       ]
     }
   ]

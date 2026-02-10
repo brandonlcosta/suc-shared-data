@@ -1,0 +1,60 @@
+{
+  "routeGroupId": "TEAM-SUC-001",
+  "pois": [
+    {
+      "id": "warm-up",
+      "type": "workout",
+      "label": "Warm Up",
+      "routePointIndex": 43
+    },
+    {
+      "id": "uphill-push",
+      "type": "workout",
+      "label": "Uphill Push",
+      "routePointIndex": 44
+    },
+    {
+      "id": "tempo-out-and-back",
+      "type": "workout",
+      "label": "Tempo Out and Back",
+      "routePointIndex": 47
+    },
+    {
+      "id": "top-of-hill",
+      "type": "workout",
+      "label": "Top of Hill",
+      "routePointIndex": 55
+    },
+    {
+      "id": "start-finish",
+      "title": "Start / Finish",
+      "type": "start-finish",
+      "system": true,
+      "locked": true,
+      "drop": {
+        "lat": 38.88936,
+        "lon": -121.06996000000001
+      },
+      "variants": {
+        "LRG": [
+          {
+            "lat": 38.88936,
+            "lon": -121.06996000000001,
+            "snapIndex": 0,
+            "distanceM": 0,
+            "distanceMi": 0,
+            "passIndex": 0
+          },
+          {
+            "lat": 38.88936,
+            "lon": -121.06997000000001,
+            "snapIndex": 143,
+            "distanceM": 7339.182845860085,
+            "distanceMi": 4.56035679497987,
+            "passIndex": 1
+          }
+        ]
+      }
+    }
+  ]
+}

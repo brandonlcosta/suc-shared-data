@@ -1,0 +1,10 @@
+{
+  "routeGroupId": "TEAM-SUC-001",
+  "name": "Team SUC Hill Workout",
+  "location": "Overlook Park",
+  "source": "SUC",
+  "notes": "",
+  "variants": [
+    "LRG"
+  ]
+}
