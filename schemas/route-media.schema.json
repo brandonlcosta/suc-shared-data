@@ -1,0 +1,270 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Route Media Plan",
+  "description": "Canonical cinematic media plan for long-form route flyovers.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "type",
+    "schemaVersion",
+    "eventId",
+    "routeId",
+    "playback",
+    "camera",
+    "timeline",
+    "subtitles",
+    "markers",
+    "visibility",
+    "createdAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Z0-9][A-Z0-9-]*$"
+    },
+    "type": {
+      "const": "route-media"
+    },
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0.0",
+      "description": "Semantic version for this schema contract."
+    },
+    "eventId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "routeId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "distanceVariantId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 1000
+    },
+    "playback": {
+      "$ref": "#/definitions/playback"
+    },
+    "camera": {
+      "$ref": "#/definitions/cameraDefaults"
+    },
+    "timeline": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/timelineEntry"
+      }
+    },
+    "subtitles": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/subtitle"
+      }
+    },
+    "markers": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/marker"
+      }
+    },
+    "visibility": {
+      "enum": ["public", "private"]
+    },
+    "publish": {
+      "type": "boolean",
+      "default": true
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active", "archived", "deprecated"],
+      "default": "active"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "definitions": {
+    "playback": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["milesPerSecond", "fps", "holdSeconds", "outputFormat"],
+      "properties": {
+        "milesPerSecond": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 10
+        },
+        "fps": {
+          "type": "integer",
+          "minimum": 12,
+          "maximum": 60
+        },
+        "holdSeconds": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 15
+        },
+        "outputFormat": {
+          "type": "string",
+          "enum": ["story", "square", "landscape"]
+        }
+      }
+    },
+    "cameraDefaults": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode"],
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": ["third-person-follow", "overview-lock"]
+        },
+        "followDistanceMeters": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 500
+        },
+        "altitudeMeters": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 2000
+        },
+        "pitchDeg": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 85
+        },
+        "headingOffsetDeg": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        }
+      }
+    },
+    "timelineEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "startMi", "endMi", "cameraMode"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "startMi": {
+          "type": "number",
+          "minimum": 0
+        },
+        "endMi": {
+          "type": "number",
+          "minimum": 0
+        },
+        "cameraMode": {
+          "type": "string",
+          "enum": ["third-person-follow", "overview-lock"]
+        },
+        "speedMiPerSec": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 10
+        },
+        "title": {
+          "type": "string",
+          "maxLength": 120
+        },
+        "subtitleIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "uniqueItems": true
+        },
+        "markerIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "subtitle": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "startSec", "endSec", "text"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "startSec": {
+          "type": "number",
+          "minimum": 0
+        },
+        "endSec": {
+          "type": "number",
+          "minimum": 0
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 180
+        },
+        "position": {
+          "type": "string",
+          "enum": ["top", "bottom"],
+          "default": "bottom"
+        }
+      }
+    },
+    "marker": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "atMi", "type", "title"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "atMi": {
+          "type": "number",
+          "minimum": 0
+        },
+        "type": {
+          "type": "string",
+          "enum": ["poi", "title", "subtitle", "custom"]
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "body": {
+          "type": "string",
+          "maxLength": 280
+        },
+        "poiId": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$"
+        }
+      }
+    }
+  }
+}

@@ -14,7 +14,9 @@
       "Bash(npm run viewer:build:*)",
       "Bash(zip:*)",
       "Bash(powershell:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(netstat -ano)",
+      "Bash(findstr :5176)"
     ],
     "additionalDirectories": [
       "c:\\Users\\Brandon\\Desktop\\Projects\\suc-studio"

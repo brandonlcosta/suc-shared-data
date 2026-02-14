@@ -45,6 +45,12 @@ const canonicalSets = [
     schemaPath: "schemas/race-intel.schema.json",
     refs: null,
   },
+  {
+    label: "route-media",
+    dir: "route-media",
+    schemaPath: "schemas/route-media.schema.json",
+    refs: null,
+  },
 ];
 
 function fail(message) {
