@@ -2,82 +2,11 @@
   "routeGroupId": "SF-26",
   "pois": [
     {
-      "id": "as-1",
+      "id": "pedro-hill",
       "title": "Pedro Hill",
-      "type": "aid",
-      "variants": {
-        "LRG": false
-      },
+      "type": "aid-station",
+      "variants": {},
       "routePointIndex": 263,
-      "metadata": {
-        "water": true,
-        "nutrition": true,
-        "crewAccess": true,
-        "dropBags": false
-      }
-    },
-    {
-      "id": "as-2",
-      "title": "South Fork Trail",
-      "type": "aid",
-      "variants": {
-        "LRG": false
-      },
-      "routePointIndex": 530,
-      "metadata": {
-        "water": true,
-        "nutrition": true,
-        "crewAccess": true,
-        "dropBags": false
-      }
-    },
-    {
-      "id": "as-3",
-      "title": "Salmon Falls Ranch",
-      "type": "aid",
-      "variants": {
-        "LRG": false
-      },
-      "routePointIndex": 776,
-      "metadata": {
-        "water": true,
-        "nutrition": true,
-        "crewAccess": true,
-        "dropBags": false
-      }
-    },
-    {
-      "id": "as-4",
-      "title": "Sweetwater",
-      "type": "aid",
-      "variants": {},
-      "routePointIndex": 1070,
-      "metadata": {
-        "water": true,
-        "nutrition": true,
-        "crewAccess": true,
-        "dropBags": false
-      }
-    },
-    {
-      "id": "as-5",
-      "title": "Monte Vista",
-      "type": "aid",
-      "variants": {},
-      "routePointIndex": 1285,
-      "metadata": {
-        "water": true,
-        "nutrition": true,
-        "crewAccess": true,
-        "dropBags": false
-      }
-    },
-    {
-      "id": "as-6",
-      "title": "NY Creek Bridge",
-      "type": "aid",
-      "variants": {},
-      "routePointIndex": 1587,
       "metadata": {
         "water": true,
         "nutrition": true,
@@ -86,11 +15,76 @@
       }
     },
     {
-      "id": "as-7",
-      "title": "Planeta Way",
-      "type": "aid",
+      "id": "south-fork-trail",
+      "title": "South Fork Trail",
+      "type": "aid-station",
       "variants": {},
-      "routePointIndex": 1843,
+      "routePointIndex": 530,
+      "metadata": {
+        "water": false,
+        "nutrition": false,
+        "crewAccess": false,
+        "dropBags": false
+      }
+    },
+    {
+      "id": "salmon-falls-ranch",
+      "title": "Salmon Falls Ranch",
+      "type": "aid-station",
+      "variants": {},
+      "routePointIndex": 777,
+      "metadata": {
+        "water": false,
+        "nutrition": false,
+        "crewAccess": false,
+        "dropBags": false
+      }
+    },
+    {
+      "id": "sweetwater",
+      "title": "Sweetwater",
+      "type": "aid-station",
+      "variants": {},
+      "routePointIndex": 1070,
+      "metadata": {
+        "water": false,
+        "nutrition": false,
+        "crewAccess": false,
+        "dropBags": false
+      }
+    },
+    {
+      "id": "monte-vista",
+      "title": "Monte Vista",
+      "type": "aid-station",
+      "variants": {},
+      "routePointIndex": 1288,
+      "metadata": {
+        "water": true,
+        "nutrition": true,
+        "crewAccess": false,
+        "dropBags": false
+      }
+    },
+    {
+      "id": "ny-creek-bridge",
+      "title": "NY Creek Bridge",
+      "type": "aid-station",
+      "variants": {},
+      "routePointIndex": 1583,
+      "metadata": {
+        "water": true,
+        "nutrition": false,
+        "crewAccess": false,
+        "dropBags": false
+      }
+    },
+    {
+      "id": "planeta-way",
+      "title": "Planeta Way",
+      "type": "aid-station",
+      "variants": {},
+      "routePointIndex": 1846,
       "metadata": {
         "water": true,
         "nutrition": true,
@@ -105,28 +99,10 @@
       "system": true,
       "locked": true,
       "drop": {
-        "lat": 38.771480000000004,
-        "lon": -121.04309
+        "lat": 38.82536,
+        "lon": -120.95618
       },
       "variants": {
-        "LRG": [
-          {
-            "lat": 38.771480000000004,
-            "lon": -121.04309,
-            "snapIndex": 0,
-            "distanceM": 0,
-            "distanceMi": 0,
-            "passIndex": 0
-          },
-          {
-            "lat": 38.71869,
-            "lon": -121.10198000000001,
-            "snapIndex": 858,
-            "distanceM": 21523.51106836244,
-            "distanceMi": 13.374089733681823,
-            "passIndex": 1
-          }
-        ],
         "XXL": [
           {
             "lat": 38.82536,
@@ -142,6 +118,24 @@
             "snapIndex": 1959,
             "distanceM": 49742.22185928908,
             "distanceMi": 30.908383701240428,
+            "passIndex": 1
+          }
+        ],
+        "MED": [
+          {
+            "lat": 38.771480000000004,
+            "lon": -121.04309,
+            "snapIndex": 0,
+            "distanceM": 0,
+            "distanceMi": 0,
+            "passIndex": 0
+          },
+          {
+            "lat": 38.71869,
+            "lon": -121.10198000000001,
+            "snapIndex": 858,
+            "distanceM": 21523.51106836244,
+            "distanceMi": 13.374089733681823,
             "passIndex": 1
           }
         ]

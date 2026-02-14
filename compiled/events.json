@@ -64,14 +64,14 @@
     },
     "routes": [
       {
-        "label": "LRG",
-        "statsUrl": "/routes/SF-26-LRG.json",
-        "geojsonUrl": "/routes/SF-26-LRG.geojson"
-      },
-      {
         "label": "XXL",
         "statsUrl": "/routes/SF-26-XXL.json",
         "geojsonUrl": "/routes/SF-26-XXL.geojson"
+      },
+      {
+        "label": "MED",
+        "statsUrl": "/routes/SF-26-MED.json",
+        "geojsonUrl": "/routes/SF-26-MED.geojson"
       }
     ]
   },
@@ -79,7 +79,7 @@
     "eventId": "TEAM-SUC-001",
     "eventName": "Team SUC Hill Workout",
     "eventDescription": "Join Team SUC and Mo Miles Run Club for a mixed terrain hill workout. Bring a headlamp or light.",
-    "eventDate": "Feb 11 2026",
+    "eventDate": "Feb 18 2026",
     "eventTime": "6:00 PM",
     "startLocationName": "Overlook Park",
     "startLocationUrl": "https://maps.app.goo.gl/bf5vgKMKvfoYhbeC8",
@@ -121,6 +121,57 @@
         "type": "water",
         "category": "water",
         "distanceMi": 1.856250491689058
+      }
+    ]
+  },
+  {
+    "eventId": "SUC-037",
+    "eventName": "SUC 037 The Divide",
+    "eventDescription": "A crew favorite. The Foresthill Divide loop gives you options and plenty of rolling vert. Full loop around the divide.",
+    "eventDate": "Feb 21 2026",
+    "eventTime": "7:15 AM",
+    "startLocationName": "Driver's Flat Parking Area",
+    "startLocationUrl": "https://maps.app.goo.gl/Fuze4J6ZWgyVDR4v6",
+    "startLocationCoordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "routes": [
+      {
+        "label": "MED",
+        "statsUrl": "/routes/SUC-037-MED.json",
+        "geojsonUrl": "/routes/SUC-037-MED.geojson"
+      },
+      {
+        "label": "LRG",
+        "statsUrl": "/routes/SUC-037-LRG.json",
+        "geojsonUrl": "/routes/SUC-037-LRG.geojson"
+      },
+      {
+        "label": "XL",
+        "statsUrl": "/routes/SUC-037-XL.json",
+        "geojsonUrl": "/routes/SUC-037-XL.geojson"
+      },
+      {
+        "label": "XXL",
+        "statsUrl": "/routes/SUC-037-XXL.json",
+        "geojsonUrl": "/routes/SUC-037-XXL.geojson"
+      }
+    ],
+    "poiHighlights": [
+      {
+        "id": "viewpoint-top-of-climb",
+        "title": "Top of Climb",
+        "type": "viewpoint",
+        "category": "view",
+        "distanceMi": 8.831547818499875
+      },
+      {
+        "id": "viewpoint-viewpoint",
+        "title": "Viewpoint",
+        "type": "viewpoint",
+        "category": "view",
+        "distanceMi": 7.340100014893542
       }
     ]
   }

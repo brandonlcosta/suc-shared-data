@@ -1,0 +1,13 @@
+{
+  "routeGroupId": "SUC-037",
+  "name": "The Divide",
+  "location": "Driver's Flat",
+  "source": "SUC",
+  "notes": "",
+  "variants": [
+    "MED",
+    "LRG",
+    "XL",
+    "XXL"
+  ]
+}

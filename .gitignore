@@ -1,2 +1,25 @@
 node_modules/
 nul
+
+# Generated media output
+dist/exports/
+**/dist/exports/
+
+# Video files
+*.mp4
+*.mov
+*.webm
+*.mkv
+*.avi
+*.m4v
+
+# Image files
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.tif
+*.tiff
+*.bmp
+*.svg

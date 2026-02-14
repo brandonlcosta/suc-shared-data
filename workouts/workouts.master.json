@@ -3015,6 +3015,161 @@
       "routeId": null,
       "routeMode": null,
       "sectionEfforts": []
+    },
+    {
+      "workoutId": "workout-f87c7cf1-1ffb-411f-9773-9e50c9145339",
+      "version": 2,
+      "status": "published",
+      "domain": "run",
+      "strengthType": null,
+      "name": "Aerobic Builder",
+      "description": "Aerobic base building run. The goal is to keep a steady pace that feels relaxed and smooth. Practice fueling and even pacing.\n\nBreathing is conversational, but its not an easy run. This effort falls between easy and tempo. Steady.",
+      "focus": [
+        "aerobic",
+        "easy",
+        "daily"
+      ],
+      "coachNotes": "",
+      "tiers": {
+        "MED": {
+          "name": "Aerobic Builder (MED)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "30min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z3"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "LRG": {
+          "name": "Aerobic Builder (LRG)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "40min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z3"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "XL": {
+          "name": "Aerobic Builder (XL)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "50min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z3"
+                },
+                "cues": []
+              },
+              "rest": null
+            },
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "15min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        }
+      },
+      "createdAt": "2026-02-07T07:36:39.396Z",
+      "updatedAt": "2026-02-12T08:33:28.549Z",
+      "publishedAt": "2026-02-12T08:33:28.549Z",
+      "routeId": null,
+      "routeMode": null,
+      "sectionEfforts": []
     }
   ]
 }

@@ -1,0 +1,291 @@
+{
+  "routeGroupId": "SUC-037",
+  "pois": [
+    {
+      "id": "fork-med-turnoff",
+      "title": "MED Turnoff",
+      "type": "fork",
+      "variants": {
+        "MED": {
+          "lat": 38.94850000000001,
+          "lon": -120.97897000000003,
+          "snapIndex": 329,
+          "distanceM": 7855.76295621018,
+          "distanceMi": 4.881344794034202,
+          "passIndex": 0
+        },
+        "LRG": {
+          "lat": 38.94850000000001,
+          "lon": -120.97897000000003,
+          "snapIndex": 329,
+          "distanceM": 7855.794905407425,
+          "distanceMi": 4.881364646344986,
+          "passIndex": 0
+        },
+        "XL": {
+          "lat": 38.94850000000001,
+          "lon": -120.97897000000003,
+          "snapIndex": 329,
+          "distanceM": 7855.775124763029,
+          "distanceMi": 4.881352355222394,
+          "passIndex": 0
+        },
+        "XXL": {
+          "lat": 38.94850000000001,
+          "lon": -120.97897000000003,
+          "snapIndex": 329,
+          "distanceM": 7855.775124763029,
+          "distanceMi": 4.881352355222394,
+          "passIndex": 0
+        }
+      },
+      "drop": {
+        "lat": 38.9485,
+        "lon": -120.97897
+      }
+    },
+    {
+      "id": "fork-lrg-turnoff",
+      "title": "LRG Turnoff",
+      "type": "fork",
+      "variants": {
+        "LRG": {
+          "lat": 38.932959999999994,
+          "lon": -121.01182999999999,
+          "snapIndex": 568,
+          "distanceM": 13566.667608820528,
+          "distanceMi": 8.429936426780431,
+          "passIndex": 0
+        },
+        "XL": {
+          "lat": 38.932959999999994,
+          "lon": -121.01182999999999,
+          "snapIndex": 566,
+          "distanceM": 13564.978908439258,
+          "distanceMi": 8.42888711701119,
+          "passIndex": 0
+        },
+        "XXL": {
+          "lat": 38.932959999999994,
+          "lon": -121.01182999999999,
+          "snapIndex": 566,
+          "distanceM": 13564.978908439258,
+          "distanceMi": 8.42888711701119,
+          "passIndex": 0
+        }
+      },
+      "drop": {
+        "lat": 38.932959999999994,
+        "lon": -121.01182999999999
+      }
+    },
+    {
+      "id": "start-finish",
+      "title": "Start / Finish",
+      "type": "start-finish",
+      "system": true,
+      "locked": true,
+      "drop": {
+        "lat": 38.96698000000001,
+        "lon": -120.9518
+      },
+      "variants": {
+        "MED": [
+          {
+            "lat": 38.96698000000001,
+            "lon": -120.9518,
+            "snapIndex": 0,
+            "distanceM": 0,
+            "distanceMi": 0,
+            "passIndex": 0
+          },
+          {
+            "lat": 38.966660000000005,
+            "lon": -120.95195000000001,
+            "snapIndex": 639,
+            "distanceM": 15405.529921163037,
+            "distanceMi": 9.572552494160998,
+            "passIndex": 1
+          }
+        ],
+        "LRG": [
+          {
+            "lat": 38.96698000000001,
+            "lon": -120.9518,
+            "snapIndex": 0,
+            "distanceM": 0,
+            "distanceMi": 0,
+            "passIndex": 0
+          },
+          {
+            "lat": 38.966660000000005,
+            "lon": -120.95195000000001,
+            "snapIndex": 1087,
+            "distanceM": 26123.652230623662,
+            "distanceMi": 16.232484932136114,
+            "passIndex": 1
+          }
+        ],
+        "XL": [
+          {
+            "lat": 38.96698000000001,
+            "lon": -120.9518,
+            "snapIndex": 0,
+            "distanceM": 0,
+            "distanceMi": 0,
+            "passIndex": 0
+          },
+          {
+            "lat": 38.966660000000005,
+            "lon": -120.95195000000001,
+            "snapIndex": 1440,
+            "distanceM": 34631.20805643987,
+            "distanceMi": 21.518835038649208,
+            "passIndex": 1
+          }
+        ],
+        "XXL": [
+          {
+            "lat": 38.96698000000001,
+            "lon": -120.9518,
+            "snapIndex": 0,
+            "distanceM": 0,
+            "distanceMi": 0,
+            "passIndex": 0
+          },
+          {
+            "lat": 38.966660000000005,
+            "lon": -120.95196000000001,
+            "snapIndex": 1703,
+            "distanceM": 41608.130023780104,
+            "distanceMi": 25.854093359642253,
+            "passIndex": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "aid-confluence-trail",
+      "title": "Confluence Trail",
+      "type": "aid",
+      "variants": {
+        "XL": {
+          "lat": 38.91574,
+          "lon": -121.03573000000002,
+          "snapIndex": 767,
+          "distanceM": 18677.103985601603,
+          "distanceMi": 11.60541437107393,
+          "passIndex": 0
+        },
+        "XXL": {
+          "lat": 38.91574,
+          "lon": -121.03573000000002,
+          "snapIndex": 767,
+          "distanceM": 18677.103985601603,
+          "distanceMi": 11.60541437107393,
+          "passIndex": 0
+        }
+      },
+      "drop": {
+        "lat": 38.91574000000001,
+        "lon": -121.03573000000002
+      }
+    },
+    {
+      "id": "viewpoint-top-of-climb",
+      "title": "Top of Climb",
+      "type": "viewpoint",
+      "variants": {
+        "LRG": {
+          "lat": 38.92806,
+          "lon": -121.01271000000001,
+          "snapIndex": 594,
+          "distanceM": 14212.998492415862,
+          "distanceMi": 8.831547818499875
+        },
+        "XL": {
+          "lat": 38.92737,
+          "lon": -121.01290000000002,
+          "snapIndex": 941,
+          "distanceM": 22627.96731999424,
+          "distanceMi": 14.060367031532252,
+          "passIndex": 0
+        },
+        "XXL": {
+          "lat": 38.92737,
+          "lon": -121.01290000000002,
+          "snapIndex": 941,
+          "distanceM": 22627.96731999424,
+          "distanceMi": 14.060367031532252,
+          "passIndex": 0
+        }
+      },
+      "drop": {
+        "lat": 38.92737,
+        "lon": -121.01290000000002
+      }
+    },
+    {
+      "id": "viewpoint-viewpoint",
+      "title": "Viewpoint",
+      "type": "viewpoint",
+      "variants": {
+        "MED": {
+          "lat": 38.946870000000004,
+          "lon": -120.96110999999999,
+          "snapIndex": 495,
+          "distanceM": 11812.745918368833,
+          "distanceMi": 7.340100014893542,
+          "passIndex": 0
+        },
+        "LRG": {
+          "lat": 38.946870000000004,
+          "lon": -120.96110999999999,
+          "snapIndex": 944,
+          "distanceM": 22531.01856899281,
+          "distanceMi": 14.000125870536573,
+          "passIndex": 0
+        },
+        "XL": {
+          "lat": 38.946870000000004,
+          "lon": -120.96110999999999,
+          "snapIndex": 1297,
+          "distanceM": 31038.574394809013,
+          "distanceMi": 19.286475977049662,
+          "passIndex": 0
+        },
+        "XXL": {
+          "lat": 38.946870000000004,
+          "lon": -120.96110999999999,
+          "snapIndex": 1297,
+          "distanceM": 31038.574394809013,
+          "distanceMi": 19.286475977049662,
+          "passIndex": 0
+        }
+      },
+      "drop": {
+        "lat": 38.946870000000004,
+        "lon": -120.96111
+      }
+    },
+    {
+      "id": "turnaround-xxl-turnaround",
+      "title": "XXL Turnaround",
+      "type": "turnaround",
+      "variants": {
+        "XXL": {
+          "lat": 38.962680000000006,
+          "lon": -120.93101999999999,
+          "snapIndex": 1570,
+          "distanceM": 38092.45440538937,
+          "distanceMi": 23.669553809123077,
+          "passIndex": 0
+        }
+      },
+      "drop": {
+        "lat": 38.962680000000006,
+        "lon": -120.93102
+      }
+    }
+  ]
+}
