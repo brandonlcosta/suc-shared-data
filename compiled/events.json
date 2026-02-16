@@ -76,30 +76,10 @@
     ]
   },
   {
-    "eventId": "TEAM-SUC-001",
-    "eventName": "Team SUC Hill Workout",
-    "eventDescription": "Join Team SUC and Mo Miles Run Club for a mixed terrain hill workout. Bring a headlamp or light.",
-    "eventDate": "Feb 18 2026",
-    "eventTime": "6:00 PM",
-    "startLocationName": "Overlook Park",
-    "startLocationUrl": "https://maps.app.goo.gl/bf5vgKMKvfoYhbeC8",
-    "startLocationCoordinates": {
-      "lat": 0,
-      "lng": 0
-    },
-    "routes": [
-      {
-        "label": "LRG",
-        "statsUrl": "/routes/TEAM-SUC-001-LRG.json",
-        "geojsonUrl": "/routes/TEAM-SUC-001-LRG.geojson"
-      }
-    ]
-  },
-  {
     "eventId": "ECO-001",
     "eventName": "Ecofitness Run Club & Strength for Runners",
     "eventDescription": "7 am - Easy run. 8 am - strength workout designed for trail runners. Led by Coach Emily.",
-    "eventDate": "Feb 13 2026",
+    "eventDate": "Feb 20 2026",
     "eventTime": "7:00 AM",
     "startLocationName": "Sacramento EcoFitness",
     "startLocationUrl": "https://maps.app.goo.gl/49iagJDgrpS9o1Rs9",
@@ -127,7 +107,7 @@
   {
     "eventId": "SUC-037",
     "eventName": "SUC 037 The Divide",
-    "eventDescription": "A crew favorite. The Foresthill Divide loop gives you options and plenty of rolling vert. Full loop around the divide.",
+    "eventDescription": "This is the long way around. The full Foresthill Divide.\nOne crew. One goal.\nThe trail doesn’t divide us. It binds us.",
     "eventDate": "Feb 21 2026",
     "eventTime": "7:15 AM",
     "startLocationName": "Driver's Flat Parking Area",
