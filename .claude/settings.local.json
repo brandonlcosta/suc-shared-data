@@ -16,7 +16,8 @@
       "Bash(powershell:*)",
       "Bash(ls:*)",
       "Bash(netstat -ano)",
-      "Bash(findstr :5176)"
+      "Bash(findstr :5176)",
+      "Bash(npm run validate:*)"
     ],
     "additionalDirectories": [
       "c:\\Users\\Brandon\\Desktop\\Projects\\suc-studio"

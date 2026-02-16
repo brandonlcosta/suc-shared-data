@@ -28,18 +28,27 @@
       "cameraMode": "overview-lock",
       "speedMiPerSec": 0.8,
       "title": "Start and Settle In",
-      "subtitleIds": ["sub-intro"],
-      "markerIds": ["m-start", "m-water-crew"]
+      "subtitleIds": [
+        "sub-intro"
+      ],
+      "markerIds": [
+        "m-start",
+        "m-water-crew"
+      ]
     },
     {
       "id": "main-climb",
-      "startMi": 2.5,
-      "endMi": 8.9,
+      "startMi": 2.5116956208881582,
+      "endMi": 8.91169562088816,
       "cameraMode": "third-person-follow",
       "speedMiPerSec": 1,
       "title": "Loma Alta Climb",
-      "subtitleIds": ["sub-climb"],
-      "markerIds": ["m-summit"]
+      "subtitleIds": [
+        "sub-climb"
+      ],
+      "markerIds": [
+        "m-summit"
+      ]
     },
     {
       "id": "descent-home",
@@ -48,22 +57,26 @@
       "cameraMode": "third-person-follow",
       "speedMiPerSec": 1.3,
       "title": "Descent and Finish",
-      "subtitleIds": ["sub-finish"],
-      "markerIds": ["m-finish"]
+      "subtitleIds": [
+        "sub-finish"
+      ],
+      "markerIds": [
+        "m-finish"
+      ]
     }
   ],
   "subtitles": [
     {
       "id": "sub-intro",
-      "startSec": 0,
-      "endSec": 8,
+      "startSec": 0.75,
+      "endSec": 8.75,
       "text": "Smooth rollout from the trailhead.",
       "position": "bottom"
     },
     {
       "id": "sub-climb",
-      "startSec": 9,
-      "endSec": 22,
+      "startSec": 3.033359655352871,
+      "endSec": 16.03335965535287,
       "text": "Steady climb. Keep cadence stable.",
       "position": "bottom"
     },
@@ -92,7 +105,7 @@
     },
     {
       "id": "m-summit",
-      "atMi": 7.1,
+      "atMi": 2.5116956208881582,
       "type": "poi",
       "title": "Loma Alta Summit",
       "poiId": "summit-loma-alta"
@@ -108,5 +121,5 @@
   "publish": true,
   "status": "active",
   "createdAt": "2026-02-14T12:00:00.000Z",
-  "updatedAt": "2026-02-14T12:00:00.000Z"
+  "updatedAt": "2026-02-15T01:43:55.575Z"
 }

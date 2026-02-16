@@ -132,6 +132,71 @@ function assertRefExists(parentLabel, childLabel, parentId, refId) {
   }
 }
 
+function toFiniteNumber(value, fallback = 0) {
+  const parsed = Number(value);
+  return Number.isFinite(parsed) ? parsed : fallback;
+}
+
+function ensureUniqueIds(items, itemLabel, filePath) {
+  const seen = new Set();
+  for (const item of items) {
+    const id = String(item?.id || "");
+    if (!id) continue;
+    if (seen.has(id)) {
+      fail(`Duplicate ${itemLabel} id "${id}" in ${filePath}`);
+    }
+    seen.add(id);
+  }
+}
+
+function compareTimelineEntries(left, right) {
+  const startDelta = toFiniteNumber(left?.startMi, 0) - toFiniteNumber(right?.startMi, 0);
+  if (startDelta !== 0) return startDelta;
+  const endDelta = toFiniteNumber(left?.endMi, 0) - toFiniteNumber(right?.endMi, 0);
+  if (endDelta !== 0) return endDelta;
+  return String(left?.id || "").localeCompare(String(right?.id || ""));
+}
+
+function validateRouteMediaInvariants(routeMediaId, filePath, data) {
+  const timeline = Array.isArray(data.timeline) ? data.timeline : [];
+  const subtitles = Array.isArray(data.subtitles) ? data.subtitles : [];
+  const markers = Array.isArray(data.markers) ? data.markers : [];
+
+  ensureUniqueIds(timeline, "route-media timeline entry", filePath);
+  ensureUniqueIds(subtitles, "route-media subtitle", filePath);
+  ensureUniqueIds(markers, "route-media marker", filePath);
+
+  for (const entry of timeline) {
+    const startMi = toFiniteNumber(entry?.startMi, 0);
+    const endMi = toFiniteNumber(entry?.endMi, startMi);
+    if (startMi < 0 || endMi < 0) {
+      fail(`route-media ${routeMediaId} has negative timeline miles in ${filePath}`);
+    }
+    if (endMi < startMi) {
+      fail(`route-media ${routeMediaId} has timeline endMi < startMi in ${filePath}`);
+    }
+  }
+
+  for (const subtitle of subtitles) {
+    const startSec = toFiniteNumber(subtitle?.startSec, 0);
+    const endSec = toFiniteNumber(subtitle?.endSec, startSec);
+    if (startSec < 0 || endSec < 0) {
+      fail(`route-media ${routeMediaId} has negative subtitle seconds in ${filePath}`);
+    }
+    if (endSec < startSec) {
+      fail(`route-media ${routeMediaId} has subtitle endSec < startSec in ${filePath}`);
+    }
+  }
+
+  const sortedTimeline = [...timeline].sort(compareTimelineEntries).map((item) => item.id);
+  const originalTimeline = timeline.map((item) => item.id);
+  if (sortedTimeline.join("|") !== originalTimeline.join("|")) {
+    fail(
+      `route-media ${routeMediaId} timeline is not deterministically ordered by startMi/endMi/id in ${filePath}`
+    );
+  }
+}
+
 for (const [id, entry] of canonical.season) {
   for (const blockId of entry.data.blocks) {
     assertRefExists("season", "block", id, blockId);
@@ -148,6 +213,10 @@ for (const [id, entry] of canonical.week) {
   for (const workoutId of entry.data.workouts) {
     assertRefExists("week", "workout", id, workoutId);
   }
+}
+
+for (const [id, entry] of canonical["route-media"]) {
+  validateRouteMediaInvariants(id, entry.file, entry.data);
 }
 
 console.log("Canonical training data validation passed.");

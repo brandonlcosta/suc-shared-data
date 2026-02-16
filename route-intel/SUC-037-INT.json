@@ -1,0 +1,30 @@
+{
+  "id": "SUC-037-INT",
+  "type": "route-intel",
+  "eventId": "SUC-037",
+  "routes": [
+    {
+      "routeId": "SUC-037",
+      "distanceVariantIds": [
+        "MED",
+        "LRG",
+        "XL",
+        "XXL"
+      ],
+      "sectionMode": "all-poi",
+      "enabledPoiIds": [
+        "fork-med-turnoff",
+        "fork-lrg-turnoff",
+        "aid-confluence-trail",
+        "viewpoint-top-of-climb",
+        "viewpoint-viewpoint",
+        "turnaround-xxl-turnaround",
+        "start-finish"
+      ]
+    }
+  ],
+  "visibility": "public",
+  "publish": true,
+  "createdAt": "2026-02-16T02:16:13.676Z",
+  "updatedAt": "2026-02-16T02:19:07.557Z"
+}
