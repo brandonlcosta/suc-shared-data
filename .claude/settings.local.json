@@ -18,7 +18,13 @@
       "Bash(netstat -ano)",
       "Bash(findstr :5176)",
       "Bash(npm run validate:*)",
-      "Bash(findstr:*)"
+      "Bash(findstr:*)",
+      "Bash(npx tsc:*)",
+      "Bash(node --version:*)",
+      "Bash(node src/narrative/verify.js:*)",
+      "Bash(node:*)",
+      "Bash(npm run parity:test:*)",
+      "Bash(npm run:*)"
     ],
     "additionalDirectories": [
       "c:\\Users\\Brandon\\Desktop\\Projects\\suc-studio"
