@@ -13,6 +13,7 @@ try {
 }
 
 const root = process.cwd();
+const ROUTES_DIR = path.join(root, "routes");
 
 const canonicalSets = [
   {
@@ -218,5 +219,36 @@ for (const [id, entry] of canonical.week) {
 for (const [id, entry] of canonical["route-media"]) {
   validateRouteMediaInvariants(id, entry.file, entry.data);
 }
+
+function validateRoutePois() {
+  const schema = loadSchema("schemas/route.pois.schema.json");
+  const validate = ajv.compile(schema);
+
+  if (!fs.existsSync(ROUTES_DIR)) {
+    return;
+  }
+
+  const routeDirs = fs
+    .readdirSync(ROUTES_DIR, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => entry.name)
+    .sort((a, b) => a.localeCompare(b));
+
+  for (const routeDirName of routeDirs) {
+    const routeDirPath = path.join(ROUTES_DIR, routeDirName);
+    const poisPath = path.join(routeDirPath, "route.pois.json");
+    if (!fs.existsSync(poisPath)) continue;
+
+    const data = readJson(poisPath);
+    const valid = validate(data);
+    if (!valid) {
+      const err = validate.errors && validate.errors[0];
+      const detail = err ? `${err.instancePath || "<root>"} ${err.message}` : "unknown schema error";
+      fail(`Schema validation failed for ${poisPath}: ${detail}`);
+    }
+  }
+}
+
+validateRoutePois();
 
 console.log("Canonical training data validation passed.");

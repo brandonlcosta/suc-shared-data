@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://suc-os.dev/schemas/route.schema.json",
+  "title": "SUC Canonical Route",
+  "description": "Canonical route metadata stored per route at routes/{routeId}/route.meta.json.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "lifecycle",
+    "route_id",
+    "name",
+    "variants",
+    "segment_ids"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "lifecycle": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "appended_at", "source"],
+      "properties": {
+        "state": {
+          "type": "string",
+          "enum": ["draft", "published", "deprecated", "archived"]
+        },
+        "appended_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "supersedes_route_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "deprecated_by_route_id": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "route_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "location": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "route_type": {
+      "type": "string",
+      "enum": ["training", "race", "crew", "social", "other"]
+    },
+    "variants": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "segment_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "source_legacy": {
+      "type": "object",
+      "description": "Legacy source snapshot for auditability. Allowed during migration only."
+    }
+  }
+}
+

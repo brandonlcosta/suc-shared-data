@@ -120,24 +120,6 @@
             "distanceMi": 30.908383701240428,
             "passIndex": 1
           }
-        ],
-        "MED": [
-          {
-            "lat": 38.771480000000004,
-            "lon": -121.04309,
-            "snapIndex": 0,
-            "distanceM": 0,
-            "distanceMi": 0,
-            "passIndex": 0
-          },
-          {
-            "lat": 38.71869,
-            "lon": -121.10198000000001,
-            "snapIndex": 858,
-            "distanceM": 21523.51106836244,
-            "distanceMi": 13.374089733681823,
-            "passIndex": 1
-          }
         ]
       }
     }

@@ -105,6 +105,21 @@
       "route_group_ids": [
         "SUC-037"
       ]
+    },
+    {
+      "event_id": "SUC-038",
+      "event_name": "SUC 038 Way Uncool 50k",
+      "event_description": "You thought about doing Salmon Falls. But nah. You're way too cool for that.",
+      "event_date": "Feb 28 2026",
+      "event_time": "8:00 AM",
+      "type": "crew-run",
+      "start_location_name": "Cool Firehouse",
+      "start_location_url": "https://maps.app.goo.gl/mEdUB8tUgg6gu2UW9",
+      "start_lat": 0,
+      "start_lng": 0,
+      "route_group_ids": [
+        "SUC-038"
+      ]
     }
   ]
 }

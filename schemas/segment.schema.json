@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://suc-os.dev/schemas/segment.schema.json",
+  "title": "SUC Canonical Segment",
+  "description": "Canonical segment object stored at segments/{segmentId}.json.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "lifecycle",
+    "segment_id",
+    "route_id",
+    "name",
+    "segment_type"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "lifecycle": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "appended_at", "source"],
+      "properties": {
+        "state": {
+          "type": "string",
+          "enum": ["draft", "published", "deprecated", "archived"]
+        },
+        "appended_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "supersedes_segment_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "deprecated_by_segment_id": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "segment_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "route_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "segment_type": {
+      "type": "string",
+      "enum": ["climb", "descent", "flat", "connector", "aid-zone", "other", "unknown"]
+    },
+    "distance_m": {
+      "type": "number",
+      "minimum": 0
+    },
+    "elevation_gain_m": {
+      "type": "number"
+    },
+    "source_legacy": {
+      "type": "object",
+      "description": "Legacy source snapshot for auditability. Allowed during migration only."
+    }
+  }
+}
+

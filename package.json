@@ -6,10 +6,17 @@
     "build": "node scripts/compile.js",
     "ensure:start-finish": "node scripts/ensureStartFinishPoi.js",
     "export:media": "node scripts/exportMedia.js",
-    "validate:canonical": "node scripts/validate-canonical.js"
+    "export:media:validate": "node scripts/exportMedia.js --validate",
+    "validate:canonical": "node scripts/validate-canonical.js",
+    "lint:boundaries": "node scripts/check-boundary-imports.cjs",
+    "migrate:export:legacy-canonical": "node scripts/migrations/export-legacy-canonical.js",
+    "migrate:validate:legacy-export": "node scripts/migrations/validate-legacy-export.js"
   },
   "dependencies": {
+    "@suc/canonical-contract": "0.0.1",
+    "@supabase/supabase-js": "^2.57.4",
     "ajv": "^8.12.0",
-    "ajv-formats": "^2.1.1"
+    "ajv-formats": "^2.1.1",
+    "dotenv": "^17.3.1"
   }
 }

@@ -1,0 +1,13 @@
+{
+  "routeGroupId": "SUC-038",
+  "name": "Way Uncool 35k",
+  "location": "Cool",
+  "source": "SUC",
+  "notes": "You thought about doing Salmon Falls. But nah. You're way too cool for that.",
+  "variants": [
+    "MED",
+    "LRG",
+    "XL",
+    "XXL"
+  ]
+}

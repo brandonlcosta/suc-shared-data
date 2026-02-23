@@ -1,8 +1,10 @@
 ﻿'use strict';
 
 const fs = require('fs/promises');
+const fsSync = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
+const { pathToFileURL } = require('url');
 
 const ROOT = path.resolve(__dirname, '..');
 const COMPILED_DIR = path.join(ROOT, 'compiled');
@@ -140,59 +142,70 @@ function getRouteGroupIds(raw) {
   return [];
 }
 
-function normalizeEventForBroadcast(raw) {
-  if (!raw || typeof raw !== 'object') return raw;
+function normalizeEventForCanonical(raw) {
+  if (!raw || typeof raw !== 'object') return null;
+  const eventId = raw.event_id ?? raw.eventId ?? raw.id;
+  if (typeof eventId !== 'string' || !eventId.trim()) return null;
   return {
-    event_id: raw.event_id ?? raw.eventId ?? raw.id,
-    event_name: raw.event_name ?? raw.eventName ?? raw.name,
-    event_description: raw.event_description ?? raw.eventDescription ?? raw.description,
-    event_date: raw.event_date ?? raw.eventDate,
-    weekId: raw.weekId ?? raw.week_id,
-    event_time: raw.event_time ?? raw.eventTime,
-    start_location_name: raw.start_location_name ?? raw.startLocationName,
-    start_location_url: raw.start_location_url ?? raw.startLocationUrl,
-    start_lat:
-      raw.start_lat ??
-      (raw.startLocationCoordinates ? raw.startLocationCoordinates.lat : undefined),
-    start_lng:
-      raw.start_lng ??
-      (raw.startLocationCoordinates ? raw.startLocationCoordinates.lng : undefined),
-    publish: raw.publish,
-    recurring: raw.recurring
+    eventId: eventId.trim(),
+    name: String(raw.event_name ?? raw.eventName ?? raw.name ?? eventId).trim(),
+    description: String(raw.event_description ?? raw.eventDescription ?? raw.description ?? ''),
+    date: String(raw.event_date ?? raw.eventDate ?? '')
   };
 }
 
-function eventsJsonExport(events, routes) {
-  const output = events.map((event) => {
-    const eventRoutes = routes
-      .filter((route) => route.event_id === event.event_id)
-      .map((route) => ({
-        label: route.label,
-        statsUrl: route.gpx_url,
-        geojsonUrl: route.geojson_url
-      }));
-
-    const poiHighlights = Array.isArray(event.poi_highlights) ? event.poi_highlights : [];
-
+function routesJsonExport(compiledRoutes) {
+  const entries = Object.values(compiledRoutes?.routes ?? {});
+  return entries.map((entry) => {
+    const stats = entry?.stats ?? {};
+    const routeId = String(stats.id ?? '').trim();
+    const routeGroupId = String(routeId.split('-').slice(0, -1).join('-') || '').trim();
+    const variant = String(stats.label ?? '').trim().toUpperCase();
     return {
-      eventId: event.event_id,
-      eventName: event.event_name,
-      eventDescription: event.event_description,
-      eventDate: event.event_date,
-      ...(event.weekId ? { weekId: event.weekId } : {}),
-      eventTime: event.event_time,
-      startLocationName: event.start_location_name,
-      startLocationUrl: event.start_location_url,
-      startLocationCoordinates: {
-        lat: event.start_lat,
-        lng: event.start_lng
-      },
-      routes: eventRoutes,
-      ...(poiHighlights.length ? { poiHighlights } : {})
+      routeId,
+      routeGroupId,
+      variant,
+      name: String(stats.name ?? `${variant} Route`).trim(),
+      distanceM:
+        typeof stats.distanceKm === 'number'
+          ? stats.distanceKm * 1000
+          : typeof stats.distanceMi === 'number'
+            ? stats.distanceMi * 1609.344
+            : null,
+      elevationGainM:
+        typeof stats.elevationM === 'number'
+          ? stats.elevationM
+          : typeof stats.elevationFt === 'number'
+            ? stats.elevationFt * 0.3048
+            : null,
+      geojson_url: stats.geojsonUrl ?? null,
+      gpx_url: stats.gpxUrl ?? null
     };
   });
+}
 
-  return JSON.stringify(output, null, 2);
+function eventsJsonExport(events, routes) {
+  const routeRefsByEventId = new Map();
+
+  for (const route of routes) {
+    const eventId = String(route.event_id ?? '').trim();
+    const routeGroupId = String(route.route_group_id ?? '').trim();
+    const variant = String(route.variant ?? route.label ?? '').trim().toUpperCase();
+    if (!eventId || !routeGroupId || !variant) continue;
+    const refs = routeRefsByEventId.get(eventId) ?? [];
+    if (!refs.some((ref) => ref.routeGroupId === routeGroupId && ref.variant === variant)) {
+      refs.push({ routeGroupId, variant });
+    }
+    routeRefsByEventId.set(eventId, refs);
+  }
+
+  return events.map((event) => ({
+    eventId: event.eventId,
+    name: event.name || event.eventId,
+    description: event.description || '',
+    date: event.date || '',
+    routeRefs: routeRefsByEventId.get(event.eventId) ?? []
+  }));
 }
 
 const ROUTE_COLOR_BY_LABEL = {
@@ -690,6 +703,8 @@ async function compileRoutesForEvents(selectedEvents) {
         routes.push({
           route_id: routeId,
           event_id: eventId,
+          route_group_id: routeGroupId,
+          variant: label,
           label,
           distance_miles: compiledStats.distanceMi,
           vert_feet: compiledStats.elevationFt,
@@ -931,6 +946,22 @@ function getGitSha() {
 }
 
 async function main() {
+  let contractModule;
+  try {
+    contractModule = await import('@suc/canonical-contract');
+  } catch (error) {
+    const fallbackCandidates = [
+      path.resolve(process.cwd(), 'packages', 'canonical-contract', 'dist', 'index.js'),
+      path.resolve(__dirname, '..', '..', 'suc-dev', 'packages', 'canonical-contract', 'dist', 'index.js')
+    ];
+    const fallbackPath = fallbackCandidates.find((candidate) => fsSync.existsSync(candidate));
+    if (!fallbackPath) {
+      throw error;
+    }
+    contractModule = await import(pathToFileURL(fallbackPath).href);
+  }
+  const { validateCanonicalRoutes, validateCanonicalEvents } = contractModule;
+
   logShowAllPoisOnce();
   log('Compiling routes...');
   const eventsMaster = await loadEventsMaster();
@@ -950,28 +981,28 @@ async function main() {
   }
 
   log('Compiling POIs...');
-  const { routes, compiledRoutes, poiHighlightsByEvent } =
-    await compileRoutesForEvents(selectedEvents);
+  const { routes, compiledRoutes } = await compileRoutesForEvents(selectedEvents);
 
   log('Compiling events...');
-  const normalizedEvents = selectedEvents.map(normalizeEventForBroadcast);
-  const eventsJson = eventsJsonExport(
-    normalizedEvents.map((event) => ({
-      ...event,
-      poi_highlights: poiHighlightsByEvent[event.event_id] ?? []
-    })),
-    routes
-  );
+  const normalizedEvents = selectedEvents
+    .map(normalizeEventForCanonical)
+    .filter(Boolean);
+  const canonicalRoutes = validateCanonicalRoutes(routesJsonExport(compiledRoutes));
+  const canonicalEvents = validateCanonicalEvents(eventsJsonExport(normalizedEvents, routes));
 
   await fs.mkdir(COMPILED_DIR, { recursive: true });
   await fs.writeFile(
     path.join(COMPILED_DIR, 'routes.json'),
-    JSON.stringify(compiledRoutes, null, 2),
+    JSON.stringify(canonicalRoutes, null, 2),
     'utf8'
   );
   log('Wrote compiled/routes.json');
 
-  await fs.writeFile(path.join(COMPILED_DIR, 'events.json'), eventsJson, 'utf8');
+  await fs.writeFile(
+    path.join(COMPILED_DIR, 'events.json'),
+    JSON.stringify(canonicalEvents, null, 2),
+    'utf8'
+  );
   log('Wrote compiled/events.json');
 
   log('Compiling training content...');
@@ -1119,7 +1150,7 @@ async function main() {
     lastBuildAt: new Date().toISOString(),
     commit: getGitSha(),
     counts: {
-      routes: Object.keys(compiledRoutes.routes || {}).length,
+      routes: canonicalRoutes.length,
       events: normalizedEvents.length,
       workouts: workoutsMaster.length
     }

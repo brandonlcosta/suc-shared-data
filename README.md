@@ -1,61 +1,28 @@
 # SUC Shared Data
 
-**This repository is the canonical source of truth for the SUC ecosystem.**
+`suc-shared-data` is the SUC-OS canonical data layer and source of truth for schema-governed entities.
 
-## 📚 SUC-OS Platform Documentation
+## Role In SUC-OS
+- Layer: Canonical truth
+- Upstream: `suc-studio` (authoring intent)
+- Downstream: `suc-broadcast` (deterministic compile) and viewers (runtime projections)
+- One-way flow: `Studio -> Shared Data -> Broadcast -> Viewers`
 
-This repo is the **Data Layer** in the SUC-OS platform architecture.
+## Governance
+- Repo guardrails: `AI.md`
+- In-repo agents: `AGENTS.md`
+- Canon authority: `../suc-agents/canon/`
 
-**Quick Links**:
-- [SUC-OS Overview](docs/SUC-OS-README.md) - Platform architecture and philosophy
-- [Architecture](docs/ARCHITECTURE.md) - System design and layer model
-- [Data Flow](docs/DATA_FLOW.md) - How data moves through the platform
-- [Developer Onboarding](docs/DEVELOPER_ONBOARDING.md) - Get started developing locally
-- [Contributor Workflow](docs/CONTRIBUTOR_WORKFLOW.md) - How to add/modify content
-- [Anti-Patterns](docs/ANTI_PATTERNS.md) - What NOT to do
+## Key Living Governance Docs
+- `docs/governance/data-contract.md`
+- `docs/governance/immutability.md`
+- `docs/governance/validation-invariants.md`
+- `docs/governance/workout-versioning.md`
 
-**Role in SUC-OS**:
-- **Layer**: Data (Source of Truth)
-- **Responsibility**: Store, version, and validate all canonical content
-- **Upstream**: Receives validated commits from `suc-studio`
-- **Downstream**: Read by `suc-broadcast` for compilation
+## Operations And History
+- Operational docs: `docs/operations/`
+- Prompt operations: `docs/prompts/`
+- Historical archive: `docs/history/`
 
----
-
-## Repository Rules
-
-Rules
-- Store structured reality only; no UI or presentation logic.
-- Canonical files live in their existing folders (events/, routes/, workouts/, etc.).
-- Training content lives in training-content/, gear reviews in gear-reviews/, crew stories in crew-stories/.
-- Leaderboard snapshots live in leaderboards/ and weekly recap inputs live in recaps/.
-- Compiled artifacts live only in compiled/ and are generated via npm run build.
-- Do not edit compiled/ by hand; regenerate instead.
-- Do not delete or "clean up" historical data.
-- Do not assume public visibility for any data.
-- This repository grows forever by design.
-
-Canonical training system (v2)
-- Canonical training data is stored as one JSON file per entity in seasons/, blocks/, weeks/, and workouts/.
-- Each entity is schema-validated via schemas/season.schema.json, schemas/block.schema.json, schemas/week.schema.json, and schemas/workout.schema.json.
-- References are by ID only: season.blocks[] -> blocks/, block.weeks[] -> weeks/, week.workouts[] -> workouts/.
-- Run `npm run validate:canonical` to validate schemas and ID references.
-- Validation only targets files that include an `id` field; legacy or historical files in these folders are preserved but ignored by the validator.
-- Training signals contract:
-  - Week-level signals are required in week.schema.json: focus (string|null), stress (low/med/med-high/high), volume (low/low-med/med/med-high/high), intensity (low/med/high).
-  - Block-level signals are optional in block.schema.json with the same enums and do not override week-level values.
-- Week-to-event linkage:
-  - Weeks may include optional `eventIds` to reference canonical SUC events by ID.
-  - Optional `eventRoles` can tag linked events as goal/tuneup/simulation/social for training semantics.
-  - Viewer calendars compile event metadata (name/date/location + derived link) from these references; canonical events remain in events/.
-- Event typing:
-  - Canonical events may include `type` (crew-run, training-run, race, camp, social) for Studio authoring and filtering.
-
-Compile contract
-- npm run build executes scripts/compile.js and overwrites compiled/ deterministically.
-- Downstream tools (route viewer, broadcast) read only from compiled/.
-- npm run export:media reads compiled/ and writes deterministic media placeholders to exports/.
-
-Legacy calendar spine (historical)
-- data/seasons.json, data/blocks.json, and data/weeks.json remain as historical references.
-- Legacy season drafts/published files live under seasons/deprecated/ for reference only.
+## Validation
+- Canonical validation: `npm run validate:canonical`

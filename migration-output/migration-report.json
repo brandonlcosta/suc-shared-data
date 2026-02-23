@@ -1,0 +1,152 @@
+{
+  "generated_at": "2026-02-18T06:11:26.516Z",
+  "export_root": "C:\\Users\\Brandon\\Desktop\\Projects\\suc-shared-data\\migration-output\\canonical-export",
+  "counts": {
+    "routes": 0,
+    "segments": 23,
+    "events": 8,
+    "errors": 0,
+    "warnings": 23
+  },
+  "findings": [
+    {
+      "severity": "warning",
+      "type": "orphaned_segment",
+      "entity": "segment",
+      "id": "0a3af298-0316-480f-b364-d32874eb87b9"
+    },
+    {
+      "severity": "warning",
+      "type": "orphaned_segment",
+      "entity": "segment",
+      "id": "133bb34a-2538-4e68-9dd5-200d904bc261"
+    },
+    {
+      "severity": "warning",
+      "type": "orphaned_segment",
+      "entity": "segment",
+      "id": "16fb5ea0-8d52-47a2-9228-99f6a1604661"
+    },
+    {
+      "severity": "warning",
+      "type": "orphaned_segment",
+      "entity": "segment",
+      "id": "1a9094c1-97c7-4a2e-842d-0310bdf28016"
+    },
+    {
+      "severity": "warning",
+      "type": "orphaned_segment",
+      "entity": "segment",
+      "id": "22ef7aa8-dc5f-40e1-a627-2116d7b86684"
+    },
+    {
+      "severity": "warning",
+      "type": "orphaned_segment",
+      "entity": "segment",
+      "id": "2d8f4586-781c-4dd4-a429-e153229139dc"
+    },
+    {
+      "severity": "warning",
+      "type": "orphaned_segment",
+      "entity": "segment",
+      "id": "3237baf0-6529-41e3-af33-fd0a9d1a8314"
+    },
+    {
+      "severity": "warning",
+      "type": "orphaned_segment",
+      "entity": "segment",
+      "id": "4e5b44c9-370c-4adb-a72b-15ea0ef2576b"
+    },
+    {
+      "severity": "warning",
+      "type": "orphaned_segment",
+      "entity": "segment",
+      "id": "4f4bc76c-91ae-47c7-a216-b4135e0731c9"
+    },
+    {
+      "severity": "warning",
+      "type": "orphaned_segment",
+      "entity": "segment",
+      "id": "56c7065e-28c8-4e65-91b6-f525670ae4b2"
+    },
+    {
+      "severity": "warning",
+      "type": "orphaned_segment",
+      "entity": "segment",
+      "id": "59acd03e-f7ae-42be-8d48-a39ba1312eb2"
+    },
+    {
+      "severity": "warning",
+      "type": "orphaned_segment",
+      "entity": "segment",
+      "id": "756efe6a-eb08-4d2f-baa7-8a012288c4f5"
+    },
+    {
+      "severity": "warning",
+      "type": "orphaned_segment",
+      "entity": "segment",
+      "id": "8c183319-9894-42d9-adcf-9c604cd989a4"
+    },
+    {
+      "severity": "warning",
+      "type": "orphaned_segment",
+      "entity": "segment",
+      "id": "8cfa3578-bca4-4a76-8846-123b8b0538c7"
+    },
+    {
+      "severity": "warning",
+      "type": "orphaned_segment",
+      "entity": "segment",
+      "id": "acf9c783-9b42-4713-a2b7-15f8fe037dfd"
+    },
+    {
+      "severity": "warning",
+      "type": "orphaned_segment",
+      "entity": "segment",
+      "id": "bd34333b-ad53-4d87-a29c-ef8600b3447e"
+    },
+    {
+      "severity": "warning",
+      "type": "orphaned_segment",
+      "entity": "segment",
+      "id": "c1650afc-85f2-47ce-8f0f-cde56190adbf"
+    },
+    {
+      "severity": "warning",
+      "type": "orphaned_segment",
+      "entity": "segment",
+      "id": "c50618d9-99ff-47b6-9ea5-b7fc6b67158e"
+    },
+    {
+      "severity": "warning",
+      "type": "orphaned_segment",
+      "entity": "segment",
+      "id": "ce77e2f2-8cc6-4c8d-959d-a42f0abb02b7"
+    },
+    {
+      "severity": "warning",
+      "type": "orphaned_segment",
+      "entity": "segment",
+      "id": "d5486234-0453-44d8-8d36-5fa83a04ff95"
+    },
+    {
+      "severity": "warning",
+      "type": "orphaned_segment",
+      "entity": "segment",
+      "id": "e1f40498-d9ae-4b2e-8aad-726764e6a0f2"
+    },
+    {
+      "severity": "warning",
+      "type": "orphaned_segment",
+      "entity": "segment",
+      "id": "fcc18ee3-7258-4aed-a643-7f2c4bd2795c"
+    },
+    {
+      "severity": "warning",
+      "type": "orphaned_segment",
+      "entity": "segment",
+      "id": "ff0546ab-7d73-4756-ac4c-5e864125e5fd"
+    }
+  ],
+  "status": "passed"
+}

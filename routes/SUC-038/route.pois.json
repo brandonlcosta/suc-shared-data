@@ -1,0 +1,265 @@
+{
+  "routeGroupId": "SUC-038",
+  "pois": [
+    {
+      "id": "start-finish",
+      "title": "Start / Finish",
+      "type": "start-finish",
+      "system": true,
+      "locked": true,
+      "drop": {
+        "lat": 38.88906,
+        "lon": -121.01726000000001
+      },
+      "variants": {
+        "MED": [
+          {
+            "lat": 38.88906,
+            "lon": -121.01726000000001,
+            "snapIndex": 0,
+            "distanceM": 0,
+            "distanceMi": 0,
+            "passIndex": 0
+          },
+          {
+            "lat": 38.88911,
+            "lon": -121.01726000000001,
+            "snapIndex": 398,
+            "distanceM": 12206.261892118733,
+            "distanceMi": 7.584619504666953,
+            "passIndex": 1
+          }
+        ],
+        "LRG": [
+          {
+            "lat": 38.88906,
+            "lon": -121.01726000000001,
+            "snapIndex": 0,
+            "distanceM": 0,
+            "distanceMi": 0,
+            "passIndex": 0
+          },
+          {
+            "lat": 38.88911,
+            "lon": -121.01726000000001,
+            "snapIndex": 636,
+            "distanceM": 18906.80770443374,
+            "distanceMi": 11.748145644706005,
+            "passIndex": 1
+          }
+        ],
+        "XL": [
+          {
+            "lat": 38.88906,
+            "lon": -121.01726000000001,
+            "snapIndex": 0,
+            "distanceM": 0,
+            "distanceMi": 0,
+            "passIndex": 0
+          },
+          {
+            "lat": 38.88911,
+            "lon": -121.01726000000001,
+            "snapIndex": 862,
+            "distanceM": 25489.618992507578,
+            "distanceMi": 15.838514943049825,
+            "passIndex": 1
+          }
+        ],
+        "XXL": [
+          {
+            "lat": 38.88906,
+            "lon": -121.01726000000001,
+            "snapIndex": 0,
+            "distanceM": 0,
+            "distanceMi": 0,
+            "passIndex": 0
+          },
+          {
+            "lat": 38.88911,
+            "lon": -121.01726000000001,
+            "snapIndex": 1303,
+            "distanceM": 35224.75471398239,
+            "distanceMi": 21.887647832894885,
+            "passIndex": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "fork-med-turnoff",
+      "title": "MED Turnoff",
+      "type": "fork",
+      "variants": {
+        "MED": {
+          "lat": 38.91634000000001,
+          "lon": -121.0061,
+          "snapIndex": 248,
+          "distanceM": 7809.996558548948,
+          "distanceMi": 4.852906872955035,
+          "passIndex": 0
+        },
+        "LRG": {
+          "lat": 38.91634000000001,
+          "lon": -121.0061,
+          "snapIndex": 247,
+          "distanceM": 7809.982278850516,
+          "distanceMi": 4.852897999961796,
+          "passIndex": 0
+        },
+        "XL": {
+          "lat": 38.91634000000001,
+          "lon": -121.0061,
+          "snapIndex": 247,
+          "distanceM": 7809.982278850516,
+          "distanceMi": 4.852897999961796,
+          "passIndex": 0
+        },
+        "XXL": {
+          "lat": 38.91634000000001,
+          "lon": -121.0061,
+          "snapIndex": 247,
+          "distanceM": 7809.982278850516,
+          "distanceMi": 4.852897999961796,
+          "passIndex": 0
+        }
+      },
+      "drop": {
+        "lat": 38.916340000000005,
+        "lon": -121.0061
+      }
+    },
+    {
+      "id": "fork-lrg-turnoff",
+      "title": "LRG Turnoff",
+      "type": "fork",
+      "variants": {
+        "LRG": {
+          "lat": 38.92619000000001,
+          "lon": -120.98819,
+          "snapIndex": 322,
+          "distanceM": 10212.04186227448,
+          "distanceMi": 6.3454686271390575,
+          "passIndex": 0
+        },
+        "XL": {
+          "lat": 38.92619000000001,
+          "lon": -120.98819,
+          "snapIndex": 322,
+          "distanceM": 10210.39982039832,
+          "distanceMi": 6.3444483096207644,
+          "passIndex": 0
+        },
+        "XXL": {
+          "lat": 38.92619000000001,
+          "lon": -120.98819,
+          "snapIndex": 322,
+          "distanceM": 10205.655679357258,
+          "distanceMi": 6.341500437045938,
+          "passIndex": 0
+        }
+      },
+      "drop": {
+        "lat": 38.926190000000005,
+        "lon": -120.98819
+      }
+    },
+    {
+      "id": "hazard-creek-crossing",
+      "title": "Creek Crossing",
+      "type": "hazard",
+      "variants": {
+        "XXL": {
+          "lat": 38.93160000000001,
+          "lon": -120.93478,
+          "snapIndex": 526,
+          "distanceM": 15858.895070776121,
+          "distanceMi": 9.854260537694937,
+          "passIndex": 0
+        }
+      },
+      "drop": {
+        "lat": 38.9316,
+        "lon": -120.93478
+      }
+    },
+    {
+      "id": "summit-goat-hill",
+      "title": "Goat Hill",
+      "type": "summit",
+      "variants": {
+        "LRG": {
+          "lat": 38.91449,
+          "lon": -120.98336000000002,
+          "snapIndex": 385,
+          "distanceM": 12178.00159565515,
+          "distanceMi": 7.567059370560396,
+          "passIndex": 0
+        },
+        "XL": {
+          "lat": 38.91449,
+          "lon": -120.98336000000002,
+          "snapIndex": 611,
+          "distanceM": 18760.812883728984,
+          "distanceMi": 11.657428668904213,
+          "passIndex": 0
+        },
+        "XXL": {
+          "lat": 38.91449,
+          "lon": -120.98336000000002,
+          "snapIndex": 1052,
+          "distanceM": 28495.9486052038,
+          "distanceMi": 17.70656155874928,
+          "passIndex": 0
+        }
+      },
+      "drop": {
+        "lat": 38.91449,
+        "lon": -120.98336
+      }
+    },
+    {
+      "id": "hazard-hwy-49",
+      "title": "HWY 49",
+      "type": "hazard",
+      "variants": {
+        "MED": {
+          "lat": 38.9025,
+          "lon": -121.01484000000002,
+          "snapIndex": 337,
+          "distanceM": 10062.245461240449,
+          "distanceMi": 6.25238945883568,
+          "passIndex": 0
+        },
+        "LRG": {
+          "lat": 38.9025,
+          "lon": -121.01484000000002,
+          "snapIndex": 575,
+          "distanceM": 16762.791273555442,
+          "distanceMi": 10.415915598874722,
+          "passIndex": 0
+        },
+        "XL": {
+          "lat": 38.9025,
+          "lon": -121.01484000000002,
+          "snapIndex": 801,
+          "distanceM": 23345.60256162928,
+          "distanceMi": 14.506284897218542,
+          "passIndex": 0
+        },
+        "XXL": {
+          "lat": 38.9025,
+          "lon": -121.01484000000002,
+          "snapIndex": 1242,
+          "distanceM": 33080.738283104096,
+          "distanceMi": 20.555417787063607,
+          "passIndex": 0
+        }
+      },
+      "drop": {
+        "lat": 38.9025,
+        "lon": -121.01484
+      }
+    }
+  ]
+}

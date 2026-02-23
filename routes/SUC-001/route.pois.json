@@ -36,6 +36,37 @@
       "type": "workout",
       "label": "Recovery to Overlook",
       "routePointIndex": 587
+    },
+    {
+      "id": "start-finish",
+      "title": "Start / Finish",
+      "type": "start-finish",
+      "system": true,
+      "locked": true,
+      "drop": {
+        "lat": 38.889430000000004,
+        "lon": -121.06915000000001
+      },
+      "variants": {
+        "LRG": [
+          {
+            "lat": 38.889430000000004,
+            "lon": -121.06915000000001,
+            "snapIndex": 0,
+            "distanceM": 0,
+            "distanceMi": 0,
+            "passIndex": 0
+          },
+          {
+            "lat": 38.88942,
+            "lon": -121.06931000000002,
+            "snapIndex": 882,
+            "distanceM": 23945.633491003544,
+            "distanceMi": 14.879126831183106,
+            "passIndex": 1
+          }
+        ]
+      }
     }
   ]
 }

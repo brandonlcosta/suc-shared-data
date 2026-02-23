@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0.0",
+  "lifecycle": {
+    "state": "published",
+    "appended_at": "2026-02-18T06:10:31.409Z",
+    "source": "supabase-legacy-export"
+  },
+  "event_id": "accf5c8b-92b3-4da5-bb8e-fcf4ebb46c99",
+  "name": "Curtis Park Crew",
+  "description": "",
+  "event_type": "training-run",
+  "starts_at": null,
+  "start_location": {
+    "name": "",
+    "url": "",
+    "lat": null,
+    "lng": null
+  },
+  "route_group_ids": [],
+  "segment_ids": [],
+  "source_legacy": {
+    "id": "accf5c8b-92b3-4da5-bb8e-fcf4ebb46c99",
+    "series_id": null,
+    "host_crew_id": "c52db32f-d8cf-4c0d-a2f4-e615a9cbed42",
+    "title": "Curtis Park Crew",
+    "description": "",
+    "start_at": "2025-12-28T15:00:15+00:00",
+    "duration_minutes": null,
+    "location_name": null,
+    "location_lat": null,
+    "location_lng": null,
+    "game_mode": "free",
+    "checkin_open_offset_minutes": -120,
+    "checkin_close_offset_minutes": 720,
+    "is_public": true,
+    "created_by_profile_id": "3a8798e8-fa68-4bbe-a25a-454f6814c424"
+  }
+}

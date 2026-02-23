@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-02-18T06:10:31.459Z",
+  "source_tables": {
+    "_legacy_routes": 0,
+    "_legacy_segments": 23,
+    "_legacy_events": 8,
+    "_legacy_event_routes": 0,
+    "_legacy_event_route_segments": 23,
+    "_legacy_route_pois": 0
+  },
+  "output_counts": {
+    "routes": 0,
+    "events": 8,
+    "segments": 23
+  }
+}

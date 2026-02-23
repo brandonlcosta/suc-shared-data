@@ -1,157 +1,85 @@
 [
   {
     "eventId": "SUC-036",
-    "eventName": "SUC 036 Big Alta Energy",
-    "eventDescription": "Roses are red, violets are blue. SUC loves big climbs. This vert might kill you.\n\n",
-    "eventDate": "Feb 14 2026",
-    "eventTime": "8:15 AM",
-    "startLocationName": "Marinwood Community Park",
-    "startLocationUrl": "https://maps.app.goo.gl/vrbZS6iWjj22qkwY8",
-    "startLocationCoordinates": {
-      "lat": 38.5816,
-      "lng": -121.4944
-    },
-    "routes": [
+    "name": "SUC 036 Big Alta Energy",
+    "description": "Roses are red, violets are blue. SUC loves big climbs. This vert might kill you.\n\n",
+    "date": "Feb 14 2026",
+    "routeRefs": [
       {
-        "label": "MED",
-        "statsUrl": "/routes/SUC-036-MED.json",
-        "geojsonUrl": "/routes/SUC-036-MED.geojson"
+        "routeGroupId": "SUC-036",
+        "variant": "MED"
       },
       {
-        "label": "LRG",
-        "statsUrl": "/routes/SUC-036-LRG.json",
-        "geojsonUrl": "/routes/SUC-036-LRG.geojson"
+        "routeGroupId": "SUC-036",
+        "variant": "LRG"
       },
       {
-        "label": "XL",
-        "statsUrl": "/routes/SUC-036-XL.json",
-        "geojsonUrl": "/routes/SUC-036-XL.geojson"
+        "routeGroupId": "SUC-036",
+        "variant": "XL"
       },
       {
-        "label": "XXL",
-        "statsUrl": "/routes/SUC-036-XXL.json",
-        "geojsonUrl": "/routes/SUC-036-XXL.geojson"
-      }
-    ],
-    "poiHighlights": [
-      {
-        "id": "viewpoint-regroup-viewpoint",
-        "title": "Regroup / Viewpoint",
-        "type": "view",
-        "category": "view",
-        "distanceMi": 4.743210025775685
-      },
-      {
-        "id": "water-crew-water-drop",
-        "title": "Crew Water Drop",
-        "type": "water",
-        "category": "water",
-        "distanceMi": 8.795287146317223
+        "routeGroupId": "SUC-036",
+        "variant": "XXL"
       }
     ]
   },
   {
     "eventId": "SF-26",
-    "eventName": "Salmon Falls Endurance Run",
-    "eventDescription": "Sac Ultra Crew's first goal race of 2026. See you there?",
-    "eventDate": "Feb 28 2026",
-    "eventTime": "7:30am",
-    "startLocationName": "Magnolia Ranch",
-    "startLocationUrl": "https://maps.app.goo.gl/z2c9UDY2em3Mherq7",
-    "startLocationCoordinates": {
-      "lat": 0,
-      "lng": 0
-    },
-    "routes": [
+    "name": "Salmon Falls Endurance Run",
+    "description": "Sac Ultra Crew's first goal race of 2026. See you there?",
+    "date": "Feb 28 2026",
+    "routeRefs": [
       {
-        "label": "XXL",
-        "statsUrl": "/routes/SF-26-XXL.json",
-        "geojsonUrl": "/routes/SF-26-XXL.geojson"
-      },
+        "routeGroupId": "SF-26",
+        "variant": "XXL"
+      }
+    ]
+  },
+  {
+    "eventId": "TEAM-SUC-001",
+    "name": "Team SUC Hill Workout",
+    "description": "Join Team SUC and Mo Miles Run Club for a mixed terrain hill workout. Bring a headlamp or light.",
+    "date": "Feb 25 2026",
+    "routeRefs": [
       {
-        "label": "MED",
-        "statsUrl": "/routes/SF-26-MED.json",
-        "geojsonUrl": "/routes/SF-26-MED.geojson"
+        "routeGroupId": "TEAM-SUC-001",
+        "variant": "LRG"
       }
     ]
   },
   {
     "eventId": "ECO-001",
-    "eventName": "Ecofitness Run Club & Strength for Runners",
-    "eventDescription": "7 am - Easy run. 8 am - strength workout designed for trail runners. Led by Coach Emily.",
-    "eventDate": "Feb 20 2026",
-    "eventTime": "7:00 AM",
-    "startLocationName": "Sacramento EcoFitness",
-    "startLocationUrl": "https://maps.app.goo.gl/49iagJDgrpS9o1Rs9",
-    "startLocationCoordinates": {
-      "lat": 0,
-      "lng": 0
-    },
-    "routes": [
+    "name": "Ecofitness Run Club & Strength for Runners",
+    "description": "7 am - Easy run. 8 am - strength workout designed for trail runners. Led by Coach Emily.",
+    "date": "Feb 20 2026",
+    "routeRefs": [
       {
-        "label": "MED",
-        "statsUrl": "/routes/ECO-001-MED.json",
-        "geojsonUrl": "/routes/ECO-001-MED.geojson"
-      }
-    ],
-    "poiHighlights": [
-      {
-        "id": "water-water-fountain",
-        "title": "Water Fountain",
-        "type": "water",
-        "category": "water",
-        "distanceMi": 1.856250491689058
+        "routeGroupId": "ECO-001",
+        "variant": "MED"
       }
     ]
   },
   {
     "eventId": "SUC-037",
-    "eventName": "SUC 037 The Divide",
-    "eventDescription": "This is the long way around. The full Foresthill Divide.\nOne crew. One goal.\nThe trail doesn’t divide us. It binds us.",
-    "eventDate": "Feb 21 2026",
-    "eventTime": "7:15 AM",
-    "startLocationName": "Driver's Flat Parking Area",
-    "startLocationUrl": "https://maps.app.goo.gl/Fuze4J6ZWgyVDR4v6",
-    "startLocationCoordinates": {
-      "lat": 0,
-      "lng": 0
-    },
-    "routes": [
+    "name": "SUC 037 The Divide",
+    "description": "This is the long way around. The full Foresthill Divide.\nOne crew. One goal.\nThe trail doesn’t divide us. It binds us.",
+    "date": "Feb 21 2026",
+    "routeRefs": [
       {
-        "label": "MED",
-        "statsUrl": "/routes/SUC-037-MED.json",
-        "geojsonUrl": "/routes/SUC-037-MED.geojson"
+        "routeGroupId": "SUC-037",
+        "variant": "MED"
       },
       {
-        "label": "LRG",
-        "statsUrl": "/routes/SUC-037-LRG.json",
-        "geojsonUrl": "/routes/SUC-037-LRG.geojson"
+        "routeGroupId": "SUC-037",
+        "variant": "LRG"
       },
       {
-        "label": "XL",
-        "statsUrl": "/routes/SUC-037-XL.json",
-        "geojsonUrl": "/routes/SUC-037-XL.geojson"
+        "routeGroupId": "SUC-037",
+        "variant": "XL"
       },
       {
-        "label": "XXL",
-        "statsUrl": "/routes/SUC-037-XXL.json",
-        "geojsonUrl": "/routes/SUC-037-XXL.geojson"
-      }
-    ],
-    "poiHighlights": [
-      {
-        "id": "viewpoint-top-of-climb",
-        "title": "Top of Climb",
-        "type": "viewpoint",
-        "category": "view",
-        "distanceMi": 8.831547818499875
-      },
-      {
-        "id": "viewpoint-viewpoint",
-        "title": "Viewpoint",
-        "type": "viewpoint",
-        "category": "view",
-        "distanceMi": 7.340100014893542
+        "routeGroupId": "SUC-037",
+        "variant": "XXL"
       }
     ]
   }

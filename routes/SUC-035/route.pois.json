@@ -283,6 +283,91 @@
         "lat": 38.738800000000005,
         "lon": -121.08637000000002
       }
+    },
+    {
+      "id": "start-finish",
+      "title": "Start / Finish",
+      "type": "start-finish",
+      "system": true,
+      "locked": true,
+      "drop": {
+        "lat": 38.71974,
+        "lon": -121.09982000000001
+      },
+      "variants": {
+        "LRG": [
+          {
+            "lat": 38.71974,
+            "lon": -121.09982000000001,
+            "snapIndex": 0,
+            "distanceM": 0,
+            "distanceMi": 0,
+            "passIndex": 0
+          },
+          {
+            "lat": 38.719730000000006,
+            "lon": -121.09980000000002,
+            "snapIndex": 1049,
+            "distanceM": 25565.675525820345,
+            "distanceMi": 15.885774281831818,
+            "passIndex": 1
+          }
+        ],
+        "MED": [
+          {
+            "lat": 38.71974,
+            "lon": -121.09982000000001,
+            "snapIndex": 0,
+            "distanceM": 0,
+            "distanceMi": 0,
+            "passIndex": 0
+          },
+          {
+            "lat": 38.719840000000005,
+            "lon": -121.09988000000001,
+            "snapIndex": 554,
+            "distanceM": 14514.331505608965,
+            "distanceMi": 9.01878747216814,
+            "passIndex": 1
+          }
+        ],
+        "XL": [
+          {
+            "lat": 38.71974,
+            "lon": -121.09982000000001,
+            "snapIndex": 0,
+            "distanceM": 0,
+            "distanceMi": 0,
+            "passIndex": 0
+          },
+          {
+            "lat": 38.719730000000006,
+            "lon": -121.09980000000002,
+            "snapIndex": 1339,
+            "distanceM": 32340.072749269384,
+            "distanceMi": 20.09518956125563,
+            "passIndex": 1
+          }
+        ],
+        "XXL": [
+          {
+            "lat": 38.719730000000006,
+            "lon": -121.09980000000002,
+            "snapIndex": 0,
+            "distanceM": 0,
+            "distanceMi": 0,
+            "passIndex": 0
+          },
+          {
+            "lat": 38.71974,
+            "lon": -121.09982000000001,
+            "snapIndex": 1754,
+            "distanceM": 42745.460216439365,
+            "distanceMi": 26.560797577422456,
+            "passIndex": 1
+          }
+        ]
+      }
     }
   ]
 }
