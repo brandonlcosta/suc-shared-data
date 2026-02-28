@@ -1,0 +1,13 @@
+{
+  "routeGroupId": "SUC-039",
+  "name": "Salmon Survivors",
+  "location": "Old Town Folsom",
+  "source": "SUC",
+  "notes": "",
+  "variants": [
+    "MED",
+    "LRG",
+    "XL",
+    "XXL"
+  ]
+}

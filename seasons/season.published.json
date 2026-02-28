@@ -54,7 +54,9 @@
             }
           },
           "eventIds": [
-            "SUC-035"
+            "SUC-035",
+            "TEAM-SUC-001",
+            "ECO-001"
           ]
         },
         {
@@ -81,7 +83,7 @@
             },
             "thu": {
               "workoutIds": [
-                "workout-0ef338a1-08fe-480b-86a9-8d41f23362be",
+                "workout-578db8ec-e939-4782-9ba1-2793747072f2",
                 "workout-b481028e-180a-4f8b-a737-a1203354c535"
               ]
             },
@@ -103,7 +105,9 @@
             }
           },
           "eventIds": [
-            "SUC-036"
+            "SUC-036",
+            "TEAM-SUC-001",
+            "ECO-001"
           ]
         },
         {
@@ -149,7 +153,12 @@
                 "workout-f6ba97e8-8797-4317-933d-e98bced97624"
               ]
             }
-          }
+          },
+          "eventIds": [
+            "TEAM-SUC-001",
+            "ECO-001",
+            "SUC-037"
+          ]
         },
         {
           "weekId": "5ef4c872-d967-4527-9c0f-0c05575ff252",
@@ -187,6 +196,199 @@
               "notes": "Salmon Falls Race Day!"
             },
             "sun": {}
+          },
+          "eventIds": [
+            "SF-26",
+            "ECO-001",
+            "SUC-038",
+            "TEAM-SUC-001"
+          ]
+        }
+      ]
+    },
+    {
+      "blockId": "20656260-21da-469a-a004-b1c41b83d7f6",
+      "name": "Canyons Block",
+      "tags": [],
+      "weeks": [
+        {
+          "weekId": "6541f36c-bb24-4dee-ab8a-aa13919262d6",
+          "focus": "base",
+          "stress": "med",
+          "volume": "med",
+          "intensity": "med",
+          "days": {
+            "mon": {
+              "workoutIds": [
+                "workout-1869e82a-1ddd-4c6b-a75b-669a2062d0b1"
+              ]
+            },
+            "tue": {
+              "workoutIds": [
+                "workout-72dcf2a8-506e-4c9e-94ed-e783e57b9bd8"
+              ]
+            },
+            "wed": {
+              "workoutIds": [
+                "workout-85df3b96-5453-49ee-9b09-2e387bfcf638"
+              ]
+            },
+            "thu": {
+              "workoutIds": [
+                "workout-f87c7cf1-1ffb-411f-9773-9e50c9145339"
+              ]
+            },
+            "fri": {
+              "workoutIds": [
+                "workout-1a154e07-07e3-4d10-b4a9-ef0002c24929",
+                "workout-247bdf6e-8207-4707-810e-87b210cecbbc"
+              ]
+            },
+            "sat": {
+              "workoutIds": [
+                "workout-d6b52256-00dd-4b11-a533-341f26fa1f41"
+              ]
+            },
+            "sun": {
+              "workoutIds": [
+                "workout-f6ba97e8-8797-4317-933d-e98bced97624"
+              ]
+            }
+          }
+        },
+        {
+          "weekId": "c3b28d5a-5221-4b6a-9d6b-ec48744d2f8b",
+          "focus": "hill-power",
+          "stress": "high",
+          "volume": "med-high",
+          "intensity": "high",
+          "days": {
+            "mon": {
+              "workoutIds": [
+                "workout-1869e82a-1ddd-4c6b-a75b-669a2062d0b1"
+              ]
+            },
+            "tue": {
+              "workoutIds": [
+                "workout-72dcf2a8-506e-4c9e-94ed-e783e57b9bd8"
+              ]
+            },
+            "wed": {
+              "workoutIds": [
+                "workout-8d07bc2c-ddab-4687-938a-d1617369b5d4"
+              ]
+            },
+            "thu": {
+              "workoutIds": [
+                "workout-578db8ec-e939-4782-9ba1-2793747072f2"
+              ]
+            },
+            "fri": {
+              "workoutIds": [
+                "workout-1a154e07-07e3-4d10-b4a9-ef0002c24929",
+                "workout-247bdf6e-8207-4707-810e-87b210cecbbc"
+              ]
+            },
+            "sat": {
+              "workoutIds": [
+                "workout-27b78894-65c5-462e-bbd7-759775e204e1"
+              ]
+            },
+            "sun": {
+              "workoutIds": [
+                "workout-f6ba97e8-8797-4317-933d-e98bced97624"
+              ]
+            }
+          }
+        },
+        {
+          "weekId": "4f2ba8d6-da6c-49c6-812f-79c93aae3247",
+          "focus": "hill-power",
+          "stress": "high",
+          "volume": "med-high",
+          "intensity": "high",
+          "days": {
+            "mon": {
+              "workoutIds": [
+                "workout-1869e82a-1ddd-4c6b-a75b-669a2062d0b1"
+              ]
+            },
+            "tue": {
+              "workoutIds": [
+                "workout-72dcf2a8-506e-4c9e-94ed-e783e57b9bd8"
+              ]
+            },
+            "wed": {
+              "workoutIds": [
+                "workout-318f134e-b31a-453e-b74e-c33204927a03"
+              ]
+            },
+            "thu": {
+              "workoutIds": [
+                "workout-578db8ec-e939-4782-9ba1-2793747072f2"
+              ]
+            },
+            "fri": {
+              "workoutIds": [
+                "workout-1a154e07-07e3-4d10-b4a9-ef0002c24929",
+                "workout-247bdf6e-8207-4707-810e-87b210cecbbc"
+              ]
+            },
+            "sat": {
+              "workoutIds": [
+                "workout-27b78894-65c5-462e-bbd7-759775e204e1"
+              ]
+            },
+            "sun": {
+              "workoutIds": [
+                "workout-beb63419-1369-4f69-9254-b5b4f4404d28"
+              ]
+            }
+          }
+        },
+        {
+          "weekId": "3184c9e2-80a1-4fd3-9589-533cbf58ebef",
+          "focus": "deload",
+          "stress": "low",
+          "volume": "low",
+          "intensity": "low",
+          "days": {
+            "mon": {
+              "workoutIds": [
+                "workout-1869e82a-1ddd-4c6b-a75b-669a2062d0b1"
+              ]
+            },
+            "tue": {
+              "workoutIds": [
+                "workout-72dcf2a8-506e-4c9e-94ed-e783e57b9bd8"
+              ]
+            },
+            "wed": {
+              "workoutIds": [
+                "workout-3edf7e98-add7-4dc7-a7a5-b6273d7d5b50"
+              ]
+            },
+            "thu": {
+              "workoutIds": [
+                "workout-f0a00c03-b742-45c9-acd0-1de9aedc3f43"
+              ]
+            },
+            "fri": {
+              "workoutIds": [
+                "workout-1a154e07-07e3-4d10-b4a9-ef0002c24929",
+                "workout-247bdf6e-8207-4707-810e-87b210cecbbc"
+              ]
+            },
+            "sat": {
+              "workoutIds": [
+                "workout-d6b52256-00dd-4b11-a533-341f26fa1f41"
+              ]
+            },
+            "sun": {
+              "workoutIds": [
+                "workout-beb63419-1369-4f69-9254-b5b4f4404d28"
+              ]
+            }
           }
         }
       ]

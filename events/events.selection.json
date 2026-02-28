@@ -1,10 +1,12 @@
 {
   "version": 1,
   "selectedEventIds": [
-    "SUC-036",
-    "SF-26",
     "ECO-001",
     "SUC-037",
-    "TEAM-SUC-001"
+    "TEAM-SUC-001",
+    "SUC-038",
+    "SUC 039",
+    "SF-26",
+    "SUC-036"
   ]
 }

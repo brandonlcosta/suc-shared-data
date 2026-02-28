@@ -1,5 +1,8 @@
 node_modules/
 nul
+.env
+.env.*
+!.env.template
 
 # Generated media output
 dist/exports/

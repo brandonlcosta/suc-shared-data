@@ -65,7 +65,7 @@
       "event_id": "TEAM-SUC-001",
       "event_name": "Team SUC Hill Workout",
       "event_description": "Join Team SUC and Mo Miles Run Club for a mixed terrain hill workout. Bring a headlamp or light.",
-      "event_date": "Feb 25 2026",
+      "event_date": "Mar 4 2026",
       "event_time": "6:00 PM",
       "type": "training-run",
       "start_location_name": "Overlook Park",
@@ -80,7 +80,7 @@
       "event_id": "ECO-001",
       "event_name": "Ecofitness Run Club & Strength for Runners",
       "event_description": "7 am - Easy run. 8 am - strength workout designed for trail runners. Led by Coach Emily.",
-      "event_date": "Feb 20 2026",
+      "event_date": "March 6 2026",
       "event_time": "7:00 AM",
       "type": "crew-run",
       "start_location_name": "Sacramento EcoFitness",
@@ -119,6 +119,21 @@
       "start_lng": 0,
       "route_group_ids": [
         "SUC-038"
+      ]
+    },
+    {
+      "event_id": "SUC 039",
+      "event_name": "SUC 039 Salmon Survivors",
+      "event_description": "The crew is recovering. You all survived Salmon Falls. Take an easy week before we crank up the vert.",
+      "event_date": "Mar 7 2026",
+      "event_time": "7:15 am",
+      "type": "crew-run",
+      "start_location_name": "Old Town Folsom (Karen's Bakery)",
+      "start_location_url": "https://maps.app.goo.gl/2PxdcgY8iBHoXYoW9",
+      "start_lat": 0,
+      "start_lng": 0,
+      "route_group_ids": [
+        "SUC-039"
       ]
     }
   ]

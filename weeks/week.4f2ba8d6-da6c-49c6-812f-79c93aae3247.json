@@ -1,0 +1,21 @@
+{
+  "id": "4f2ba8d6-da6c-49c6-812f-79c93aae3247",
+  "title": "4f2ba8d6-da6c-49c6-812f-79c93aae3247",
+  "status": "published",
+  "createdAt": "2026-02-28T06:19:13.052Z",
+  "updatedAt": "2026-02-28T06:19:13.052Z",
+  "focus": "hill-power",
+  "stress": "high",
+  "volume": "med-high",
+  "intensity": "high",
+  "workouts": [
+    "workout-1869e82a-1ddd-4c6b-a75b-669a2062d0b1",
+    "workout-72dcf2a8-506e-4c9e-94ed-e783e57b9bd8",
+    "workout-318f134e-b31a-453e-b74e-c33204927a03",
+    "workout-578db8ec-e939-4782-9ba1-2793747072f2",
+    "workout-1a154e07-07e3-4d10-b4a9-ef0002c24929",
+    "workout-247bdf6e-8207-4707-810e-87b210cecbbc",
+    "workout-27b78894-65c5-462e-bbd7-759775e204e1",
+    "workout-beb63419-1369-4f69-9254-b5b4f4404d28"
+  ]
+}

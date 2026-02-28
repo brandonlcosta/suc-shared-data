@@ -2,8 +2,8 @@
   "id": "0a91b815-6d18-4dc4-9bec-3fdebdab8842",
   "title": "0a91b815-6d18-4dc4-9bec-3fdebdab8842",
   "status": "published",
-  "createdAt": "2026-02-07T08:04:11.945Z",
-  "updatedAt": "2026-02-07T08:04:11.945Z",
+  "createdAt": "2026-02-28T06:19:13.052Z",
+  "updatedAt": "2026-02-28T06:19:13.052Z",
   "focus": "ultra",
   "stress": "med-high",
   "volume": "high",
@@ -20,6 +20,8 @@
     "workout-beb63419-1369-4f69-9254-b5b4f4404d28"
   ],
   "eventIds": [
-    "SUC-035"
+    "SUC-035",
+    "TEAM-SUC-001",
+    "ECO-001"
   ]
 }
