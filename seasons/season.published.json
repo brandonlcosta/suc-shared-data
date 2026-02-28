@@ -193,7 +193,10 @@
               ]
             },
             "sat": {
-              "notes": "Salmon Falls Race Day!"
+              "notes": "Salmon Falls Race Day!",
+              "workoutIds": [
+                "workout-6858b433-0fd5-4e85-b928-1c585d9dee79"
+              ]
             },
             "sun": {}
           },

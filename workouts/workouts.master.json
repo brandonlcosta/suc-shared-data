@@ -4266,6 +4266,83 @@
       "createdAt": "2026-02-28T05:03:31.448Z",
       "updatedAt": "2026-02-28T05:10:32.089Z",
       "publishedAt": "2026-02-28T05:10:32.089Z"
+    },
+    {
+      "workoutId": "workout-6858b433-0fd5-4e85-b928-1c585d9dee79",
+      "version": 1,
+      "status": "published",
+      "domain": "run",
+      "strengthType": null,
+      "name": "Race Day - Salmon Falls",
+      "description": "",
+      "focus": [
+        "race",
+        "ultra",
+        "trail"
+      ],
+      "coachNotes": "",
+      "tiers": {
+        "MED": {
+          "name": "Race Day - Ultra (MED)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "9hr",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "LRG": {
+          "name": "Race Day - Ultra (LRG)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "7hr",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        },
+        "XL": {
+          "name": "Race Day - Ultra (XL)",
+          "structure": [
+            {
+              "type": "interval",
+              "reps": 1,
+              "work": {
+                "duration": "5hr 30min",
+                "target": {
+                  "type": "pace",
+                  "zone": "Z2"
+                },
+                "cues": []
+              },
+              "rest": null
+            }
+          ]
+        }
+      },
+      "routeId": null,
+      "routeMode": null,
+      "sectionEfforts": [],
+      "createdAt": "2026-02-28T06:52:09.889Z",
+      "updatedAt": "2026-02-28T06:53:38.821Z",
+      "publishedAt": "2026-02-28T06:53:38.821Z"
     }
   ]
 }
