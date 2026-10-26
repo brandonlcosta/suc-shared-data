@@ -1,4 +1,4 @@
-﻿name: boundary-lint
+name: boundary-lint
 
 on:
   pull_request:
@@ -12,7 +12,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version-file: .node-version
           cache: npm
       - run: npm ci
       - run: npm run lint:boundaries
+
